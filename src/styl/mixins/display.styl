@@ -1,18 +1,2 @@
-display-scope(value, print = false)
-  if print
-    suffix = '-print'
-  else
-    suffix = ''
-
-  .{prefix-display}{suffix}-{value}
-    display: value !important
-
-display-responsive-scope(prop, key, value, print = false)
-  if print
-    suffix = '-print'
-  else
-    suffix = ''
-
-  @media screen and (min-width: value)
-    .{prefix-display}{suffix}-{key}-{prop}
-      display: prop !important
+display-scope(value)
+  display: value !important

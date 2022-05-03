@@ -8,7 +8,3 @@ visually-hidden()
   clip: rect(0, 0, 0, 0) !important
   white-space: nowrap !important
   border: 0 !important
-
-visually-responsive-hidden(key, value)
-  .{prefix-visually-hidden}-{key}, .{prefix-visually-hidden}-{prefix-focusable}-{key}:not(:focus):not(:focus-within)
-    visually-hidden()

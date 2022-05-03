@@ -22,6 +22,7 @@
   },
   "prefix": {
     "global": "",
+    "print": "print",
     "min": "min",
     "max": "max",
     "align": "align",

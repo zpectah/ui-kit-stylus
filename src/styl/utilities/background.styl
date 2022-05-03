@@ -1,8 +1,8 @@
 for prop in (none initial inherit)
-  background-scope(prop, prop)
+  .{prefix-background}-{prop}
+    background-scope(prop, prop)
 
 for prop, value in palette
   for num in (1..10)
-    background-scope(prop, value, num)
-
-
+    .{prefix-background}-{prop}-{num}
+      background-scope(prop, value, num)
