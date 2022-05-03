@@ -1,0 +1,60 @@
+padding-scope(value)
+  if value > 0
+    val = value * spacer
+  else
+    val = value
+
+  .{prefix-padding}-{value}
+    padding: val !important
+
+  .{prefix-padding}{prefix-top}-{value}
+    padding-top: val !important
+
+  .{prefix-padding}{prefix-right}-{value}
+    padding-right: val !important
+
+  .{prefix-padding}{prefix-bottom}-{value}
+    padding-bottom: val !important
+
+  .{prefix-padding}{prefix-left}-{value}
+    padding-left: val !important
+
+  .{prefix-padding}{prefix-xAxis}-{value}
+    padding-left: val !important
+    padding-right: val !important
+
+  .{prefix-padding}{prefix-yAxis}-{value}
+    padding-top: val !important
+    padding-bottom: val !important
+
+
+padding-responsive-scope(value, key, width)
+  if value > 0
+    val = value * spacer
+  else
+    val = value
+
+  @media screen and (min-width: width)
+    .{prefix-padding}-{key}-{value}
+        padding: val !important
+
+    .{prefix-padding}{prefix-top}-{key}-{value}
+        padding-top: val !important
+
+    .{prefix-padding}{prefix-right}-{key}-{value}
+        padding-right: val !important
+
+    .{prefix-padding}{prefix-bottom}-{key}-{value}
+        padding-bottom: val !important
+
+    .{prefix-padding}{prefix-left}-{key}-{value}
+        padding-left: val !important
+
+    .{prefix-padding}{prefix-xAxis}-{key}-{value}
+        padding-left: val !important
+        padding-right: val !important
+
+    .{prefix-padding}{prefix-yAxis}-{key}-{value}
+        padding-top: val !important
+        padding-bottom: val !important
+

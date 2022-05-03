@@ -1,0 +1,12 @@
+for key in (visible hidden collapse initial inherit)
+  display-visibility(key)
+
+for key, value in breakpoints
+  for prop in (visible hidden collapse initial inherit)
+    display-responsive-visibility(prop, key, value)
+
+.{prefix-visually-hidden}, .{prefix-visually-hidden}-{prefix-focusable}:not(:focus):not(:focus-within)
+  visually-hidden()
+
+for key, value in breakpoints
+  visually-responsive-hidden(key, value)

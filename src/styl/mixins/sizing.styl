@@ -1,0 +1,65 @@
+width-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vw')
+      val = value * 1vw
+  else
+    val = value
+
+  width: val !important
+
+height-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vh')
+      val = value * 1vh
+  else
+    val = value
+
+  height: val !important
+
+min-width-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vw')
+      val = value * 1vw
+  else
+    val = value
+
+  min-width: val !important
+
+min-height-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vh')
+      val = value * 1vh
+  else
+    val = value
+
+  min-height: val !important
+
+max-width-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vw')
+      val = value * 1vw
+  else
+    val = value
+
+  max-width: val !important
+
+max-height-scope(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vh')
+      val = value * 1vh
+  else
+    val = value
+
+  max-height: val !important

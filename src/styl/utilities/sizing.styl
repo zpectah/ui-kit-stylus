@@ -1,0 +1,66 @@
+for key in (auto initial inherit)
+  .{prefix-width}-{key}
+    width-scope(key)
+
+  .{prefix-height}-{key}
+    height-scope(key)
+
+  .{prefix-viewWidth}-{key}
+    width-scope(key)
+
+  .{prefix-viewHeight}-{key}
+    height-scope(key)
+
+
+for key in (initial inherit)
+  .{prefix-width}-{prefix-min}-{key}
+    min-width-scope(key)
+
+  .{prefix-height}-{prefix-min}-{key}
+    min-height-scope(key)
+
+
+for key in (none initial inherit)
+  .{prefix-width}-{prefix-max}-{key}
+    max-width-scope(key)
+
+  .{prefix-height}-{prefix-max}-{key}
+    max-height-scope(key)
+
+
+for key in (0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100)
+  .{prefix-width}-{key}
+    width-scope(key, '%')
+
+  .{prefix-height}-{key}
+    height-scope(key, '%')
+
+  .{prefix-viewWidth}-{key}
+    width-scope(key, 'vw')
+
+  .{prefix-viewHeight}-{key}
+    height-scope(key, 'vh')
+
+  .{prefix-width}-{prefix-min}-{key}
+    min-width-scope(key, '%')
+
+  .{prefix-height}-{prefix-min}-{key}
+    min-height-scope(key, '%')
+
+  .{prefix-width}-{prefix-max}-{key}
+    max-width-scope(key, '%')
+
+  .{prefix-height}-{prefix-max}-{key}
+    max-height-scope(key, '%')
+
+  .{prefix-viewWidth}-{prefix-min}-{key}
+    min-width-scope(key, 'vw')
+
+  .{prefix-viewHeight}-{prefix-min}-{key}
+    min-height-scope(key, 'vh')
+
+  .{prefix-viewWidth}-{prefix-max}-{key}
+    max-width-scope(key, 'vw')
+
+  .{prefix-viewHeight}-{prefix-max}-{key}
+    max-height-scope(key, 'vh')

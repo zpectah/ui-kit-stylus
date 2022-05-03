@@ -1,0 +1,8 @@
+display-visibility(value)
+  .{prefix-visibility}-{value}
+    visibility: value !important;
+
+display-responsive-visibility(prop, key, value)
+  @media screen and (min-width: value)
+    .{prefix-visibility}-{key}-{prop}
+      visibility: prop !important;

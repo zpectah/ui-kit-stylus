@@ -1,0 +1,29 @@
+/* Margin */
+for prop in (auto initial inherit)
+  margin-scope(prop)
+
+for prop in (0..5)
+  margin-scope(prop)
+
+/* Margin negative */
+for prop in (1..5)
+  margin-scope(prop, true)
+
+/* Padding */
+for prop in (initial inherit)
+  padding-scope(prop)
+
+for prop in (0..5)
+  padding-scope(prop)
+
+/* Responsive */
+for key, value in breakpoints
+  for prop in (0..5)
+    margin-responsive-scope(prop, key, value)
+
+  for prop in (1..5)
+    margin-responsive-scope(prop, key, value, true)
+
+  for prop in (0..5)
+    padding-responsive-scope(prop, key, value)
+

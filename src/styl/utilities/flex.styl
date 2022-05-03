@@ -1,0 +1,143 @@
+// Direction
+for prop in (row row-reverse column column-reverse initial inherit)
+  .{prefix-flex}-{prop}
+    flex-direction-scope(prop)
+
+// Justify content
+for prop in (flex-start flex-end center space-between space-around space-evenly initial inherit)
+  .{prefix-justify-content}-{prop}
+    flex-justify-content-scope(prop)
+
+// Justify items
+for prop in (flex-start flex-end center initial inherit)
+  .{prefix-justify-items}-{prop}
+    flex-justify-items-scope(prop)
+
+// Justify self
+for prop in (auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset)
+  .{prefix-justify-self}-{prop}
+    flex-justify-self-scope(prop)
+
+// Align content
+for prop in (stretch center flex-start flex-end space-between space-around initial inherit)
+  .{prefix-align-content}-{prop}
+    flex-align-content-scope(prop)
+
+// Align items
+for prop in (stretch center flex-start flex-end baseline initial inherit)
+  .{prefix-align-items}-{prop}
+    flex-align-items-scope(prop)
+
+// Align self
+for prop in (auto stretch center flex-start flex-end baseline initial inherit)
+  .{prefix-align-self}-{prop}
+    flex-align-self-scope(prop)
+
+// Fill
+.{prefix-fill}
+  flex-fill-scope()
+
+// Grow & shrink
+for prop in (initial inherit)
+  .{prefix-grow}-{prop}
+    flex-grow-scope(prop)
+
+  .{prefix-shrink}-{prop}
+    flex-shrink-scope(prop)
+
+for prop in (0..5)
+  .{prefix-grow}-{prop}
+    flex-grow-scope(prop)
+
+  .{prefix-shrink}-{prop}
+    flex-shrink-scope(prop)
+
+// Wrap
+for prop in (nowrap wrap wrap-reverse initial inherit)
+  .{prefix-wrap}-{prop}
+    flex-wrap-scope(prop)
+
+// Order
+.{prefix-order}-first
+  flex-order-scope(-1)
+
+for prop in (0..5)
+  .{prefix-order}-{props}
+    flex-order-scope(prop)
+
+.{prefix-order}-last
+  flex-order-scope(6)
+
+
+for key, value in breakpoints
+  @media screen and (min-width: value)
+    // Direction
+    for prop in (row row-reverse column column-reverse initial inherit)
+      .{prefix-flex}-{key}-{prop}
+        flex-direction-scope(prop)
+
+    // Justify content
+    for prop in (flex-start flex-end center space-between space-around space-evenly initial inherit)
+      .{prefix-justify-content}-{key}-{prop}
+        flex-justify-content-scope(prop)
+
+    // Justify items
+    for prop in (flex-start flex-end center initial inherit)
+      .{prefix-justify-items}-{key}-{prop}
+        flex-justify-items-scope(prop)
+
+    // Justify self
+    for prop in (auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset)
+      .{prefix-justify-self}-{key}-{prop}
+        flex-justify-self-scope(prop)
+
+    // Align content
+    for prop in (stretch center flex-start flex-end space-between space-around initial inherit)
+      .{prefix-align-content}-{key}-{prop}
+        flex-align-content-scope(prop)
+
+    // Align items
+    for prop in (stretch center flex-start flex-end baseline initial inherit)
+      .{prefix-align-items}-{key}-{prop}
+        flex-align-items-scope(prop)
+
+    // Align self
+    for prop in (auto stretch center flex-start flex-end baseline initial inherit)
+      .{prefix-align-self}-{key}-{prop}
+        flex-align-self-scope(prop)
+
+    // Fill
+    .{prefix-fill}-{key}
+      flex-fill-scope()
+
+    // Grow & shrink
+    for prop in (initial inherit)
+      .{prefix-grow}-{key}-{prop}
+        flex-grow-scope(prop)
+
+      .{prefix-shrink}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+    for prop in (0..5)
+      .{prefix-grow}-{key}-{prop}
+        flex-grow-scope(prop)
+
+      .{prefix-shrink}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+    // Wrap
+    for prop in (nowrap wrap wrap-reverse initial inherit)
+      .{prefix-wrap}-{key}-{prop}
+        flex-wrap-scope(prop)
+
+    // Order
+    .{prefix-order}-{key}-first
+      flex-order-scope(-1)
+
+    for prop in (0..5)
+      .{prefix-order}-{key}-{props}
+        flex-order-scope(prop)
+
+    .{prefix-order}-{key}-last
+      flex-order-scope(6)
+

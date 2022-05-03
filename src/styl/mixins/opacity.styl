@@ -1,0 +1,8 @@
+opacity-scope(value)
+  if value > 0
+    val = value / 100
+  else
+    val = value
+
+  .{prefix-opacity}-{value}
+    opacity: val !important

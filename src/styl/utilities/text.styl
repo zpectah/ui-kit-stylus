@@ -1,0 +1,48 @@
+for key in (initial inherit)
+  color-scope(key, key)
+
+for key, value in palette
+  color-scope(key, value)
+
+for num in (1..10)
+  for key, value in palette
+    color-scope(key, value, num)
+
+for key in (left right center justify initial inherit)
+  .{prefix-text}-{prefix-align}-{key}
+    text-align: key !important
+
+for key, value in breakpoints
+  for prop in (left right center justify initial inherit)
+    .{prefix-text}-{prefix-align}-{key}-{prop}
+      @media screen and (min-width: value)
+        text-align: prop !important
+
+for key in (underline overline line-through none initial inherit)
+  .{prefix-text}-{prefix-decoration}-{key}
+    text-decoration: key !important
+
+for key in (auto inter-word inter-character none initial inherit)
+  .{prefix-text}-{prefix-justify}-{key}
+    text-justify: key !important
+
+for key in (clip ellipsis initial inherit)
+  .{prefix-text}-{prefix-overflow}-{key}
+    text-overflow: key !important
+
+for key in (none capitalize uppercase lowercase initial inherit)
+  .{prefix-text}-{key}
+    text-transform: key !important
+
+for key in (normal nowrap pre pre-line pre-wrap initial inherit)
+  .{prefix-whiteSpace}-{key}
+    white-space: key !important
+
+for key in (normal break-all keep-all break-word initial inherit)
+  .{prefix-wordBreak}-{key}
+    word-break: key !important
+
+for key in (normal break-word initial inherit)
+  .{prefix-wordWrap}-{key}
+    word-wrap: key !important
+

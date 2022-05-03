@@ -1,0 +1,9 @@
+for prop in (inherit none inline inline-block block grid table table-cell table-row flex inline-flex)
+  display-scope(prop)
+
+  for key, value in breakpoints
+    display-responsive-scope(prop, key, value)
+
+@media print
+  for prop in (inherit none inline inline-block block grid table table-cell table-row flex inline-flex)
+    display-scope(prop, true)

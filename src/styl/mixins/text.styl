@@ -1,0 +1,10 @@
+color-scope(key, value, opacity = 10)
+  if opacity < 10
+    val = rgba(value, opacity / 10)
+    suffix = - + opacity
+  else
+    val = value
+    suffix = ''
+
+  .{prefix-text}-{key}{suffix}
+    color: val !important
