@@ -1,0 +1,53 @@
+base-element(padding = 0)
+  width: auto
+  height: auto
+  margin: 0
+  padding: padding
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: inherit
+  background: transparent
+  border: 0
+  outline: none
+
+
+button-like-element(padding = 0)
+  base-element(padding)
+
+  text-decoration: none
+  transition: border-color transition-duration ease-in-out transition-delay, color transition-duration ease-in-out transition-delay, background-color transition-duration ease-in-out transition-delay
+
+  &:hover
+    color: inherit
+
+  &:active
+    color: inherit
+
+  &:disabled, &.disabled
+    opacity: .75
+    cursor: not-allowed
+
+
+button-base(minSize, padding, fontSize, lineHeight)
+  button-like-element(padding)
+
+  min-width: minSize
+  min-height: minSize
+  font-size: fontSize
+  font-weight: bold
+  line-height: lineHeight
+  cursor: pointer
+
+
+chip-base(minSize, padding, fontSize, lineHeight)
+  base-element(padding)
+
+  min-width: minSize
+  min-height: minSize
+  font-size: fontSize
+  line-height: lineHeight
+
+  &[a]
+    cursor: pointer
+

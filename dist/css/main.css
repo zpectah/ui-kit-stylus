@@ -880,6 +880,24 @@
 .flex-order-5 {
   order: 5 !important;
 }
+.gap-0 {
+  gap: 0 !important;
+}
+.gap-1 {
+  gap: 1rem !important;
+}
+.gap-2 {
+  gap: 2rem !important;
+}
+.gap-3 {
+  gap: 3rem !important;
+}
+.gap-4 {
+  gap: 4rem !important;
+}
+.gap-5 {
+  gap: 5rem !important;
+}
 .float-none {
   float: none !important;
 }
@@ -2441,6 +2459,18 @@
   display: block;
   clear: both;
 }
+.stack-v {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 1 1 auto;
+}
+.stack-h {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  align-items: center;
+}
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2457,6 +2487,64 @@
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+.button {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+  min-width: 2.375rem;
+  min-height: 2.375rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.05;
+  cursor: pointer;
+}
+.button:hover {
+  color: inherit;
+}
+.button:active {
+  color: inherit;
+}
+.button:disabled,
+.button.disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+.card {
+  margin: 0;
+}
+.chip {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  outline: none;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  font-size: 0.9rem;
+  line-height: 1.05;
+}
+.chip[a] {
+  cursor: pointer;
+}
+.input {
+  margin: 0;
 }
 @media print {
   .d-print-inherit {
@@ -2787,6 +2875,24 @@
   }
   .flex-order-xs-5 {
     order: 5 !important;
+  }
+  .gap-xs-0 {
+    gap: 0 !important;
+  }
+  .gap-xs-1 {
+    gap: 1rem !important;
+  }
+  .gap-xs-2 {
+    gap: 2rem !important;
+  }
+  .gap-xs-3 {
+    gap: 3rem !important;
+  }
+  .gap-xs-4 {
+    gap: 4rem !important;
+  }
+  .gap-xs-5 {
+    gap: 5rem !important;
   }
   .float-xs-none {
     float: none !important;
@@ -3650,6 +3756,24 @@
   .flex-order-sm-5 {
     order: 5 !important;
   }
+  .gap-sm-0 {
+    gap: 0 !important;
+  }
+  .gap-sm-1 {
+    gap: 1rem !important;
+  }
+  .gap-sm-2 {
+    gap: 2rem !important;
+  }
+  .gap-sm-3 {
+    gap: 3rem !important;
+  }
+  .gap-sm-4 {
+    gap: 4rem !important;
+  }
+  .gap-sm-5 {
+    gap: 5rem !important;
+  }
   .float-sm-none {
     float: none !important;
   }
@@ -4511,6 +4635,24 @@
   }
   .flex-order-md-5 {
     order: 5 !important;
+  }
+  .gap-md-0 {
+    gap: 0 !important;
+  }
+  .gap-md-1 {
+    gap: 1rem !important;
+  }
+  .gap-md-2 {
+    gap: 2rem !important;
+  }
+  .gap-md-3 {
+    gap: 3rem !important;
+  }
+  .gap-md-4 {
+    gap: 4rem !important;
+  }
+  .gap-md-5 {
+    gap: 5rem !important;
   }
   .float-md-none {
     float: none !important;
@@ -5374,6 +5516,24 @@
   .flex-order-lg-5 {
     order: 5 !important;
   }
+  .gap-lg-0 {
+    gap: 0 !important;
+  }
+  .gap-lg-1 {
+    gap: 1rem !important;
+  }
+  .gap-lg-2 {
+    gap: 2rem !important;
+  }
+  .gap-lg-3 {
+    gap: 3rem !important;
+  }
+  .gap-lg-4 {
+    gap: 4rem !important;
+  }
+  .gap-lg-5 {
+    gap: 5rem !important;
+  }
   .float-lg-none {
     float: none !important;
   }
@@ -6236,6 +6396,24 @@
   .flex-order-xl-5 {
     order: 5 !important;
   }
+  .gap-xl-0 {
+    gap: 0 !important;
+  }
+  .gap-xl-1 {
+    gap: 1rem !important;
+  }
+  .gap-xl-2 {
+    gap: 2rem !important;
+  }
+  .gap-xl-3 {
+    gap: 3rem !important;
+  }
+  .gap-xl-4 {
+    gap: 4rem !important;
+  }
+  .gap-xl-5 {
+    gap: 5rem !important;
+  }
   .float-xl-none {
     float: none !important;
   }
@@ -7097,6 +7275,24 @@
   }
   .flex-order-xxl-5 {
     order: 5 !important;
+  }
+  .gap-xxl-0 {
+    gap: 0 !important;
+  }
+  .gap-xxl-1 {
+    gap: 1rem !important;
+  }
+  .gap-xxl-2 {
+    gap: 2rem !important;
+  }
+  .gap-xxl-3 {
+    gap: 3rem !important;
+  }
+  .gap-xxl-4 {
+    gap: 4rem !important;
+  }
+  .gap-xxl-5 {
+    gap: 5rem !important;
   }
   .float-xxl-none {
     float: none !important;

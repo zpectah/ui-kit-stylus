@@ -1,71 +1,76 @@
 // Direction
-for prop in (props-flex-direction-values)
-  .{prefix-global}{props-flex-direction-class}-{prop}
+for prop in (utilities-flex-direction-values)
+  .{prefix-global}{utilities-flex-direction-class}-{prop}
     flex-direction-scope(prop)
 
 // Justify content
-for prop in (props-flex-justify-content-values)
-  .{prefix-global}{props-flex-justify-content-class}-{prop}
+for prop in (utilities-flex-justify-content-values)
+  .{prefix-global}{utilities-flex-justify-content-class}-{prop}
     flex-justify-content-scope(prop)
 
 // Justify items
-for prop in (props-flex-justify-items-values)
-  .{prefix-global}{props-flex-justify-items-class}-{prop}
+for prop in (utilities-flex-justify-items-values)
+  .{prefix-global}{utilities-flex-justify-items-class}-{prop}
     flex-justify-items-scope(prop)
 
 // Justify self
-for prop in (props-flex-justify-self-values)
-  .{prefix-global}{props-flex-justify-self-class}-{prop}
+for prop in (utilities-flex-justify-self-values)
+  .{prefix-global}{utilities-flex-justify-self-class}-{prop}
     flex-justify-self-scope(prop)
 
 // Align content
-for prop in (props-flex-align-content-values)
-  .{prefix-global}{props-flex-align-content-class}-{prop}
+for prop in (utilities-flex-align-content-values)
+  .{prefix-global}{utilities-flex-align-content-class}-{prop}
     flex-align-content-scope(prop)
 
 // Align items
-for prop in (props-flex-align-items-values)
-  .{prefix-global}{props-flex-align-items-class}-{prop}
+for prop in (utilities-flex-align-items-values)
+  .{prefix-global}{utilities-flex-align-items-class}-{prop}
     flex-align-items-scope(prop)
 
 // Align self
-for prop in (props-flex-align-self-values)
-  .{prefix-global}{props-flex-align-self-class}-{prop}
+for prop in (utilities-flex-align-self-values)
+  .{prefix-global}{utilities-flex-align-self-class}-{prop}
     flex-align-self-scope(prop)
 
 // Fill
-.{prefix-global}{props-flex-fill-class}
+.{prefix-global}{utilities-flex-fill-class}
   flex-fill-scope()
 
 // Grow & shrink
-for prop in (props-flex-grow-values)
-  .{prefix-global}{props-flex-grow-class}-{prop}
+for prop in (utilities-flex-grow-values)
+  .{prefix-global}{utilities-flex-grow-class}-{prop}
     flex-grow-scope(prop)
 
-for prop in (props-flex-shrink-values)
-  .{prefix-global}{props-flex-shrink-class}-{prop}
+for prop in (utilities-flex-shrink-values)
+  .{prefix-global}{utilities-flex-shrink-class}-{prop}
     flex-shrink-scope(prop)
 
-for prop in (props-flex-grow-counter_min..props-flex-grow-counter_max)
-  .{prefix-global}{props-flex-grow-class}-{prop}
+for prop in (utilities-flex-grow-counter_min..utilities-flex-grow-counter_max)
+  .{prefix-global}{utilities-flex-grow-class}-{prop}
     flex-grow-scope(prop)
 
-for prop in (props-flex-shrink-counter_min..props-flex-shrink-counter_max)
-  .{prefix-global}{props-flex-shrink-class}-{prop}
+for prop in (utilities-flex-shrink-counter_min..utilities-flex-shrink-counter_max)
+  .{prefix-global}{utilities-flex-shrink-class}-{prop}
     flex-shrink-scope(prop)
 
 // Wrap
-for prop in (props-flex-wrap-values)
-  .{prefix-global}{props-flex-wrap-class}-{prop}
+for prop in (utilities-flex-wrap-values)
+  .{prefix-global}{utilities-flex-wrap-class}-{prop}
     flex-wrap-scope(prop)
 
 // Order
-.{prefix-global}{props-flex-order-class}-{suffix-first}
-  flex-order-scope((props-flex-order-counter_min - 1))
+.{prefix-global}{utilities-flex-order-class}-{suffix-first}
+  flex-order-scope((utilities-flex-order-counter_min - 1))
 
-.{prefix-global}{props-flex-order-class}-{suffix-last}
-  flex-order-scope((props-flex-order-counter_max + 1))
+.{prefix-global}{utilities-flex-order-class}-{suffix-last}
+  flex-order-scope((utilities-flex-order-counter_max + 1))
 
-for prop in (props-flex-order-counter_min..props-flex-order-counter_max)
-  .{prefix-global}{props-flex-order-class}-{prop}
+for prop in (utilities-flex-order-counter_min..utilities-flex-order-counter_max)
+  .{prefix-global}{utilities-flex-order-class}-{prop}
     flex-order-scope(prop)
+
+// Gap
+for prop in (utilities-flex-gap-counter_min..utilities-flex-gap-counter_max)
+  .{prefix-global}{utilities-flex-gap-class}-{prop}
+    flex-gap-scope(prop)

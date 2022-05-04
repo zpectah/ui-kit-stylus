@@ -1,6 +1,33 @@
 {
   "spacer": "1rem",
-  "font-size": "16px",
+  "font": {
+    "size": "16px"
+  },
+  "border": {
+    "width": "1px",
+    "style": "solid",
+    "radius": ".35rem"
+  },
+  "transition": {
+    "duration": ".25s",
+    "delay": "0s"
+  },
+  "prefix": {
+    "global": ""
+  },
+  "suffix": {
+    "print": "print",
+    "first": "first",
+    "last": "last",
+    "focusable": "focusable",
+    "negative": "n",
+    "top": "t",
+    "right": "r",
+    "bottom": "b",
+    "left": "l",
+    "x": "x",
+    "y": "y"
+  },
   "breakpoints": {
     "xs": 0,
     "sm": "576px",
@@ -20,23 +47,7 @@
     "light": "rgb(250,250,250)",
     "dark": "rgb(41,40,45)"
   },
-  "prefix": {
-    "global": ""
-  },
-  "suffix": {
-    "print": "print",
-    "first": "first",
-    "last": "last",
-    "focusable": "focusable",
-    "negative": "n",
-    "top": "t",
-    "right": "r",
-    "bottom": "b",
-    "left": "l",
-    "x": "x",
-    "y": "y"
-  },
-  "props": {
+  "utilities": {
     "vertical-align": {
       "property": "vertical-align",
       "class": "vertical-align",
@@ -136,6 +147,13 @@
       "order": {
         "property": "order",
         "class": "flex-order",
+        "counter_min": 0,
+        "counter_max": 5,
+        "responsive": true
+      },
+      "gap": {
+        "property": "gap",
+        "class": "gap",
         "counter_min": 0,
         "counter_max": 5,
         "responsive": true
@@ -292,12 +310,32 @@
       "class": "clearfix"
     },
     "stack": {
-      "class": "stack"
+      "class": "stack",
+      "horizontal": {
+        "suffix": "h"
+      },
+      "vertical": {
+        "suffix": "v"
+      }
     },
     "text": {
       "truncate": {
         "class": "text-truncate"
       }
+    }
+  },
+  "ui": {
+    "button": {
+      "class": "button"
+    },
+    "card": {
+      "class": "card"
+    },
+    "chip": {
+      "class": "chip"
+    },
+    "input": {
+      "class": "input"
     }
   }
 }
