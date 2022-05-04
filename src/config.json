@@ -21,8 +21,13 @@
     "dark": "rgb(41,40,45)"
   },
   "prefix": {
-    "global": "",
+    "global": ""
+  },
+  "suffix": {
     "print": "print",
+    "first": "first",
+    "last": "last",
+    "focusable": "focusable",
     "negative": "n",
     "top": "t",
     "right": "r",
@@ -30,11 +35,6 @@
     "left": "l",
     "x": "x",
     "y": "y"
-  },
-  "suffix": {
-    "first": "first",
-    "last": "last",
-    "focusable": "focusable"
   },
   "props": {
     "vertical-align": {
@@ -59,79 +59,93 @@
     "display": {
       "property": "display",
       "class": "d",
-      "values": "inherit none inline inline-block block grid table table-cell table-row flex inline-flex"
+      "values": "inherit none inline inline-block block grid table table-cell table-row flex inline-flex",
+      "responsive": true
     },
     "flex": {
       "direction": {
         "property": "flex-direction",
         "class": "flex",
-        "values": "row row-reverse column column-reverse initial inherit"
+        "values": "row row-reverse column column-reverse initial inherit",
+        "responsive": true
       },
       "justify-content": {
         "property": "justify-content",
         "class": "justify-content",
-        "values": "flex-start flex-end center space-between space-around space-evenly initial inherit"
+        "values": "flex-start flex-end center space-between space-around space-evenly initial inherit",
+        "responsive": true
       },
       "justify-items": {
         "property": "justify-items",
         "class": "justify-items",
-        "values": "flex-start flex-end center initial inherit"
+        "values": "flex-start flex-end center initial inherit",
+        "responsive": true
       },
       "justify-self": {
         "property": "justify-self",
         "class": "justify-self",
-        "values": "auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset"
+        "values": "auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset",
+        "responsive": true
       },
       "align-content": {
         "property": "align-content",
         "class": "align-content",
-        "values": "stretch center flex-start flex-end space-between space-around initial inherit"
+        "values": "stretch center flex-start flex-end space-between space-around initial inherit",
+        "responsive": true
       },
       "align-items": {
         "property": "align-items",
         "class": "align-items",
-        "values": "stretch center flex-start flex-end baseline initial inherit"
+        "values": "stretch center flex-start flex-end baseline initial inherit",
+        "responsive": true
       },
       "align-self": {
         "property": "align-self",
         "class": "align-self",
-        "values": "auto stretch center flex-start flex-end baseline initial inherit"
+        "values": "auto stretch center flex-start flex-end baseline initial inherit",
+        "responsive": true
       },
       "fill": {
         "property": "flex",
         "class": "flex-fill",
-        "value": "1 1 auto"
+        "value": "1 1 auto",
+        "responsive": true
       },
       "grow": {
         "property": "flex-grow",
         "class": "flex-grow",
         "values": "initial inherit",
         "counter_min": 0,
-        "counter_max": 5
+        "counter_max": 5,
+        "responsive": true
       },
       "shrink": {
         "property": "flex-shrink",
         "class": "flex-shrink",
         "values": "initial inherit",
         "counter_min": 0,
-        "counter_max": 5
+        "counter_max": 5,
+        "responsive": true
       },
       "wrap": {
         "property": "flex-wrap",
         "class": "flex-wrap",
-        "values": "nowrap wrap wrap-reverse initial inherit"
+        "values": "nowrap wrap wrap-reverse initial inherit",
+        "responsive": true
       },
       "order": {
         "property": "order",
         "class": "flex-order",
         "counter_min": 0,
-        "counter_max": 5
+        "counter_max": 5,
+        "responsive": true
       }
     },
     "float": {
       "property": "float",
       "class": "float",
-      "values": "none left right initial inherit"
+      "values": "none left right initial inherit",
+      "responsive": true
     },
     "spacing": {
       "counter_min": 0,
@@ -141,12 +155,14 @@
         "class": "m",
         "values": "auto initial inherit",
         "counterNeg_min": 1,
-        "counterNeg_max": 5
+        "counterNeg_max": 5,
+        "responsive": true
       },
       "padding": {
         "property": "padding",
         "class": "p",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       }
     },
     "sizing": {
@@ -221,7 +237,8 @@
       "align": {
         "property": "text-align",
         "class": "text-align",
-        "values": "left right center justify initial inherit"
+        "values": "left right center justify initial inherit",
+        "responsive": true
       },
       "decoration": {
         "property": "text-decoration",
@@ -262,12 +279,14 @@
     "visibility": {
       "property": "visibility",
       "class": "visibility",
-      "values": "visible hidden collapse initial inherit"
+      "values": "visible hidden collapse initial inherit",
+      "responsive": true
     }
   },
   "helpers": {
     "visually-hidden": {
-      "class": "visually-hidden"
+      "class": "visually-hidden",
+      "responsive": true
     },
     "clearfix": {
       "class": "clearfix"

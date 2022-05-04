@@ -1,5 +1,5 @@
 @media print
 
   for prop in (props-display-values)
-    .{props-display-class}-{prefix-print}-{prop}
+    .{prefix-global}{props-display-class}-{suffix-print}-{prop}
       display-scope(prop)
