@@ -1,0 +1,36 @@
+getRemValue(value)
+  if value > 0
+    val = value * spacer
+  else
+    val = value
+
+  val
+
+
+getNegativeValue(value)
+  value * -1
+
+
+getWidthValue(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vw')
+      val = value * 1vw
+  else
+    val = value
+
+  val
+
+
+getHeightValue(value, unit = '')
+  if (value > 0)
+    if (unit == '%')
+      val = value + unit
+    else if (unit == 'vh')
+      val = value * 1vh
+  else
+    val = value
+
+  val
+

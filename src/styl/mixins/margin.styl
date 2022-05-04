@@ -1,74 +1,53 @@
 margin-scope(value, negative = false)
-  if value > 0
-    val = value * spacer
-  else
-    val = value
+  val = getRemValue(value)
 
   if negative
-    val = val * -1
-    suffix = n
-  else
-    val = val
-    suffix = ''
+    val = getNegativeValue(val)
 
-  .{prefix-margin}-{suffix}{value}
-    margin: val !important
-
-  .{prefix-margin}{prefix-top}-{suffix}{value}
-    margin-top: val !important
-
-  .{prefix-margin}{prefix-right}-{suffix}{value}
-    margin-right: val !important
-
-  .{prefix-margin}{prefix-bottom}-{suffix}{value}
-    margin-bottom: val !important
-
-  .{prefix-margin}{prefix-left}-{suffix}{value}
-    margin-left: val !important
-
-  .{prefix-margin}{prefix-xAxis}-{suffix}{value}
-    margin-left: val !important
-    margin-right: val !important
-
-  .{prefix-margin}{prefix-yAxis}-{suffix}{value}
-    margin-top: val !important
-    margin-bottom: val !important
+  margin: val !important
 
 
-margin-responsive-scope(value, key, width, negative = false)
-  if value > 0
-    val = value * spacer
-  else
-    val = value
+margin-top-scope(value, negative = false)
+  val = getRemValue(value)
 
   if negative
-    val = val * -1
-    suffix = n
-  else
-    val = val
-    suffix = ''
+    val = getNegativeValue(val)
 
-  @media screen and (min-width: width)
-    .{prefix-margin}-{key}-{suffix}{value}
-      margin: val !important
+  margin-top: val !important
 
-    .{prefix-margin}{prefix-top}-{key}-{suffix}{value}
-        margin-top: val !important
 
-    .{prefix-margin}{prefix-right}-{key}-{suffix}{value}
-        margin-right: val !important
+margin-right-scope(value, negative = false)
+  val = getRemValue(value)
 
-    .{prefix-margin}{prefix-bottom}-{key}-{suffix}{value}
-        margin-bottom: val !important
+  if negative
+    val = getNegativeValue(val)
 
-    .{prefix-margin}{prefix-left}-{key}-{suffix}{value}
-        margin-left: val !important
+  margin-right: val !important
 
-    .{prefix-margin}{prefix-xAxis}-{key}-{suffix}{value}
-        margin-left: val !important
-        margin-right: val !important
 
-    .{prefix-margin}{prefix-yAxis}-{key}-{suffix}{value}
-        margin-top: val !important
-        margin-bottom: val !important
+margin-bottom-scope(value, negative = false)
+  val = getRemValue(value)
 
+  if negative
+    val = getNegativeValue(val)
+
+  margin-bottom: val !important
+
+
+margin-left-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  margin-left: val !important
+
+
+margin-y-scope(value, negative = false)
+  margin-top-scope(value, negative)
+  margin-bottom-scope(value, negative)
+
+
+margin-x-scope(value, negative = false)
+  margin-left-scope(value, negative)
+  margin-right-scope(value, negative)

@@ -1,65 +1,17 @@
 width-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vw')
-      val = value * 1vw
-  else
-    val = value
-
-  width: val !important
+  width: getWidthValue(value, unit) !important
 
 height-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vh')
-      val = value * 1vh
-  else
-    val = value
-
-  height: val !important
+  height: getHeightValue(value, unit) !important
 
 min-width-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vw')
-      val = value * 1vw
-  else
-    val = value
-
-  min-width: val !important
+  min-width: getWidthValue(value, unit) !important
 
 min-height-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vh')
-      val = value * 1vh
-  else
-    val = value
-
-  min-height: val !important
+  min-height: getHeightValue(value, unit) !important
 
 max-width-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vw')
-      val = value * 1vw
-  else
-    val = value
-
-  max-width: val !important
+  max-width: getWidthValue(value, unit) !important
 
 max-height-scope(value, unit = '')
-  if (value > 0)
-    if (unit == '%')
-      val = value + unit
-    else if (unit == 'vh')
-      val = value * 1vh
-  else
-    val = value
-
-  max-height: val !important
+  max-height: getHeightValue(value, unit) !important

@@ -34,7 +34,7 @@ for prop in (auto stretch center flex-start flex-end baseline initial inherit)
     flex-align-self-scope(prop)
 
 // Fill
-.{prefix-fill}
+.{prefix-flex}-{prefix-fill}
   flex-fill-scope()
 
 // Grow & shrink
@@ -62,7 +62,7 @@ for prop in (nowrap wrap wrap-reverse initial inherit)
   flex-order-scope(-1)
 
 for prop in (0..5)
-  .{prefix-order}-{props}
+  .{prefix-order}-{prop}
     flex-order-scope(prop)
 
 .{prefix-order}-last
@@ -107,7 +107,7 @@ for key, value in breakpoints
         flex-align-self-scope(prop)
 
     // Fill
-    .{prefix-fill}-{key}
+    .{prefix-flex}-{prefix-fill}-{key}
       flex-fill-scope()
 
     // Grow & shrink
@@ -135,7 +135,7 @@ for key, value in breakpoints
       flex-order-scope(-1)
 
     for prop in (0..5)
-      .{prefix-order}-{key}-{props}
+      .{prefix-order}-{key}-{prop}
         flex-order-scope(prop)
 
     .{prefix-order}-{key}-last

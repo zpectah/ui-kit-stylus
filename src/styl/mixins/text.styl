@@ -1,7 +1,2 @@
-color-scope(key, value, opacity = 10)
-  if opacity < 10
-    val = rgba(value, opacity / 10)
-  else
-    val = value
-
-  color: val !important
+color-scope(value, opacity = 10)
+  color: getOpacityValue(value, opacity) !important

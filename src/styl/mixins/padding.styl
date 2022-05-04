@@ -1,60 +1,28 @@
 padding-scope(value)
-  if value > 0
-    val = value * spacer
-  else
-    val = value
-
-  .{prefix-padding}-{value}
-    padding: val !important
-
-  .{prefix-padding}{prefix-top}-{value}
-    padding-top: val !important
-
-  .{prefix-padding}{prefix-right}-{value}
-    padding-right: val !important
-
-  .{prefix-padding}{prefix-bottom}-{value}
-    padding-bottom: val !important
-
-  .{prefix-padding}{prefix-left}-{value}
-    padding-left: val !important
-
-  .{prefix-padding}{prefix-xAxis}-{value}
-    padding-left: val !important
-    padding-right: val !important
-
-  .{prefix-padding}{prefix-yAxis}-{value}
-    padding-top: val !important
-    padding-bottom: val !important
+  padding: getRemValue(value) !important
 
 
-padding-responsive-scope(value, key, width)
-  if value > 0
-    val = value * spacer
-  else
-    val = value
+padding-top-scope(value)
+  padding-top: getRemValue(value) !important
 
-  @media screen and (min-width: width)
-    .{prefix-padding}-{key}-{value}
-        padding: val !important
 
-    .{prefix-padding}{prefix-top}-{key}-{value}
-        padding-top: val !important
+padding-right-scope(value)
+  padding-right: getRemValue(value) !important
 
-    .{prefix-padding}{prefix-right}-{key}-{value}
-        padding-right: val !important
 
-    .{prefix-padding}{prefix-bottom}-{key}-{value}
-        padding-bottom: val !important
+padding-bottom-scope(value)
+  padding-bottom: getRemValue(value) !important
 
-    .{prefix-padding}{prefix-left}-{key}-{value}
-        padding-left: val !important
 
-    .{prefix-padding}{prefix-xAxis}-{key}-{value}
-        padding-left: val !important
-        padding-right: val !important
+padding-left-scope(value)
+  padding-left: getRemValue(value) !important
 
-    .{prefix-padding}{prefix-yAxis}-{key}-{value}
-        padding-top: val !important
-        padding-bottom: val !important
 
+padding-y-scope(value)
+  padding-top-scope(value)
+  padding-bottom-scope(value)
+
+
+padding-x-scope(value)
+  padding-left-scope(value)
+  padding-right-scope(value)

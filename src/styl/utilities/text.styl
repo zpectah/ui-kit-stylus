@@ -1,14 +1,14 @@
 for prop in (initial inherit)
   .{prefix-text}-{prop}
-    color-scope(prop, prop)
+    color-scope(prop)
 
 for key, value in palette
   .{prefix-text}-{key}
-    color-scope(key, value)
+    color-scope(value)
 
-  for num in (1..10)
+  for num in (1..9)
     .{prefix-text}-{key}-{num}
-      color-scope(key, value, num)
+      color-scope(value, num)
 
 for key in (left right center justify initial inherit)
   .{prefix-text}-{prefix-align}-{key}

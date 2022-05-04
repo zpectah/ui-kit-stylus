@@ -1,29 +1,226 @@
-/* Margin */
 for prop in (auto initial inherit)
-  margin-scope(prop)
+  .{prefix-margin}-{prop}
+    margin-scope(prop)
 
-for prop in (0..5)
-  margin-scope(prop)
+  .{prefix-margin}{prefix-top}-{prop}
+    margin-top-scope(prop)
 
-/* Margin negative */
-for prop in (1..5)
-  margin-scope(prop, true)
+  .{prefix-margin}{prefix-right}-{prop}
+    margin-right-scope(prop)
 
-/* Padding */
+  .{prefix-margin}{prefix-bottom}-{prop}
+    margin-bottom-scope(prop)
+
+  .{prefix-margin}{prefix-left}-{prop}
+    margin-left-scope(prop)
+
+  .{prefix-margin}{prefix-xAxis}-{prop}
+    margin-x-scope(prop)
+
+  .{prefix-margin}{prefix-yAxis}-{prop}
+    margin-y-scope(prop)
+
+
 for prop in (initial inherit)
-  padding-scope(prop)
+  .{prefix-padding}-{prop}
+    padding-scope(prop)
+
+  .{prefix-padding}{prefix-top}-{prop}
+    padding-top-scope(prop)
+
+  .{prefix-padding}{prefix-right}-{prop}
+    padding-right-scope(prop)
+
+  .{prefix-padding}{prefix-bottom}-{prop}
+    padding-bottom-scope(prop)
+
+  .{prefix-padding}{prefix-left}-{prop}
+    padding-left-scope(prop)
+
+  .{prefix-padding}{prefix-xAxis}-{prop}
+    padding-x-scope(prop)
+
+  .{prefix-padding}{prefix-yAxis}-{prop}
+    padding-y-scope(prop)
+
 
 for prop in (0..5)
-  padding-scope(prop)
+  .{prefix-margin}-{prop}
+    margin-scope(prop)
 
-/* Responsive */
+  .{prefix-margin}{prefix-top}-{prop}
+    margin-top-scope(prop)
+
+  .{prefix-margin}{prefix-right}-{prop}
+    margin-right-scope(prop)
+
+  .{prefix-margin}{prefix-bottom}-{prop}
+    margin-bottom-scope(prop)
+
+  .{prefix-margin}{prefix-left}-{prop}
+    margin-left-scope(prop)
+
+  .{prefix-margin}{prefix-xAxis}-{prop}
+    margin-x-scope(prop)
+
+  .{prefix-margin}{prefix-yAxis}-{prop}
+    margin-y-scope(prop)
+
+  .{prefix-padding}-{prop}
+    padding-scope(prop)
+
+  .{prefix-padding}{prefix-top}-{prop}
+    padding-top-scope(prop)
+
+  .{prefix-padding}{prefix-right}-{prop}
+    padding-right-scope(prop)
+
+  .{prefix-padding}{prefix-bottom}-{prop}
+    padding-bottom-scope(prop)
+
+  .{prefix-padding}{prefix-left}-{prop}
+    padding-left-scope(prop)
+
+  .{prefix-padding}{prefix-xAxis}-{prop}
+    padding-x-scope(prop)
+
+  .{prefix-padding}{prefix-yAxis}-{prop}
+    padding-y-scope(prop)
+
+
+for prop in (1..5)
+  .{prefix-margin}-{prefix-negative}{prop}
+    margin-scope(prop, true)
+
+  .{prefix-margin}{prefix-top}-{prefix-negative}{prop}
+    margin-top-scope(prop, true)
+
+  .{prefix-margin}{prefix-right}-{prefix-negative}{prop}
+    margin-right-scope(prop, true)
+
+  .{prefix-margin}{prefix-bottom}-{prefix-negative}{prop}
+    margin-bottom-scope(prop, true)
+
+  .{prefix-margin}{prefix-left}-{prefix-negative}{prop}
+    margin-left-scope(prop, true)
+
+  .{prefix-margin}{prefix-xAxis}-{prefix-negative}{prop}
+    margin-x-scope(prop, true)
+
+  .{prefix-margin}{prefix-yAxis}-{prefix-negative}{prop}
+    margin-y-scope(prop, true)
+
+
 for key, value in breakpoints
-  for prop in (0..5)
-    margin-responsive-scope(prop, key, value)
+  @media screen and (min-width: value)
+    for prop in (auto initial inherit)
+      .{prefix-margin}-{key}-{prop}
+        margin-scope(prop)
 
-  for prop in (1..5)
-    margin-responsive-scope(prop, key, value, true)
+      .{prefix-margin}{prefix-top}-{key}-{prop}
+        margin-top-scope(prop)
 
-  for prop in (0..5)
-    padding-responsive-scope(prop, key, value)
+      .{prefix-margin}{prefix-right}-{key}-{prop}
+        margin-right-scope(prop)
 
+      .{prefix-margin}{prefix-bottom}-{key}-{prop}
+        margin-bottom-scope(prop)
+
+      .{prefix-margin}{prefix-left}-{key}-{prop}
+        margin-left-scope(prop)
+
+      .{prefix-margin}{prefix-xAxis}-{key}-{prop}
+        margin-x-scope(prop)
+
+      .{prefix-margin}{prefix-yAxis}-{key}-{prop}
+        margin-y-scope(prop)
+
+
+    for prop in (initial inherit)
+      .{prefix-padding}-{key}-{prop}
+        padding-scope(prop)
+
+      .{prefix-padding}{prefix-top}-{key}-{prop}
+        padding-top-scope(prop)
+
+      .{prefix-padding}{prefix-right}-{key}-{prop}
+        padding-right-scope(prop)
+
+      .{prefix-padding}{prefix-bottom}-{key}-{prop}
+        padding-bottom-scope(prop)
+
+      .{prefix-padding}{prefix-left}-{key}-{prop}
+        padding-left-scope(prop)
+
+      .{prefix-padding}{prefix-xAxis}-{key}-{prop}
+        padding-x-scope(prop)
+
+      .{prefix-padding}{prefix-yAxis}-{key}-{prop}
+        padding-y-scope(prop)
+
+
+    for prop in (0..5)
+      .{prefix-margin}-{key}-{prop}
+        margin-scope(prop)
+
+      .{prefix-margin}{prefix-top}-{key}-{prop}
+        margin-top-scope(prop)
+
+      .{prefix-margin}{prefix-right}-{key}-{prop}
+        margin-right-scope(prop)
+
+      .{prefix-margin}{prefix-bottom}-{key}-{prop}
+        margin-bottom-scope(prop)
+
+      .{prefix-margin}{prefix-left}-{key}-{prop}
+        margin-left-scope(prop)
+
+      .{prefix-margin}{prefix-xAxis}-{key}-{prop}
+        margin-x-scope(prop)
+
+      .{prefix-margin}{prefix-yAxis}-{key}-{prop}
+        margin-y-scope(prop)
+
+      .{prefix-padding}-{key}-{prop}
+        padding-scope(prop)
+
+      .{prefix-padding}{prefix-top}-{key}-{prop}
+        padding-top-scope(prop)
+
+      .{prefix-padding}{prefix-right}-{key}-{prop}
+        padding-right-scope(prop)
+
+      .{prefix-padding}{prefix-bottom}-{key}-{prop}
+        padding-bottom-scope(prop)
+
+      .{prefix-padding}{prefix-left}-{key}-{prop}
+        padding-left-scope(prop)
+
+      .{prefix-padding}{prefix-xAxis}-{key}-{prop}
+        padding-x-scope(prop)
+
+      .{prefix-padding}{prefix-yAxis}-{key}-{prop}
+        padding-y-scope(prop)
+
+
+    for prop in (1..5)
+      .{prefix-margin}-{key}-{prefix-negative}{prop}
+        margin-scope(prop, true)
+
+      .{prefix-margin}{prefix-top}-{key}-{prefix-negative}{prop}
+        margin-top-scope(prop, true)
+
+      .{prefix-margin}{prefix-right}-{key}-{prefix-negative}{prop}
+        margin-right-scope(prop, true)
+
+      .{prefix-margin}{prefix-bottom}-{key}-{prefix-negative}{prop}
+        margin-bottom-scope(prop, true)
+
+      .{prefix-margin}{prefix-left}-{key}-{prefix-negative}{prop}
+        margin-left-scope(prop, true)
+
+      .{prefix-margin}{prefix-xAxis}-{key}-{prefix-negative}{prop}
+        margin-x-scope(prop, true)
+
+      .{prefix-margin}{prefix-yAxis}-{key}-{prefix-negative}{prop}
+        margin-y-scope(prop, true)
