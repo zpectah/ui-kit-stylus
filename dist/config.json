@@ -348,6 +348,9 @@
         "xxl": "1320px"
       }
     },
+    "divider": {
+      "class": "divider"
+    },
     "input": {
       "class": "input"
     }

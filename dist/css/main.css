@@ -2590,7 +2590,37 @@ body {
   cursor: not-allowed;
 }
 .card {
+  width: 100%;
+  height: auto;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.35rem;
+}
+.card-heading {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-body {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.card-actions {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .chip {
   width: auto;
@@ -2626,6 +2656,11 @@ a.chip {
   margin-left: auto;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+.divider,
+hr {
+  margin: 1rem 0;
+  display: block;
 }
 .input {
   margin: 0;
