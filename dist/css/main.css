@@ -2541,7 +2541,22 @@
   line-height: 1.05;
 }
 .chip[a] {
+  text-decoration: none;
   cursor: pointer;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 .input {
   margin: 0;
@@ -3460,6 +3475,17 @@
     white-space: nowrap !important;
     border: 0 !important;
   }
+  .container-xs {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-xs,
+  .container {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 576px) {
   .d-sm-inherit {
@@ -4339,6 +4365,17 @@
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+  .container-sm {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-sm,
+  .container {
+    max-width: 540px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -5220,6 +5257,17 @@
     white-space: nowrap !important;
     border: 0 !important;
   }
+  .container-md {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-md,
+  .container {
+    max-width: 720px;
+  }
 }
 @media screen and (min-width: 992px) {
   .d-lg-inherit {
@@ -6099,6 +6147,17 @@
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+  .container-lg {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-lg,
+  .container {
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -6980,6 +7039,17 @@
     white-space: nowrap !important;
     border: 0 !important;
   }
+  .container-xl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-xl,
+  .container {
+    max-width: 1140px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .d-xxl-inherit {
@@ -7859,6 +7929,17 @@
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+  .container-xxl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .container-xxl,
+  .container {
+    max-width: 1320px;
   }
 }
 

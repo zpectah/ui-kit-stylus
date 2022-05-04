@@ -240,3 +240,11 @@ for key, value in (breakpoints)
       .{prefix-global}{helpers-visually-hidden-class}-{key},
       .{prefix-global}{helpers-visually-hidden-class}-{suffix-focusable}-{key}:not(:focus):not(:focus-within)
         visually-hidden()
+
+    // UI
+    // UI: Container
+    .{prefix-global}{ui-container-class}-{key}
+      container-base(spacer / 2, containers[key])
+
+    .{prefix-global}{ui-container-class}-{key}, .{prefix-global}{ui-container-class}
+      {utilities-sizing-max-width-property}: containers[key]
