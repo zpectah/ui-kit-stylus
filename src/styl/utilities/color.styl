@@ -1,0 +1,11 @@
+for prop in (initial inherit)
+  .{props-color-class}-{prop}
+    color-scope(prop)
+
+for key, value in palette
+  .{props-color-class}-{key}
+    color-scope(value)
+
+  for prop in (props-color-counter_min..props-color-counter_max)
+    .{props-color-class}-{key}-{prop}
+      color-scope(value, prop)

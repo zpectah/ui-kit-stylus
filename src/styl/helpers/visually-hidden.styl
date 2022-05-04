@@ -1,0 +1,9 @@
+.{helpers-visually-hidden-class},
+.{helpers-visually-hidden-class}-{suffix-focusable}:not(:focus):not(:focus-within)
+  visually-hidden()
+
+for key, value in breakpoints
+  @media screen and (min-width: value)
+    .{helpers-visually-hidden-class}-{key},
+    .{helpers-visually-hidden-class}-{suffix-focusable}-{key}:not(:focus):not(:focus-within)
+      visually-hidden()

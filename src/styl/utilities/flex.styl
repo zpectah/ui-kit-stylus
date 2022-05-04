@@ -1,143 +1,146 @@
 // Direction
-for prop in (row row-reverse column column-reverse initial inherit)
-  .{prefix-flex}-{prop}
+for prop in (props-flex-direction-values)
+  .{props-flex-direction-class}-{prop}
     flex-direction-scope(prop)
 
 // Justify content
-for prop in (flex-start flex-end center space-between space-around space-evenly initial inherit)
-  .{prefix-justify-content}-{prop}
+for prop in (props-flex-justify-content-values)
+  .{props-flex-justify-content-class}-{prop}
     flex-justify-content-scope(prop)
 
 // Justify items
-for prop in (flex-start flex-end center initial inherit)
-  .{prefix-justify-items}-{prop}
+for prop in (props-flex-justify-items-values)
+  .{props-flex-justify-items-class}-{prop}
     flex-justify-items-scope(prop)
 
 // Justify self
-for prop in (auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset)
-  .{prefix-justify-self}-{prop}
+for prop in (props-flex-justify-self-values)
+  .{props-flex-justify-self-class}-{prop}
     flex-justify-self-scope(prop)
 
 // Align content
-for prop in (stretch center flex-start flex-end space-between space-around initial inherit)
-  .{prefix-align-content}-{prop}
+for prop in (props-flex-align-content-values)
+  .{props-flex-align-content-class}-{prop}
     flex-align-content-scope(prop)
 
 // Align items
-for prop in (stretch center flex-start flex-end baseline initial inherit)
-  .{prefix-align-items}-{prop}
+for prop in (props-flex-align-items-values)
+  .{props-flex-align-items-class}-{prop}
     flex-align-items-scope(prop)
 
 // Align self
-for prop in (auto stretch center flex-start flex-end baseline initial inherit)
-  .{prefix-align-self}-{prop}
+for prop in (props-flex-align-self-values)
+  .{props-flex-align-self-class}-{prop}
     flex-align-self-scope(prop)
 
 // Fill
-.{prefix-flex}-{prefix-fill}
+.{props-flex-fill-class}
   flex-fill-scope()
 
 // Grow & shrink
-for prop in (initial inherit)
-  .{prefix-grow}-{prop}
+for prop in (props-flex-grow-values)
+  .{props-flex-grow-class}-{prop}
     flex-grow-scope(prop)
 
-  .{prefix-shrink}-{prop}
+for prop in (props-flex-shrink-values)
+  .{props-flex-shrink-class}-{prop}
     flex-shrink-scope(prop)
 
-for prop in (0..5)
-  .{prefix-grow}-{prop}
+for prop in (props-flex-grow-counter_min..props-flex-grow-counter_max)
+  .{props-flex-grow-class}-{prop}
     flex-grow-scope(prop)
 
-  .{prefix-shrink}-{prop}
+for prop in (props-flex-shrink-counter_min..props-flex-shrink-counter_max)
+  .{props-flex-shrink-class}-{prop}
     flex-shrink-scope(prop)
 
 // Wrap
-for prop in (nowrap wrap wrap-reverse initial inherit)
-  .{prefix-wrap}-{prop}
+for prop in (props-flex-wrap-values)
+  .{props-flex-wrap-class}-{prop}
     flex-wrap-scope(prop)
 
 // Order
-.{prefix-order}-first
-  flex-order-scope(-1)
+.{props-flex-order-class}-{suffix-first}
+  flex-order-scope((props-flex-order-counter_min - 1))
 
-for prop in (0..5)
-  .{prefix-order}-{prop}
+.{props-flex-order-class}-{suffix-last}
+  flex-order-scope((props-flex-order-counter_max + 1))
+
+for prop in (props-flex-order-counter_min..props-flex-order-counter_max)
+  .{props-flex-order-class}-{prop}
     flex-order-scope(prop)
-
-.{prefix-order}-last
-  flex-order-scope(6)
 
 
 for key, value in breakpoints
   @media screen and (min-width: value)
     // Direction
-    for prop in (row row-reverse column column-reverse initial inherit)
-      .{prefix-flex}-{key}-{prop}
+    for prop in (props-flex-direction-values)
+      .{props-flex-direction-class}-{key}-{prop}
         flex-direction-scope(prop)
 
     // Justify content
-    for prop in (flex-start flex-end center space-between space-around space-evenly initial inherit)
-      .{prefix-justify-content}-{key}-{prop}
+    for prop in (props-flex-justify-content-values)
+      .{props-flex-justify-content-class}-{key}-{prop}
         flex-justify-content-scope(prop)
 
     // Justify items
-    for prop in (flex-start flex-end center initial inherit)
-      .{prefix-justify-items}-{key}-{prop}
+    for prop in (props-flex-justify-items-values)
+      .{props-flex-justify-items-class}-{key}-{prop}
         flex-justify-items-scope(prop)
 
     // Justify self
-    for prop in (auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset)
-      .{prefix-justify-self}-{key}-{prop}
+    for prop in (props-flex-justify-self-values)
+      .{props-flex-justify-self-class}-{key}-{prop}
         flex-justify-self-scope(prop)
 
     // Align content
-    for prop in (stretch center flex-start flex-end space-between space-around initial inherit)
-      .{prefix-align-content}-{key}-{prop}
+    for prop in (props-flex-align-content-values)
+      .{props-flex-align-content-class}-{key}-{prop}
         flex-align-content-scope(prop)
 
     // Align items
-    for prop in (stretch center flex-start flex-end baseline initial inherit)
-      .{prefix-align-items}-{key}-{prop}
+    for prop in (props-flex-align-items-values)
+      .{props-flex-align-items-class}-{key}-{prop}
         flex-align-items-scope(prop)
 
     // Align self
-    for prop in (auto stretch center flex-start flex-end baseline initial inherit)
-      .{prefix-align-self}-{key}-{prop}
+    for prop in (props-flex-align-self-values)
+      .{props-flex-align-self-class}-{key}-{prop}
         flex-align-self-scope(prop)
 
     // Fill
-    .{prefix-flex}-{prefix-fill}-{key}
+    .{props-flex-fill-class}-{key}
       flex-fill-scope()
 
     // Grow & shrink
-    for prop in (initial inherit)
-      .{prefix-grow}-{key}-{prop}
+    for prop in (props-flex-grow-values)
+      .{props-flex-grow-class}-{key}-{prop}
         flex-grow-scope(prop)
 
-      .{prefix-shrink}-{key}-{prop}
+    for prop in (props-flex-shrink-values)
+      .{props-flex-shrink-class}-{key}-{prop}
         flex-shrink-scope(prop)
 
-    for prop in (0..5)
-      .{prefix-grow}-{key}-{prop}
+    for prop in (props-flex-grow-counter_min..props-flex-grow-counter_max)
+      .{props-flex-grow-class}-{key}-{prop}
         flex-grow-scope(prop)
 
-      .{prefix-shrink}-{key}-{prop}
+    for prop in (props-flex-shrink-counter_min..props-flex-shrink-counter_max)
+      .{props-flex-shrink-class}-{key}-{prop}
         flex-shrink-scope(prop)
 
     // Wrap
-    for prop in (nowrap wrap wrap-reverse initial inherit)
-      .{prefix-wrap}-{key}-{prop}
+    for prop in (props-flex-wrap-values)
+      .{props-flex-wrap-class}-{key}-{prop}
         flex-wrap-scope(prop)
 
     // Order
-    .{prefix-order}-{key}-first
-      flex-order-scope(-1)
+    .{props-flex-order-class}-{key}-{suffix-first}
+      flex-order-scope((props-flex-order-counter_min - 1))
 
-    for prop in (0..5)
-      .{prefix-order}-{key}-{prop}
+    .{props-flex-order-class}-{key}-{suffix-last}
+      flex-order-scope((props-flex-order-counter_max + 1))
+
+    for prop in (props-flex-order-counter_min..props-flex-order-counter_max)
+      .{props-flex-order-class}-{key}-{prop}
         flex-order-scope(prop)
-
-    .{prefix-order}-{key}-last
-      flex-order-scope(6)
-

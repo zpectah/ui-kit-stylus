@@ -1,18 +1,8 @@
-for prop in (visible hidden collapse initial inherit)
-  .{prefix-visibility}-{prop}
-    display-visibility(prop)
+for prop in (props-visibility-values)
+  .{props-visibility-class}-{prop}
+    visibility-scope(prop)
 
   for key, value in breakpoints
     @media screen and (min-width: value)
-      .{prefix-visibility}-{key}-{prop}
-        display-visibility(prop)
-
-.{prefix-visually-hidden},
-.{prefix-visually-hidden}-{prefix-focusable}:not(:focus):not(:focus-within)
-  visually-hidden()
-
-for key, value in breakpoints
-  @media screen and (min-width: value)
-    .{prefix-visually-hidden}-{key},
-    .{prefix-visually-hidden}-{prefix-focusable}-{key}:not(:focus):not(:focus-within)
-      visually-hidden()
+      .{props-visibility-class}-{key}-{prop}
+        visibility-scope(prop)

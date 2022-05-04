@@ -1,12 +1,12 @@
-for prop in (inherit none inline inline-block block grid table table-cell table-row flex inline-flex)
-  .{prefix-display}-{prop}
+for prop in (props-display-values)
+  .{props-display-class}-{prop}
     display-scope(prop)
 
   for key, value in breakpoints
     @media screen and (min-width: value)
-      .{prefix-display}-{key}-{prop}
+      .{props-display-class}-{key}-{prop}
         display-scope(prop)
 
   @media print
-    .{prefix-display}-{prefix-print}-{prop}
+    .{props-display-class}-{prefix-print}-{prop}
       display-scope(prop)

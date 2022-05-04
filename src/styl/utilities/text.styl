@@ -1,50 +1,38 @@
-for prop in (initial inherit)
-  .{prefix-text}-{prop}
-    color-scope(prop)
-
-for key, value in palette
-  .{prefix-text}-{key}
-    color-scope(value)
-
-  for num in (1..9)
-    .{prefix-text}-{key}-{num}
-      color-scope(value, num)
-
-for key in (left right center justify initial inherit)
-  .{prefix-text}-{prefix-align}-{key}
-    text-align: key !important
+for prop in (props-text-align-values)
+  .{props-text-align-class}-{prop}
+    text-align-scope(prop)
 
 for key, value in breakpoints
-  for prop in (left right center justify initial inherit)
-    .{prefix-text}-{prefix-align}-{key}-{prop}
-      @media screen and (min-width: value)
-        text-align: prop !important
+  @media screen and (min-width: value)
+    for prop in (props-text-align-values)
+      .{props-text-align-class}-{key}-{prop}
+        text-align-scope(prop)
 
-for key in (underline overline line-through none initial inherit)
-  .{prefix-text}-{prefix-decoration}-{key}
-    text-decoration: key !important
+for prop in (props-text-decoration-values)
+  .{props-text-decoration-class}-{prop}
+    text-decoration-scope(prop)
 
-for key in (auto inter-word inter-character none initial inherit)
-  .{prefix-text}-{prefix-justify}-{key}
-    text-justify: key !important
+for prop in (props-text-justify-values)
+  .{props-text-justify-class}-{prop}
+    text-justify-scope(prop)
 
-for key in (clip ellipsis initial inherit)
-  .{prefix-text}-{prefix-overflow}-{key}
-    text-overflow: key !important
+for prop in (props-text-overflow-values)
+  .{props-text-overflow-class}-{prop}
+    text-overflow-scope(prop)
 
-for key in (none capitalize uppercase lowercase initial inherit)
-  .{prefix-text}-{key}
-    text-transform: key !important
+for prop in (props-text-transform-values)
+  .{props-text-transform-class}-{prop}
+    text-transform-scope(prop)
 
-for key in (normal nowrap pre pre-line pre-wrap initial inherit)
-  .{prefix-whiteSpace}-{key}
-    white-space: key !important
+for prop in (props-text-white-space-values)
+  .{props-text-white-space-class}-{prop}
+    white-space-scope(prop)
 
-for key in (normal break-all keep-all break-word initial inherit)
-  .{prefix-wordBreak}-{key}
-    word-break: key !important
+for prop in (props-text-word-break-values)
+  .{props-text-word-break-class}-{prop}
+    word-break-scope(prop)
 
-for key in (normal break-word initial inherit)
-  .{prefix-wordWrap}-{key}
-    word-wrap: key !important
+for prop in (props-text-word-wrap-values)
+  .{props-text-word-wrap-class}-{prop}
+    word-wrap-scope(prop)
 

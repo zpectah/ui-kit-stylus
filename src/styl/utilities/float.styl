@@ -1,8 +1,8 @@
-for prop in (none left right initial inherit)
-  .{prefix-float}-{prop}
+for prop in (props-float-values)
+  .{props-float-class}-{prop}
     float-scope(prop)
 
   for key, value in breakpoints
     @media screen and (min-width: value)
-      .{prefix-float}-{key}-{prop}
+      .{props-float-class}-{key}-{prop}
         float-scope(prop)

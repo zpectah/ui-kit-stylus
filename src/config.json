@@ -23,48 +23,262 @@
   "prefix": {
     "global": "",
     "print": "print",
-    "min": "min",
-    "max": "max",
     "negative": "n",
-    "align": "align",
-    "vertical-align": "vertical-align",
-    "decoration": "deco",
-    "align-items": "align-items",
-    "align-content": "align-content",
-    "align-self": "align-self",
-    "justify-content": "justify-content",
-    "justify-items": "justify-items",
-    "justify-self": "justify-self",
-    "grow": "grow",
-    "shrink": "shrink",
-    "wrap": "wrap",
-    "fill": "fill",
-    "overflow": "overflow",
-    "background": "bg",
-    "display": "d",
-    "visibility": "v",
-    "visually-hidden": "visually-hidden",
-    "flex": "flex",
-    "order": "order",
-    "float": "float",
-    "opacity": "opacity",
-    "width": "w",
-    "height": "h",
-    "viewWidth": "vw",
-    "viewHeight": "vh",
-    "margin": "m",
-    "padding": "p",
-    "text": "txt",
     "top": "t",
     "right": "r",
     "bottom": "b",
     "left": "l",
-    "xAxis": "x",
-    "yAxis": "y",
-    "whiteSpace": "ws",
-    "wordBreak": "wb",
-    "wordWrap": "ww",
+    "x": "x",
+    "y": "y"
+  },
+  "suffix": {
+    "first": "first",
+    "last": "last",
     "focusable": "focusable"
   },
-  "props": {}
+  "props": {
+    "vertical-align": {
+      "property": "vertical-align",
+      "class": "vertical-align",
+      "values": "baseline sub super top text-top middle bottom text-bottom initial inherit"
+    },
+    "background": {
+      "property": "background",
+      "class": "bg",
+      "values": "none initial inherit",
+      "counter_min": 1,
+      "counter_max": 9
+    },
+    "color": {
+      "property": "color",
+      "class": "color",
+      "values": "initial inherit",
+      "counter_min": 1,
+      "counter_max": 9
+    },
+    "display": {
+      "property": "display",
+      "class": "d",
+      "values": "inherit none inline inline-block block grid table table-cell table-row flex inline-flex"
+    },
+    "flex": {
+      "direction": {
+        "property": "flex-direction",
+        "class": "flex",
+        "values": "row row-reverse column column-reverse initial inherit"
+      },
+      "justify-content": {
+        "property": "justify-content",
+        "class": "justify-content",
+        "values": "flex-start flex-end center space-between space-around space-evenly initial inherit"
+      },
+      "justify-items": {
+        "property": "justify-items",
+        "class": "justify-items",
+        "values": "flex-start flex-end center initial inherit"
+      },
+      "justify-self": {
+        "property": "justify-self",
+        "class": "justify-self",
+        "values": "auto normal stretch center flex-start flex-end self-start self-end left right baseline initial inherit revert unset"
+      },
+      "align-content": {
+        "property": "align-content",
+        "class": "align-content",
+        "values": "stretch center flex-start flex-end space-between space-around initial inherit"
+      },
+      "align-items": {
+        "property": "align-items",
+        "class": "align-items",
+        "values": "stretch center flex-start flex-end baseline initial inherit"
+      },
+      "align-self": {
+        "property": "align-self",
+        "class": "align-self",
+        "values": "auto stretch center flex-start flex-end baseline initial inherit"
+      },
+      "fill": {
+        "property": "flex",
+        "class": "flex-fill",
+        "value": "1 1 auto"
+      },
+      "grow": {
+        "property": "flex-grow",
+        "class": "flex-grow",
+        "values": "initial inherit",
+        "counter_min": 0,
+        "counter_max": 5
+      },
+      "shrink": {
+        "property": "flex-shrink",
+        "class": "flex-shrink",
+        "values": "initial inherit",
+        "counter_min": 0,
+        "counter_max": 5
+      },
+      "wrap": {
+        "property": "flex-wrap",
+        "class": "flex-wrap",
+        "values": "nowrap wrap wrap-reverse initial inherit"
+      },
+      "order": {
+        "property": "order",
+        "class": "flex-order",
+        "counter_min": 0,
+        "counter_max": 5
+      }
+    },
+    "float": {
+      "property": "float",
+      "class": "float",
+      "values": "none left right initial inherit"
+    },
+    "spacing": {
+      "counter_min": 0,
+      "counter_max": 5,
+      "margin": {
+        "property": "margin",
+        "class": "m",
+        "values": "auto initial inherit",
+        "counterNeg_min": 1,
+        "counterNeg_max": 5
+      },
+      "padding": {
+        "property": "padding",
+        "class": "p",
+        "values": "initial inherit"
+      }
+    },
+    "sizing": {
+      "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100",
+      "width": {
+        "property": "width",
+        "class": "w",
+        "values": "auto initial inherit"
+      },
+      "min-width": {
+        "property": "min-width",
+        "class": "w-min",
+        "values": "initial inherit"
+      },
+      "max-width": {
+        "property": "max-width",
+        "class": "w-max",
+        "values": "none initial inherit"
+      },
+      "height": {
+        "property": "height",
+        "class": "h",
+        "values": "auto initial inherit"
+      },
+      "min-height": {
+        "property": "min-height",
+        "class": "h-min",
+        "values": "initial inherit"
+      },
+      "max-height": {
+        "property": "max-height",
+        "class": "h-max",
+        "values": "none initial inherit"
+      },
+      "viewport-width": {
+        "property": "width",
+        "class": "vw",
+        "values": "auto initial inherit"
+      },
+      "min-viewport-width": {
+        "property": "min-width",
+        "class": "vw-min",
+        "values": "initial inherit"
+      },
+      "max-viewport-width": {
+        "property": "max-width",
+        "class": "vw-max",
+        "values": "none initial inherit"
+      },
+      "viewport-height": {
+        "property": "height",
+        "class": "vh",
+        "values": "auto initial inherit"
+      },
+      "min-viewport-height": {
+        "property": "min-height",
+        "class": "vh-min",
+        "values": "initial inherit"
+      },
+      "max-viewport-height": {
+        "property": "max-height",
+        "class": "vh-max",
+        "values": "none initial inherit"
+      }
+    },
+    "opacity": {
+      "property": "opacity",
+      "class": "opacity",
+      "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100"
+    },
+    "text": {
+      "align": {
+        "property": "text-align",
+        "class": "text-align",
+        "values": "left right center justify initial inherit"
+      },
+      "decoration": {
+        "property": "text-decoration",
+        "class": "text-decoration",
+        "values": "underline overline line-through none initial inherit"
+      },
+      "justify": {
+        "property": "text-justify",
+        "class": "text-justify",
+        "values": "auto inter-word inter-character none initial inherit"
+      },
+      "overflow": {
+        "property": "text-overflow",
+        "class": "text-overflow",
+        "values": "clip ellipsis initial inherit"
+      },
+      "transform": {
+        "property": "text-transform",
+        "class": "text-transform",
+        "values": "none capitalize uppercase lowercase initial inherit"
+      },
+      "white-space": {
+        "property": "white-space",
+        "class": "white-space",
+        "values": "normal nowrap pre pre-line pre-wrap initial inherit"
+      },
+      "word-break": {
+        "property": "word-break",
+        "class": "word-break",
+        "values": "normal break-all keep-all break-word initial inherit"
+      },
+      "word-wrap": {
+        "property": "word-wrap",
+        "class": "word-wrap",
+        "values": "normal break-word initial inherit"
+      }
+    },
+    "visibility": {
+      "property": "visibility",
+      "class": "visibility",
+      "values": "visible hidden collapse initial inherit"
+    }
+  },
+  "helpers": {
+    "visually-hidden": {
+      "class": "visually-hidden"
+    },
+    "clearfix": {
+      "class": "clearfix"
+    },
+    "stack": {
+      "class": "stack"
+    },
+    "text": {
+      "truncate": {
+        "class": "text-truncate"
+      }
+    }
+  }
 }

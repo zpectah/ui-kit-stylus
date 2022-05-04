@@ -1,0 +1,83 @@
+margin-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  {props-spacing-margin-property}: val !important
+
+
+margin-top-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  {props-spacing-margin-property}-top: val !important
+
+
+margin-right-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  {props-spacing-margin-property}-right: val !important
+
+
+margin-bottom-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  {props-spacing-margin-property}-bottom: val !important
+
+
+margin-left-scope(value, negative = false)
+  val = getRemValue(value)
+
+  if negative
+    val = getNegativeValue(val)
+
+  {props-spacing-margin-property}-left: val !important
+
+
+margin-y-scope(value, negative = false)
+  margin-top-scope(value, negative)
+  margin-bottom-scope(value, negative)
+
+
+margin-x-scope(value, negative = false)
+  margin-left-scope(value, negative)
+  margin-right-scope(value, negative)
+
+
+padding-scope(value)
+  {props-spacing-padding-property}: getRemValue(value) !important
+
+
+padding-top-scope(value)
+  {props-spacing-padding-property}-top: getRemValue(value) !important
+
+
+padding-right-scope(value)
+  {props-spacing-padding-property}-right: getRemValue(value) !important
+
+
+padding-bottom-scope(value)
+  {props-spacing-padding-property}-bottom: getRemValue(value) !important
+
+
+padding-left-scope(value)
+  {props-spacing-padding-property}-left: getRemValue(value) !important
+
+
+padding-y-scope(value)
+  padding-top-scope(value)
+  padding-bottom-scope(value)
+
+
+padding-x-scope(value)
+  padding-left-scope(value)
+  padding-right-scope(value)
