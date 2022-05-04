@@ -2,12 +2,6 @@ for prop in (props-text-align-values)
   .{props-text-align-class}-{prop}
     text-align-scope(prop)
 
-for key, value in breakpoints
-  @media screen and (min-width: value)
-    for prop in (props-text-align-values)
-      .{props-text-align-class}-{key}-{prop}
-        text-align-scope(prop)
-
 for prop in (props-text-decoration-values)
   .{props-text-decoration-class}-{prop}
     text-decoration-scope(prop)

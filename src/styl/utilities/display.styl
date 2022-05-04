@@ -1,12 +1,3 @@
 for prop in (props-display-values)
   .{props-display-class}-{prop}
     display-scope(prop)
-
-  for key, value in breakpoints
-    @media screen and (min-width: value)
-      .{props-display-class}-{key}-{prop}
-        display-scope(prop)
-
-  @media print
-    .{props-display-class}-{prefix-print}-{prop}
-      display-scope(prop)

@@ -1,0 +1,213 @@
+for key, value in (breakpoints)
+  @media screen and (min-width: value)
+
+    // Display
+    for prop in (props-display-values)
+      .{props-display-class}-{key}-{prop}
+        display-scope(prop)
+
+    // Flex
+    // Direction
+    for prop in (props-flex-direction-values)
+      .{props-flex-direction-class}-{key}-{prop}
+        flex-direction-scope(prop)
+
+    // Justify content
+    for prop in (props-flex-justify-content-values)
+      .{props-flex-justify-content-class}-{key}-{prop}
+        flex-justify-content-scope(prop)
+
+    // Justify items
+    for prop in (props-flex-justify-items-values)
+      .{props-flex-justify-items-class}-{key}-{prop}
+        flex-justify-items-scope(prop)
+
+    // Justify self
+    for prop in (props-flex-justify-self-values)
+      .{props-flex-justify-self-class}-{key}-{prop}
+        flex-justify-self-scope(prop)
+
+    // Align content
+    for prop in (props-flex-align-content-values)
+      .{props-flex-align-content-class}-{key}-{prop}
+        flex-align-content-scope(prop)
+
+    // Align items
+    for prop in (props-flex-align-items-values)
+      .{props-flex-align-items-class}-{key}-{prop}
+        flex-align-items-scope(prop)
+
+    // Align self
+    for prop in (props-flex-align-self-values)
+      .{props-flex-align-self-class}-{key}-{prop}
+        flex-align-self-scope(prop)
+
+    // Fill
+    .{props-flex-fill-class}-{key}
+      flex-fill-scope()
+
+    // Grow & shrink
+    for prop in (props-flex-grow-values)
+      .{props-flex-grow-class}-{key}-{prop}
+        flex-grow-scope(prop)
+
+    for prop in (props-flex-shrink-values)
+      .{props-flex-shrink-class}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+    for prop in (props-flex-grow-counter_min..props-flex-grow-counter_max)
+      .{props-flex-grow-class}-{key}-{prop}
+        flex-grow-scope(prop)
+
+    for prop in (props-flex-shrink-counter_min..props-flex-shrink-counter_max)
+      .{props-flex-shrink-class}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+    // Wrap
+    for prop in (props-flex-wrap-values)
+      .{props-flex-wrap-class}-{key}-{prop}
+        flex-wrap-scope(prop)
+
+    // Order
+    .{props-flex-order-class}-{key}-{suffix-first}
+      flex-order-scope((props-flex-order-counter_min - 1))
+
+    .{props-flex-order-class}-{key}-{suffix-last}
+      flex-order-scope((props-flex-order-counter_max + 1))
+
+    for prop in (props-flex-order-counter_min..props-flex-order-counter_max)
+      .{props-flex-order-class}-{key}-{prop}
+        flex-order-scope(prop)
+
+    // Float
+    for prop in (props-float-values)
+      .{props-float-class}-{key}-{prop}
+        float-scope(prop)
+
+    // Spacing
+    for prop in (props-spacing-margin-values)
+      .{props-spacing-margin-class}-{key}-{prop}
+        margin-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-top}-{key}-{prop}
+        margin-top-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-right}-{key}-{prop}
+        margin-right-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-bottom}-{key}-{prop}
+        margin-bottom-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-left}-{key}-{prop}
+        margin-left-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-x}-{key}-{prop}
+        margin-x-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-y}-{key}-{prop}
+        margin-y-scope(prop)
+
+    for prop in (props-spacing-padding-values)
+      .{props-spacing-padding-class}-{key}-{prop}
+        padding-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-top}-{key}-{prop}
+        padding-top-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-right}-{key}-{prop}
+        padding-right-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-bottom}-{key}-{prop}
+        padding-bottom-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-left}-{key}-{prop}
+        padding-left-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-x}-{key}-{prop}
+        padding-x-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-y}-{key}-{prop}
+        padding-y-scope(prop)
+
+    for prop in (props-spacing-counter_min..props-spacing-counter_max)
+      .{props-spacing-margin-class}-{key}-{prop}
+        margin-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-top}-{key}-{prop}
+        margin-top-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-right}-{key}-{prop}
+        margin-right-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-bottom}-{key}-{prop}
+        margin-bottom-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-left}-{key}-{prop}
+        margin-left-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-x}-{key}-{prop}
+        margin-x-scope(prop)
+
+      .{props-spacing-margin-class}{prefix-y}-{key}-{prop}
+        margin-y-scope(prop)
+
+      .{props-spacing-padding-class}-{key}-{prop}
+        padding-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-top}-{key}-{prop}
+        padding-top-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-right}-{key}-{prop}
+        padding-right-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-bottom}-{key}-{prop}
+        padding-bottom-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-left}-{key}-{prop}
+        padding-left-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-x}-{key}-{prop}
+        padding-x-scope(prop)
+
+      .{props-spacing-padding-class}{prefix-y}-{key}-{prop}
+        padding-y-scope(prop)
+
+    for prop in (props-spacing-margin-counterNeg_min..props-spacing-margin-counterNeg_max)
+      .{props-spacing-margin-class}-{key}-{prefix-negative}{prop}
+        margin-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-top}-{key}-{prefix-negative}{prop}
+        margin-top-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-right}-{key}-{prefix-negative}{prop}
+        margin-right-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-bottom}-{key}-{prefix-negative}{prop}
+        margin-bottom-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-left}-{key}-{prefix-negative}{prop}
+        margin-left-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-x}-{key}-{prefix-negative}{prop}
+        margin-x-scope(prop, true)
+
+      .{props-spacing-margin-class}{prefix-y}-{key}-{prefix-negative}{prop}
+        margin-y-scope(prop, true)
+
+    // Text
+    // Text align
+    for prop in (props-text-align-values)
+      .{props-text-align-class}-{key}-{prop}
+        text-align-scope(prop)
+
+    // Visibility
+    for prop in (props-visibility-values)
+      .{props-visibility-class}-{key}-{prop}
+        visibility-scope(prop)
+
+    // Helpers
+    // Visually hidden
+    .{helpers-visually-hidden-class}-{key},
+    .{helpers-visually-hidden-class}-{suffix-focusable}-{key}:not(:focus):not(:focus-within)
+      visually-hidden()
+
