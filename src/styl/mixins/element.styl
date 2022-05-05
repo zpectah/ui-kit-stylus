@@ -16,7 +16,7 @@ button-like-element(padding = 0)
   base-element(padding)
 
   text-decoration: none
-  transition: border-color transition-duration ease-in-out transition-delay, color transition-duration ease-in-out transition-delay, background-color transition-duration ease-in-out transition-delay
+  transition: border-color base-transition-duration ease-in-out base-transition-delay, color base-transition-duration ease-in-out base-transition-delay, background-color base-transition-duration ease-in-out base-transition-delay
 
   &:hover
     color: inherit
@@ -62,9 +62,9 @@ card-base(margin, padding)
   flex-direction: column
 
   border-color: palette-default
-  border-width: border-width
-  border-style: border-style
-  border-radius: border-radius
+  border-width: base-border-width
+  border-style: base-border-style
+  border-radius: base-border-radius
 
 
 card-block-base(padding)

@@ -1,19 +1,21 @@
 {
-  "spacer": "1rem",
-  "font": {
-    "family": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-    "size-base": "16px",
-    "weight-base": 400,
-    "line-height": 1.5
-  },
-  "border": {
-    "width": "1px",
-    "style": "solid",
-    "radius": ".35rem"
-  },
-  "transition": {
-    "duration": ".25s",
-    "delay": "0s"
+  "base": {
+    "spacer": "1rem",
+    "font": {
+      "family": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "size": "16px",
+      "weight": 400,
+      "line-height": 1.5
+    },
+    "border": {
+      "width": "1px",
+      "style": "solid",
+      "radius": ".35rem"
+    },
+    "transition": {
+      "duration": ".25s",
+      "delay": "0s"
+    }
   },
   "prefix": {
     "global": ""
@@ -171,82 +173,94 @@
     "spacing": {
       "counter_min": 0,
       "counter_max": 5,
+      "responsive": true,
       "margin": {
         "property": "margin",
         "class": "m",
         "values": "auto initial inherit",
         "counterNeg_min": 1,
-        "counterNeg_max": 5,
-        "responsive": true
+        "counterNeg_max": 5
       },
       "padding": {
         "property": "padding",
         "class": "p",
-        "values": "initial inherit",
-        "responsive": true
+        "values": "initial inherit"
       }
     },
     "sizing": {
       "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100",
+      "responsive": true,
       "width": {
         "property": "width",
         "class": "w",
-        "values": "auto initial inherit"
+        "values": "auto initial inherit",
+        "responsive": true
       },
       "min-width": {
         "property": "min-width",
         "class": "w-min",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       },
       "max-width": {
         "property": "max-width",
         "class": "w-max",
-        "values": "none initial inherit"
+        "values": "none initial inherit",
+        "responsive": true
       },
       "height": {
         "property": "height",
         "class": "h",
-        "values": "auto initial inherit"
+        "values": "auto initial inherit",
+        "responsive": true
       },
       "min-height": {
         "property": "min-height",
         "class": "h-min",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       },
       "max-height": {
         "property": "max-height",
         "class": "h-max",
-        "values": "none initial inherit"
+        "values": "none initial inherit",
+        "responsive": true
       },
       "viewport-width": {
         "property": "width",
         "class": "vw",
-        "values": "auto initial inherit"
+        "values": "auto initial inherit",
+        "responsive": true
       },
       "min-viewport-width": {
         "property": "min-width",
         "class": "vw-min",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       },
       "max-viewport-width": {
         "property": "max-width",
         "class": "vw-max",
-        "values": "none initial inherit"
+        "values": "none initial inherit",
+        "responsive": true
       },
       "viewport-height": {
         "property": "height",
         "class": "vh",
-        "values": "auto initial inherit"
+        "values": "auto initial inherit",
+        "responsive": true
       },
       "min-viewport-height": {
         "property": "min-height",
         "class": "vh-min",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       },
       "max-viewport-height": {
         "property": "max-height",
         "class": "vh-max",
-        "values": "none initial inherit"
+        "values": "none initial inherit",
+        "responsive": true
       }
     },
     "opacity": {
