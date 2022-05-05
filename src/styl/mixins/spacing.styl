@@ -4,7 +4,7 @@ margin-scope(value, negative = false)
   if negative
     val = getNegativeValue(val)
 
-  {utilities-spacing-margin-property}: val !important
+  {utilities-spacing-margin-property}: val getImportantSuffix()
 
 
 margin-top-scope(value, negative = false)
@@ -13,7 +13,7 @@ margin-top-scope(value, negative = false)
   if negative
     val = getNegativeValue(val)
 
-  {utilities-spacing-margin-property}-top: val !important
+  {utilities-spacing-margin-property}-top: val getImportantSuffix()
 
 
 margin-right-scope(value, negative = false)
@@ -22,7 +22,7 @@ margin-right-scope(value, negative = false)
   if negative
     val = getNegativeValue(val)
 
-  {utilities-spacing-margin-property}-right: val !important
+  {utilities-spacing-margin-property}-right: val getImportantSuffix()
 
 
 margin-bottom-scope(value, negative = false)
@@ -31,7 +31,7 @@ margin-bottom-scope(value, negative = false)
   if negative
     val = getNegativeValue(val)
 
-  {utilities-spacing-margin-property}-bottom: val !important
+  {utilities-spacing-margin-property}-bottom: val getImportantSuffix()
 
 
 margin-left-scope(value, negative = false)
@@ -40,7 +40,7 @@ margin-left-scope(value, negative = false)
   if negative
     val = getNegativeValue(val)
 
-  {utilities-spacing-margin-property}-left: val !important
+  {utilities-spacing-margin-property}-left: val getImportantSuffix()
 
 
 margin-y-scope(value, negative = false)
@@ -54,23 +54,23 @@ margin-x-scope(value, negative = false)
 
 
 padding-scope(value)
-  {utilities-spacing-padding-property}: getRemValue(value) !important
+  {utilities-spacing-padding-property}: getRemValue(value) getImportantSuffix()
 
 
 padding-top-scope(value)
-  {utilities-spacing-padding-property}-top: getRemValue(value) !important
+  {utilities-spacing-padding-property}-top: getRemValue(value) getImportantSuffix()
 
 
 padding-right-scope(value)
-  {utilities-spacing-padding-property}-right: getRemValue(value) !important
+  {utilities-spacing-padding-property}-right: getRemValue(value) getImportantSuffix()
 
 
 padding-bottom-scope(value)
-  {utilities-spacing-padding-property}-bottom: getRemValue(value) !important
+  {utilities-spacing-padding-property}-bottom: getRemValue(value) getImportantSuffix()
 
 
 padding-left-scope(value)
-  {utilities-spacing-padding-property}-left: getRemValue(value) !important
+  {utilities-spacing-padding-property}-left: getRemValue(value) getImportantSuffix()
 
 
 padding-y-scope(value)
