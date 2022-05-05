@@ -1,3 +1,4 @@
-for prop in (utilities-opacity-values)
-  .{prefix-global}{utilities-opacity-class}-{prop}
-    opacity-scope(prop)
+if (utilities-enabled && utilities-opacity-enabled)
+  for prop in (utilities-opacity-values)
+    .{prefix-global}{utilities-opacity-class}-{prop}
+      opacity-scope(prop)

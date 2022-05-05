@@ -1,3 +1,4 @@
-.{prefix-global}{ui-container-class}
-  &, &-fluid, &-xs, &-sm, &-md, &-lg, &-xl, &-xxl
-    container-base(spacer / 2)
+if (ui-enabled && ui-container-enabled)
+  .{prefix-global}{ui-container-class}
+    &, &-fluid, &-xs, &-sm, &-md, &-lg, &-xl, &-xxl
+      container-base(spacer / 2)

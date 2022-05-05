@@ -1,3 +1,4 @@
-for prop in (utilities-visibility-values)
-  .{prefix-global}{utilities-visibility-class}-{prop}
-    visibility-scope(prop)
+if (utilities-enabled && utilities-visibility-enabled)
+  for prop in (utilities-visibility-values)
+    .{prefix-global}{utilities-visibility-class}-{prop}
+      visibility-scope(prop)

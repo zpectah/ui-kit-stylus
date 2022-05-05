@@ -1,3 +1,4 @@
-for prop in (utilities-display-values)
-  .{prefix-global}{utilities-display-class}-{prop}
-    display-scope(prop)
+if (utilities-enabled && utilities-display-enabled)
+  for prop in (utilities-display-values)
+    .{prefix-global}{utilities-display-class}-{prop}
+      display-scope(prop)

@@ -1,3 +1,4 @@
 container-responsive-scope(key)
-  .{prefix-global}{ui-container-class}-{key}, .{prefix-global}{ui-container-class}
-    {utilities-sizing-max-width-property}: containers[key]
+  if (ui-enabled && ui-container-enabled)
+    .{prefix-global}{ui-container-class}-{key}, .{prefix-global}{ui-container-class}
+      {utilities-sizing-max-width-property}: containers[key]

@@ -1,6 +1,6 @@
 text-responsive-scope(key)
   // Text align
-  if utilities-text-align-responsive
+  if (utilities-enabled && utilities-text-enabled && utilities-text-align-responsive)
     for prop in (utilities-text-align-values)
       .{prefix-global}{utilities-text-align-class}-{key}-{prop}
         text-align-scope(prop)

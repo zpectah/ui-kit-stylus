@@ -1,68 +1,69 @@
-for prop in (utilities-sizing-width-values)
-  .{prefix-global}{utilities-sizing-width-class}-{prop}
-    width-scope(prop)
+if (utilities-enabled && utilities-sizing-enabled)
+  for prop in (utilities-sizing-width-values)
+    .{prefix-global}{utilities-sizing-width-class}-{prop}
+      width-scope(prop)
 
-for prop in (utilities-sizing-height-values)
-  .{prefix-global}{utilities-sizing-height-class}-{prop}
-    height-scope(prop)
+  for prop in (utilities-sizing-height-values)
+    .{prefix-global}{utilities-sizing-height-class}-{prop}
+      height-scope(prop)
 
-for prop in (utilities-sizing-viewport-width-values)
-  .{prefix-global}{utilities-sizing-viewport-width-class}-{prop}
-    width-scope(prop)
+  for prop in (utilities-sizing-viewport-width-values)
+    .{prefix-global}{utilities-sizing-viewport-width-class}-{prop}
+      width-scope(prop)
 
-for prop in (utilities-sizing-viewport-height-values)
-  .{prefix-global}{utilities-sizing-viewport-height-class}-{prop}
-    height-scope(prop)
+  for prop in (utilities-sizing-viewport-height-values)
+    .{prefix-global}{utilities-sizing-viewport-height-class}-{prop}
+      height-scope(prop)
 
-for prop in (utilities-sizing-min-width-values)
-  .{prefix-global}{utilities-sizing-min-width-class}-{prop}
-    min-width-scope(prop)
+  for prop in (utilities-sizing-min-width-values)
+    .{prefix-global}{utilities-sizing-min-width-class}-{prop}
+      min-width-scope(prop)
 
-for prop in (utilities-sizing-min-height-values)
-  .{prefix-global}{utilities-sizing-min-height-class}-{prop}
-    min-height-scope(prop)
+  for prop in (utilities-sizing-min-height-values)
+    .{prefix-global}{utilities-sizing-min-height-class}-{prop}
+      min-height-scope(prop)
 
-for prop in (utilities-sizing-max-width-values)
-  .{prefix-global}{utilities-sizing-max-width-class}-{prop}
-    max-width-scope(prop)
+  for prop in (utilities-sizing-max-width-values)
+    .{prefix-global}{utilities-sizing-max-width-class}-{prop}
+      max-width-scope(prop)
 
-for prop in (utilities-sizing-max-height-values)
-  .{prefix-global}{utilities-sizing-max-height-class}-{prop}
-    max-height-scope(prop)
+  for prop in (utilities-sizing-max-height-values)
+    .{prefix-global}{utilities-sizing-max-height-class}-{prop}
+      max-height-scope(prop)
 
-for prop in (utilities-sizing-values)
-  .{prefix-global}{utilities-sizing-width-class}-{prop}
-    width-scope(prop, '%')
+  for prop in (utilities-sizing-values)
+    .{prefix-global}{utilities-sizing-width-class}-{prop}
+      width-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-height-class}-{prop}
-    height-scope(prop, '%')
+    .{prefix-global}{utilities-sizing-height-class}-{prop}
+      height-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-viewport-width-class}-{prop}
-    width-scope(prop, 'vw')
+    .{prefix-global}{utilities-sizing-viewport-width-class}-{prop}
+      width-scope(prop, 'vw')
 
-  .{prefix-global}{utilities-sizing-viewport-height-class}-{prop}
-    height-scope(prop, 'vh')
+    .{prefix-global}{utilities-sizing-viewport-height-class}-{prop}
+      height-scope(prop, 'vh')
 
-  .{prefix-global}{utilities-sizing-min-width-class}-{prop}
-    min-width-scope(prop, '%')
+    .{prefix-global}{utilities-sizing-min-width-class}-{prop}
+      min-width-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-min-height-class}-{prop}
-    min-height-scope(prop, '%')
+    .{prefix-global}{utilities-sizing-min-height-class}-{prop}
+      min-height-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-max-width-class}-{prop}
-    max-width-scope(prop, '%')
+    .{prefix-global}{utilities-sizing-max-width-class}-{prop}
+      max-width-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-max-height-class}-{prop}
-    max-height-scope(prop, '%')
+    .{prefix-global}{utilities-sizing-max-height-class}-{prop}
+      max-height-scope(prop, '%')
 
-  .{prefix-global}{utilities-sizing-min-viewport-width-class}-{prop}
-    min-width-scope(prop, 'vw')
+    .{prefix-global}{utilities-sizing-min-viewport-width-class}-{prop}
+      min-width-scope(prop, 'vw')
 
-  .{prefix-global}{utilities-sizing-min-viewport-height-class}-{prop}
-    min-height-scope(prop, 'vh')
+    .{prefix-global}{utilities-sizing-min-viewport-height-class}-{prop}
+      min-height-scope(prop, 'vh')
 
-  .{prefix-global}{utilities-sizing-max-viewport-width-class}-{prop}
-    max-width-scope(prop, 'vw')
+    .{prefix-global}{utilities-sizing-max-viewport-width-class}-{prop}
+      max-width-scope(prop, 'vw')
 
-  .{prefix-global}{utilities-sizing-max-viewport-height-class}-{prop}
-    max-height-scope(prop, 'vh')
+    .{prefix-global}{utilities-sizing-max-viewport-height-class}-{prop}
+      max-height-scope(prop, 'vh')

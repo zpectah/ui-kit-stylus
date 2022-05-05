@@ -1,11 +1,12 @@
-.{prefix-global}{helpers-stack-class}-{helpers-stack-vertical-suffix}
-  display: flex
-  flex-direction: column
-  align-self: stretch
-  flex: 1 1 auto
+if (helpers-enabled && helpers-stack-enabled)
+  .{prefix-global}{helpers-stack-class}-{helpers-stack-vertical-suffix}
+    display: flex
+    flex-direction: column
+    align-self: stretch
+    flex: 1 1 auto
 
-.{prefix-global}{helpers-stack-class}-{helpers-stack-horizontal-suffix}
-  display: flex
-  flex-direction: row
-  align-self: stretch
-  align-items: center
+  .{prefix-global}{helpers-stack-class}-{helpers-stack-horizontal-suffix}
+    display: flex
+    flex-direction: row
+    align-self: stretch
+    align-items: center

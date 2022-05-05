@@ -1,5 +1,5 @@
 spacing-responsive-scope(key)
-  if utilities-spacing-responsive
+  if (utilities-enabled && utilities-spacing-enabled && utilities-spacing-responsive)
     // Margin
     if utilities-spacing-margin-responsive
       for prop in (utilities-spacing-margin-values)

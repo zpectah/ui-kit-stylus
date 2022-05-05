@@ -1,32 +1,32 @@
-for prop in (utilities-text-align-values)
-  .{prefix-global}{utilities-text-align-class}-{prop}
-    text-align-scope(prop)
+if (utilities-enabled && utilities-text-enabled)
+  for prop in (utilities-text-align-values)
+    .{prefix-global}{utilities-text-align-class}-{prop}
+      text-align-scope(prop)
 
-for prop in (utilities-text-decoration-values)
-  .{prefix-global}{utilities-text-decoration-class}-{prop}
-    text-decoration-scope(prop)
+  for prop in (utilities-text-decoration-values)
+    .{prefix-global}{utilities-text-decoration-class}-{prop}
+      text-decoration-scope(prop)
 
-for prop in (utilities-text-justify-values)
-  .{prefix-global}{utilities-text-justify-class}-{prop}
-    text-justify-scope(prop)
+  for prop in (utilities-text-justify-values)
+    .{prefix-global}{utilities-text-justify-class}-{prop}
+      text-justify-scope(prop)
 
-for prop in (utilities-text-overflow-values)
-  .{prefix-global}{utilities-text-overflow-class}-{prop}
-    text-overflow-scope(prop)
+  for prop in (utilities-text-overflow-values)
+    .{prefix-global}{utilities-text-overflow-class}-{prop}
+      text-overflow-scope(prop)
 
-for prop in (utilities-text-transform-values)
-  .{prefix-global}{utilities-text-transform-class}-{prop}
-    text-transform-scope(prop)
+  for prop in (utilities-text-transform-values)
+    .{prefix-global}{utilities-text-transform-class}-{prop}
+      text-transform-scope(prop)
 
-for prop in (utilities-text-white-space-values)
-  .{prefix-global}{utilities-text-white-space-class}-{prop}
-    white-space-scope(prop)
+  for prop in (utilities-text-white-space-values)
+    .{prefix-global}{utilities-text-white-space-class}-{prop}
+      white-space-scope(prop)
 
-for prop in (utilities-text-word-break-values)
-  .{prefix-global}{utilities-text-word-break-class}-{prop}
-    word-break-scope(prop)
+  for prop in (utilities-text-word-break-values)
+    .{prefix-global}{utilities-text-word-break-class}-{prop}
+      word-break-scope(prop)
 
-for prop in (utilities-text-word-wrap-values)
-  .{prefix-global}{utilities-text-word-wrap-class}-{prop}
-    word-wrap-scope(prop)
-
+  for prop in (utilities-text-word-wrap-values)
+    .{prefix-global}{utilities-text-word-wrap-class}-{prop}
+      word-wrap-scope(prop)

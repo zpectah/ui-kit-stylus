@@ -1,3 +1,4 @@
-for prop in (utilities-float-values)
-  .{prefix-global}{utilities-float-class}-{prop}
-    float-scope(prop)
+if (utilities-enabled && utilities-float-enabled)
+  for prop in (utilities-float-values)
+    .{prefix-global}{utilities-float-class}-{prop}
+      float-scope(prop)

@@ -1,3 +1,4 @@
-.{prefix-global}{helpers-visually-hidden-class},
-.{prefix-global}{helpers-visually-hidden-class}-{suffix-focusable}:not(:focus):not(:focus-within)
-  visually-hidden()
+if (helpers-enabled && helpers-visually-hidden-enabled)
+  .{prefix-global}{helpers-visually-hidden-class},
+  .{prefix-global}{helpers-visually-hidden-class}-{suffix-focusable}:not(:focus):not(:focus-within)
+    visually-hidden()

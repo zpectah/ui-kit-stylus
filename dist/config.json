@@ -1,6 +1,8 @@
 {
   "rules": {
-    "important": true
+    "important": true,
+    "reset": true,
+    "body": true
   },
   "base": {
     "spacer": "1rem",
@@ -56,12 +58,15 @@
     "dark": "rgb(41,40,45)"
   },
   "utilities": {
+    "enabled": true,
     "vertical-align": {
+      "enabled": true,
       "property": "vertical-align",
       "class": "vertical-align",
       "values": "baseline sub super top text-top middle bottom text-bottom initial inherit"
     },
     "background": {
+      "enabled": true,
       "property": "background",
       "class": "bg",
       "values": "none initial inherit",
@@ -69,6 +74,7 @@
       "counter_max": 9
     },
     "color": {
+      "enabled": true,
       "property": "color",
       "class": "color",
       "values": "initial inherit",
@@ -76,6 +82,7 @@
       "counter_max": 9
     },
     "display": {
+      "enabled": true,
       "property": "display",
       "class": "d",
       "values": "inherit none inline inline-block block grid table table-cell table-row flex inline-flex",
@@ -83,6 +90,7 @@
       "print": true
     },
     "flex": {
+      "enabled": true,
       "direction": {
         "property": "flex-direction",
         "class": "flex",
@@ -169,12 +177,14 @@
       }
     },
     "float": {
+      "enabled": true,
       "property": "float",
       "class": "float",
       "values": "none left right initial inherit",
       "responsive": true
     },
     "spacing": {
+      "enabled": true,
       "counter_min": 0,
       "counter_max": 5,
       "responsive": true,
@@ -194,6 +204,7 @@
       }
     },
     "sizing": {
+      "enabled": true,
       "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100",
       "responsive": true,
       "width": {
@@ -270,11 +281,13 @@
       }
     },
     "opacity": {
+      "enabled": true,
       "property": "opacity",
       "class": "opacity",
       "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100"
     },
     "text": {
+      "enabled": true,
       "align": {
         "property": "text-align",
         "class": "text-align",
@@ -318,6 +331,7 @@
       }
     },
     "visibility": {
+      "enabled": true,
       "property": "visibility",
       "class": "visibility",
       "values": "visible hidden collapse initial inherit",
@@ -325,14 +339,18 @@
     }
   },
   "helpers": {
+    "enabled": true,
     "visually-hidden": {
+      "enabled": true,
       "class": "visually-hidden",
       "responsive": true
     },
     "clearfix": {
+      "enabled": true,
       "class": "clearfix"
     },
     "stack": {
+      "enabled": true,
       "class": "stack",
       "horizontal": {
         "suffix": "h"
@@ -342,22 +360,28 @@
       }
     },
     "text": {
+      "enabled": true,
       "truncate": {
         "class": "text-truncate"
       }
     }
   },
   "ui": {
+    "enabled": true,
     "button": {
+      "enabled": true,
       "class": "button"
     },
     "card": {
+      "enabled": true,
       "class": "card"
     },
     "chip": {
+      "enabled": true,
       "class": "chip"
     },
     "container": {
+      "enabled": true,
       "class": "container",
       "max-width": {
         "xs": "100%",
@@ -369,12 +393,15 @@
       }
     },
     "divider": {
+      "enabled": true,
       "class": "divider"
     },
     "input": {
+      "enabled": true,
       "class": "input"
     },
     "menu": {
+      "enabled": true,
       "class": "menu"
     }
   }

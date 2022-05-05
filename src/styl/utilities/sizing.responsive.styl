@@ -1,5 +1,5 @@
 sizing-responsive-scope(key)
-  if utilities-sizing-responsive
+  if (utilities-enabled && utilities-sizing-enabled && utilities-sizing-responsive)
     if utilities-sizing-width-responsive
       for prop in (utilities-sizing-width-values)
         .{prefix-global}{utilities-sizing-width-class}-{key}-{prop}

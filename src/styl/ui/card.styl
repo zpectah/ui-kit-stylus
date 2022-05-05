@@ -1,11 +1,12 @@
-.{prefix-global}{ui-card-class}
-  card-base(0, 0)
+if (ui-enabled && ui-card-enabled)
+  .{prefix-global}{ui-card-class}
+    card-base(0, 0)
 
-  &-heading
-    card-block-base(spacer)
+    &-heading
+      card-block-base(spacer)
 
-  &-body
-    card-body-base(spacer)
+    &-body
+      card-body-base(spacer)
 
-  &-actions
-    card-block-base(spacer)
+    &-actions
+      card-block-base(spacer)

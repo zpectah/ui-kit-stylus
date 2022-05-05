@@ -1,5 +1,5 @@
 display-print-scope()
-  if utilities-display-print
+  if (utilities-enabled && utilities-display-enabled && utilities-display-print)
     for prop in (utilities-display-values)
       .{prefix-global}{utilities-display-class}-{suffix-print}-{prop}
         display-scope(prop)

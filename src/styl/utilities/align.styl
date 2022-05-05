@@ -1,3 +1,4 @@
-for prop in (utilities-vertical-align-values)
-  .{prefix-global}{utilities-vertical-align-class}-{prop}
-    vertical-align-scope(prop)
+if (utilities-enabled && utilities-vertical-align-enabled)
+  for prop in (utilities-vertical-align-values)
+    .{prefix-global}{utilities-vertical-align-class}-{prop}
+      vertical-align-scope(prop)

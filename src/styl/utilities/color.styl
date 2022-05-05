@@ -1,11 +1,12 @@
-for prop in (utilities-color-values)
-  .{prefix-global}{utilities-color-class}-{prop}
-    color-scope(prop)
+if (utilities-enabled && utilities-color-enabled)
+  for prop in (utilities-color-values)
+    .{prefix-global}{utilities-color-class}-{prop}
+      color-scope(prop)
 
-for key, value in palette
-  .{prefix-global}{utilities-color-class}-{key}
-    color-scope(value)
+  for key, value in palette
+    .{prefix-global}{utilities-color-class}-{key}
+      color-scope(value)
 
-  for prop in (utilities-color-counter_min..utilities-color-counter_max)
-    .{prefix-global}{utilities-color-class}-{key}-{prop}
-      color-scope(value, prop)
+    for prop in (utilities-color-counter_min..utilities-color-counter_max)
+      .{prefix-global}{utilities-color-class}-{key}-{prop}
+        color-scope(value, prop)
