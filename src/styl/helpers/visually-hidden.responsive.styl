@@ -1,0 +1,5 @@
+visually-hidden-responsive-scope(key)
+  if helpers-visually-hidden-responsive
+    .{prefix-global}{helpers-visually-hidden-class}-{key},
+    .{prefix-global}{helpers-visually-hidden-class}-{suffix-focusable}-{key}:not(:focus):not(:focus-within)
+      visually-hidden()

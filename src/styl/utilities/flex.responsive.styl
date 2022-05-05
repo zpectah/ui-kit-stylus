@@ -1,0 +1,103 @@
+flex-responsive-scope(key)
+  // Flex: Direction
+  if utilities-flex-direction-responsive
+    for prop in (utilities-flex-direction-values)
+      .{prefix-global}{utilities-flex-direction-class}-{key}-{prop}
+        flex-direction-scope(prop)
+
+
+  // Flex: Justify content
+  if utilities-flex-justify-content-responsive
+    for prop in (utilities-flex-justify-content-values)
+      .{prefix-global}{utilities-flex-justify-content-class}-{key}-{prop}
+        flex-justify-content-scope(prop)
+
+
+  // Flex: Justify items
+  if utilities-flex-justify-items-responsive
+    for prop in (utilities-flex-justify-items-values)
+      .{prefix-global}{utilities-flex-justify-items-class}-{key}-{prop}
+        flex-justify-items-scope(prop)
+
+
+  // Flex: Justify self
+  if utilities-flex-justify-self-responsive
+    for prop in (utilities-flex-justify-self-values)
+      .{prefix-global}{utilities-flex-justify-self-class}-{key}-{prop}
+        flex-justify-self-scope(prop)
+
+
+  // Flex: Align content
+  if utilities-flex-align-content-responsive
+    for prop in (utilities-flex-align-content-values)
+      .{prefix-global}{utilities-flex-align-content-class}-{key}-{prop}
+        flex-align-content-scope(prop)
+
+
+  // Flex: Align items
+  if utilities-flex-align-items-responsive
+    for prop in (utilities-flex-align-items-values)
+      .{prefix-global}{utilities-flex-align-items-class}-{key}-{prop}
+        flex-align-items-scope(prop)
+
+
+  // Flex: Align self
+  if utilities-flex-align-self-responsive
+    for prop in (utilities-flex-align-self-values)
+      .{prefix-global}{utilities-flex-align-self-class}-{key}-{prop}
+        flex-align-self-scope(prop)
+
+
+  // Flex: Fill
+  if utilities-flex-fill-responsive
+    .{prefix-global}{utilities-flex-fill-class}-{key}
+      flex-fill-scope()
+
+
+  // Flex: Grow
+  if utilities-flex-grow-responsive
+    for prop in (utilities-flex-grow-values)
+      .{prefix-global}{utilities-flex-grow-class}-{key}-{prop}
+        flex-grow-scope(prop)
+
+    for prop in (utilities-flex-grow-counter_min..utilities-flex-grow-counter_max)
+      .{prefix-global}{utilities-flex-grow-class}-{key}-{prop}
+        flex-grow-scope(prop)
+
+
+  // Flex: Shrink
+  if utilities-flex-shrink-responsive
+    for prop in (utilities-flex-shrink-values)
+      .{prefix-global}{utilities-flex-shrink-class}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+    for prop in (utilities-flex-shrink-counter_min..utilities-flex-shrink-counter_max)
+      .{prefix-global}{utilities-flex-shrink-class}-{key}-{prop}
+        flex-shrink-scope(prop)
+
+
+  // Flex: Wrap
+  if utilities-flex-wrap-responsive
+    for prop in (utilities-flex-wrap-values)
+      .{prefix-global}{utilities-flex-wrap-class}-{key}-{prop}
+        flex-wrap-scope(prop)
+
+
+  // Flex: Order
+  if utilities-flex-order-responsive
+    .{prefix-global}{utilities-flex-order-class}-{key}-{suffix-first}
+      flex-order-scope((utilities-flex-order-counter_min - 1))
+
+    .{prefix-global}{utilities-flex-order-class}-{key}-{suffix-last}
+      flex-order-scope((utilities-flex-order-counter_max + 1))
+
+    for prop in (utilities-flex-order-counter_min..utilities-flex-order-counter_max)
+      .{prefix-global}{utilities-flex-order-class}-{key}-{prop}
+        flex-order-scope(prop)
+
+
+  // Flex: Gap
+  if utilities-flex-gap-responsive
+    for prop in (utilities-flex-gap-counter_min..utilities-flex-gap-counter_max)
+      .{prefix-global}{utilities-flex-gap-class}-{key}-{prop}
+        flex-gap-scope(prop)

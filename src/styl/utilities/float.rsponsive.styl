@@ -1,0 +1,5 @@
+float-responsive-scope(key)
+  if utilities-float-responsive
+    for prop in (utilities-float-values)
+      .{prefix-global}{utilities-float-class}-{key}-{prop}
+        float-scope(prop)

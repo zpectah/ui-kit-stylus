@@ -1,0 +1,5 @@
+display-responsive-scope(key)
+  if utilities-display-responsive
+    for prop in (utilities-display-values)
+      .{prefix-global}{utilities-display-class}-{key}-{prop}
+        display-scope(prop)

@@ -1,0 +1,5 @@
+visibility-responsive-scope(key)
+  if utilities-visibility-responsive
+    for prop in (utilities-visibility-values)
+      .{prefix-global}{utilities-visibility-class}-{key}-{prop}
+        visibility-scope(prop)

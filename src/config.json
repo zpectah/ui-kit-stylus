@@ -76,7 +76,8 @@
       "property": "display",
       "class": "d",
       "values": "inherit none inline inline-block block grid table table-cell table-row flex inline-flex",
-      "responsive": true
+      "responsive": true,
+      "print": true
     },
     "flex": {
       "direction": {
@@ -179,12 +180,14 @@
         "class": "m",
         "values": "auto initial inherit",
         "counterNeg_min": 1,
-        "counterNeg_max": 5
+        "counterNeg_max": 5,
+        "responsive": true
       },
       "padding": {
         "property": "padding",
         "class": "p",
-        "values": "initial inherit"
+        "values": "initial inherit",
+        "responsive": true
       }
     },
     "sizing": {
