@@ -2643,14 +2643,14 @@ a.chip {
   text-decoration: none;
   cursor: pointer;
 }
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-.container-fluid {
+.container,
+.container-fluid,
+.container-xs,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -2663,6 +2663,9 @@ hr {
   display: block;
 }
 .input {
+  margin: 0;
+}
+.menu {
   margin: 0;
 }
 @media print {
@@ -4401,13 +4404,6 @@ hr {
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .container-xs {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
   .container-xs,
   .container {
     max-width: 100%;
@@ -6113,13 +6109,6 @@ hr {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
-  }
-  .container-sm {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
   }
   .container-sm,
   .container {
@@ -7827,13 +7816,6 @@ hr {
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .container-md {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
   .container-md,
   .container {
     max-width: 720px;
@@ -9539,13 +9521,6 @@ hr {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
-  }
-  .container-lg {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
   }
   .container-lg,
   .container {
@@ -11253,13 +11228,6 @@ hr {
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .container-xl {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
   .container-xl,
   .container {
     max-width: 1140px;
@@ -12966,13 +12934,6 @@ hr {
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .container-xxl {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
   .container-xxl,
   .container {
     max-width: 1320px;
@@ -12980,4 +12941,4 @@ hr {
 }
 
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=index.css.map*/

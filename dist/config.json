@@ -370,6 +370,9 @@
     },
     "input": {
       "class": "input"
+    },
+    "menu": {
+      "class": "menu"
     }
   }
 }

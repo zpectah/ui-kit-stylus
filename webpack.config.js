@@ -10,8 +10,8 @@ module.exports = [
         plugins: [
             new FixStyleOnlyEntriesPlugin(),
             new MiniCssExtractPlugin({
-                filename: `[name]${process.env.NODE_ENV !== 'development' ? '.min' : ''}.css`,
-                chunkFilename: '[name].[id].css',
+                filename: `index${process.env.NODE_ENV !== 'development' ? '.min' : ''}.css`,
+                chunkFilename: 'index.[id].css',
             }),
             new CopyWebpackPlugin({
                 patterns: [

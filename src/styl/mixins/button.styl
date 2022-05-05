@@ -1,0 +1,26 @@
+button-like-element(padding = 0)
+  base-element(padding)
+
+  text-decoration: none
+  transition: border-color base-transition-duration ease-in-out base-transition-delay, color base-transition-duration ease-in-out base-transition-delay, background-color base-transition-duration ease-in-out base-transition-delay
+
+  &:hover
+    color: inherit
+
+  &:active
+    color: inherit
+
+  &:disabled, &.disabled
+    opacity: .75
+    cursor: not-allowed
+
+
+button-base(minSize, padding, fontSize, lineHeight)
+  button-like-element(padding)
+
+  min-width: minSize
+  min-height: minSize
+  font-size: fontSize
+  font-weight: bold
+  line-height: lineHeight
+  cursor: pointer
