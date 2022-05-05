@@ -3,6 +3,7 @@ button-like-element(padding = 0)
 
   text-decoration: none
   transition: border-color base-transition-duration ease-in-out base-transition-delay, color base-transition-duration ease-in-out base-transition-delay, background-color base-transition-duration ease-in-out base-transition-delay
+  color: base-link
 
   &:hover
     color: inherit
@@ -21,6 +22,33 @@ button-base(minSize, padding, fontSize, lineHeight)
   min-width: minSize
   min-height: minSize
   font-size: fontSize
-  font-weight: bold
   line-height: lineHeight
-  cursor: pointer
+
+
+button-variant(
+  bg, color, border,
+  hoverBg, hoverColor, hoverBorder,
+  activeBg, activeColor, activeBorder,
+  disabledBg, disabledColor, disabledBorder
+)
+  background-color: bg
+  color: color
+  border-color: border
+
+  &:hover
+    background-color: hoverBg
+    color: hoverColor
+    border-color: hoverBorder
+
+  &:active
+    background-color: activeBg
+    color: activeColor
+    border-color: activeBorder
+
+  &:focus
+    box-shadow: 0 0 .025rem .125rem alpha(darken(border, 25%), .5)
+
+  &:disabled, &.disabled
+    background-color: disabledBg
+    color: disabledColor
+    border-color: disabledBorder

@@ -6,6 +6,7 @@
   },
   "base": {
     "spacer": "1rem",
+    "link": "rgb(123,31,162)",
     "font": {
       "family": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "size": "16px",
@@ -15,7 +16,7 @@
     "border": {
       "width": "1px",
       "style": "solid",
-      "radius": ".35rem"
+      "radius": ".25rem"
     },
     "transition": {
       "duration": ".25s",
@@ -370,7 +371,38 @@
     "enabled": true,
     "button": {
       "enabled": true,
-      "class": "button"
+      "class": "btn",
+      "active-shadow": "0 0 .025rem .125rem",
+      "palette": {
+        "enabled": true,
+        "outline": {
+          "enabled": true,
+          "prefix": "outline"
+        }
+      },
+      "size": {
+        "enabled": true,
+        "default": {
+          "height": "2.375rem",
+          "padding": "0 .85rem",
+          "font-size": "1rem",
+          "line-height": 1.05
+        },
+        "small": {
+          "prefix": "sm",
+          "height": "2rem",
+          "padding": "0 .5rem",
+          "font-size": "0.85rem",
+          "line-height": 1.05
+        },
+        "large": {
+          "prefix": "lg",
+          "height": "2.75rem",
+          "padding": "0 1rem",
+          "font-size": "1.125rem",
+          "line-height": 1.05
+        }
+      }
     },
     "card": {
       "enabled": true,

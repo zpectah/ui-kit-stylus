@@ -2,13 +2,13 @@
   "name": "ui-toolkit",
   "version": "0.9.0",
   "description": "CSS utilities and helper classes based on STYLUS preprocessor",
-  "main": "dist/css/index.min.css",
+  "main": "src/styl/index.styl",
   "author": "Tomas Sychra | zpecter.com",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=development webpack",
+    "build:min": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
     "copy-webpack-plugin": "10.2.4",
