@@ -5,6 +5,8 @@ button-like-element()
   display: inline-flex
   align-items: center
   justify-content: center
+  gap: (spacer / 2)
+  flex: none
   background: transparent
   outline: none
   text-decoration: none
@@ -30,13 +32,6 @@ button-base()
   border-width: base-border-width
   border-style: base-border-style
   border-radius: base-border-radius
-
-  & > span
-    display: flex
-    align-items: center
-    justify-content: space-between
-    color: inherit
-    text-truncate()
 
   &:focus
     box-shadow: ui-button-active-shadow alpha(base-link, .75)

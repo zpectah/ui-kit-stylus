@@ -1,6 +1,6 @@
 {
-  "rules": {
-    "important": true,
+  "import": {
+    "root": true,
     "reset": true,
     "body": true
   },
@@ -61,6 +61,7 @@
   },
   "utilities": {
     "enabled": true,
+    "important": true,
     "vertical-align": {
       "enabled": true,
       "property": "vertical-align",
@@ -93,9 +94,15 @@
     },
     "flex": {
       "enabled": true,
+      "flex": {
+        "property": "flex",
+        "class": "flex",
+        "values": "auto none initial inherit 1 0",
+        "responsive": true
+      },
       "direction": {
         "property": "flex-direction",
-        "class": "flex",
+        "class": "flex-direction",
         "values": "row row-reverse column column-reverse initial inherit",
         "responsive": true
       },
@@ -382,6 +389,9 @@
         "xxl": "1320px"
       }
     },
+    "typography": {
+      "enabled": true
+    },
     "button": {
       "enabled": true,
       "class": "btn",
@@ -431,23 +441,23 @@
       "size": {
         "enabled": true,
         "default": {
-          "height": "1.75rem",
+          "height": "1.5rem",
           "padding": "0 .5rem",
-          "font-size": ".9rem",
+          "font-size": ".85rem",
           "line-height": 1.05
         },
         "small": {
           "prefix": "sm",
-          "height": "1.5rem",
-          "padding": "0 .5rem",
-          "font-size": "0.8rem",
+          "height": "1.25rem",
+          "padding": "0 .4rem",
+          "font-size": "0.7rem",
           "line-height": 1.05
         },
         "large": {
           "prefix": "lg",
-          "height": "1.9rem",
-          "padding": "0 .75rem",
-          "font-size": ".95rem",
+          "height": "1.75rem",
+          "padding": "0 .7rem",
+          "font-size": ".9rem",
           "line-height": 1.05
         }
       }

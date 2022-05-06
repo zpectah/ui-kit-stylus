@@ -2,6 +2,7 @@ if (ui-enabled && ui-button-enabled)
   .{prefix-global}{ui-button-class}
     button-size-variant(ui-button-size-default-height, ui-button-size-default-padding, ui-button-size-default-font-size, ui-button-size-default-line-height)
     button-base()
+    text-truncate()
 
     if ui-button-size-enabled
       &.{ui-button-size-small-prefix}
@@ -12,7 +13,7 @@ if (ui-enabled && ui-button-enabled)
 
     if ui-button-palette-enabled
       for key, value in palette
-        if key != 'default'
+        if key != 'default' // Ignored 'default' color
           &.{key}
             button-color-variant(
               colors[key][0], colors[key][1], colors[key][2],

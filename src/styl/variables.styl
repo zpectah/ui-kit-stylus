@@ -1,43 +1,6 @@
 json('../config.json')
 
-root-prefix = '--'
-
-spacer = base-spacer
-breakpoints = {
-  xs: breakpoints-xs,
-  sm: breakpoints-sm,
-  md: breakpoints-md,
-  lg: breakpoints-lg,
-  xl: breakpoints-xl,
-  xxl: breakpoints-xxl,
-}
-containers = {
-  xs: ui-container-max-width-xs,
-  sm: ui-container-max-width-sm,
-  md: ui-container-max-width-md,
-  lg: ui-container-max-width-lg,
-  xl: ui-container-max-width-xl,
-  xxl: ui-container-max-width-xxl,
-}
-palette = {
-  default: palette-default,
-  primary: palette-primary,
-  secondary: palette-secondary,
-  success: palette-success,
-  info: palette-info,
-  warning: palette-warning,
-  error: palette-error,
-  light: palette-light,
-  dark: palette-dark,
-}
-colors = {
-  default: (palette-default palette-light palette-default)
-  primary: (palette-primary palette-light palette-primary)
-  secondary: (palette-secondary palette-light palette-secondary)
-  success: (palette-success palette-light palette-success)
-  info: (palette-info palette-light palette-info)
-  warning: (palette-warning palette-light palette-warning)
-  error: (palette-error palette-light palette-error)
-  light: (palette-light palette-dark palette-light)
-  dark: (palette-dark palette-light palette-dark)
-}
+@import './variables/prefixes'
+@import './variables/common'
+@import './variables/responsive'
+@import './variables/theme'

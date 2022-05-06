@@ -720,22 +720,40 @@ a:hover {
 .d-inline-flex {
   display: inline-flex !important;
 }
-.flex-row {
-  flex-direction: row !important;
+.flex-auto {
+  flex: auto !important;
 }
-.flex-row-reverse {
-  flex-direction: row-reverse !important;
-}
-.flex-column {
-  flex-direction: column !important;
-}
-.flex-column-reverse {
-  flex-direction: column-reverse !important;
+.flex-none {
+  flex: none !important;
 }
 .flex-initial {
-  flex-direction: initial !important;
+  flex: initial !important;
 }
 .flex-inherit {
+  flex: inherit !important;
+}
+.flex-1 {
+  flex: 1 !important;
+}
+.flex-0 {
+  flex: 0 !important;
+}
+.flex-direction-row {
+  flex-direction: row !important;
+}
+.flex-direction-row-reverse {
+  flex-direction: row-reverse !important;
+}
+.flex-direction-column {
+  flex-direction: column !important;
+}
+.flex-direction-column-reverse {
+  flex-direction: column-reverse !important;
+}
+.flex-direction-initial {
+  flex-direction: initial !important;
+}
+.flex-direction-inherit {
   flex-direction: inherit !important;
 }
 .justify-content-flex-start {
@@ -2601,6 +2619,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  flex: none;
   background: transparent;
   outline: none;
   text-decoration: none;
@@ -2611,6 +2631,9 @@ a:hover {
   border-width: 1px;
   border-style: solid;
   border-radius: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn:hover {
   color: inherit;
@@ -2622,15 +2645,6 @@ a:hover {
 .btn.disabled {
   opacity: 0.75;
   cursor: not-allowed;
-}
-.btn > span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: inherit;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .btn:focus {
   box-shadow: 0 0 0.025rem 0.125rem rgba(123,31,162,0.75);
@@ -3045,6 +3059,11 @@ a:hover {
   border-style: solid;
   border-radius: 0.25rem;
 }
+.card > .divider,
+.card hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .card-heading {
   width: 100%;
   padding: 1rem;
@@ -3058,6 +3077,7 @@ a:hover {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex: 1;
 }
 .card-actions {
   width: 100%;
@@ -3067,24 +3087,28 @@ a:hover {
   justify-content: space-between;
 }
 .chip {
-  min-width: 1.75rem;
-  min-height: 1.75rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   padding: 0 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.05;
-  border-radius: 1.75rem;
+  border-radius: 1.5rem;
   width: auto;
   height: auto;
   margin: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: none;
   background: transparent;
   outline: none;
   color: inherit;
   border-color: transparent;
   border-width: 1px;
   border-style: solid;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 a.chip {
   text-decoration: none;
@@ -3095,20 +3119,20 @@ a.chip:hover {
   text-decoration: underline;
 }
 .chip.sm {
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  padding: 0 0.5rem;
-  font-size: 0.8rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  padding: 0 0.4rem;
+  font-size: 0.7rem;
   line-height: 1.05;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
 }
 .chip.lg {
-  min-width: 1.9rem;
-  min-height: 1.9rem;
-  padding: 0 0.75rem;
-  font-size: 0.95rem;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  padding: 0 0.7rem;
+  font-size: 0.9rem;
   line-height: 1.05;
-  border-radius: 1.9rem;
+  border-radius: 1.75rem;
 }
 .chip.primary {
   background-color: #6868ac;
@@ -3544,6 +3568,10 @@ a.chip.dark-outline.disabled {
 hr {
   margin: 1rem 0;
   display: block;
+  border: 0;
+  border-top-color: #455a64;
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 .input {
   margin: 0;
@@ -3620,22 +3648,40 @@ hr {
   .d-xs-inline-flex {
     display: inline-flex !important;
   }
-  .flex-xs-row {
-    flex-direction: row !important;
+  .flex-xs-auto {
+    flex: auto !important;
   }
-  .flex-xs-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-xs-column {
-    flex-direction: column !important;
-  }
-  .flex-xs-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-xs-none {
+    flex: none !important;
   }
   .flex-xs-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-xs-inherit {
+    flex: inherit !important;
+  }
+  .flex-xs-1 {
+    flex: 1 !important;
+  }
+  .flex-xs-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-xs-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-xs-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-xs-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-xs-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-xs-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-xs-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-xs-flex-start {
@@ -5326,22 +5372,40 @@ hr {
   .d-sm-inline-flex {
     display: inline-flex !important;
   }
-  .flex-sm-row {
-    flex-direction: row !important;
+  .flex-sm-auto {
+    flex: auto !important;
   }
-  .flex-sm-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-sm-column {
-    flex-direction: column !important;
-  }
-  .flex-sm-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-sm-none {
+    flex: none !important;
   }
   .flex-sm-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-sm-inherit {
+    flex: inherit !important;
+  }
+  .flex-sm-1 {
+    flex: 1 !important;
+  }
+  .flex-sm-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-sm-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-sm-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-sm-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-sm-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-sm-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-sm-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-sm-flex-start {
@@ -7032,22 +7096,40 @@ hr {
   .d-md-inline-flex {
     display: inline-flex !important;
   }
-  .flex-md-row {
-    flex-direction: row !important;
+  .flex-md-auto {
+    flex: auto !important;
   }
-  .flex-md-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-md-column {
-    flex-direction: column !important;
-  }
-  .flex-md-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-md-none {
+    flex: none !important;
   }
   .flex-md-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-md-inherit {
+    flex: inherit !important;
+  }
+  .flex-md-1 {
+    flex: 1 !important;
+  }
+  .flex-md-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-md-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-md-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-md-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-md-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-md-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-md-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-md-flex-start {
@@ -8738,22 +8820,40 @@ hr {
   .d-lg-inline-flex {
     display: inline-flex !important;
   }
-  .flex-lg-row {
-    flex-direction: row !important;
+  .flex-lg-auto {
+    flex: auto !important;
   }
-  .flex-lg-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-lg-column {
-    flex-direction: column !important;
-  }
-  .flex-lg-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-lg-none {
+    flex: none !important;
   }
   .flex-lg-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-lg-inherit {
+    flex: inherit !important;
+  }
+  .flex-lg-1 {
+    flex: 1 !important;
+  }
+  .flex-lg-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-lg-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-lg-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-lg-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-lg-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-lg-flex-start {
@@ -10444,22 +10544,40 @@ hr {
   .d-xl-inline-flex {
     display: inline-flex !important;
   }
-  .flex-xl-row {
-    flex-direction: row !important;
+  .flex-xl-auto {
+    flex: auto !important;
   }
-  .flex-xl-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-xl-column {
-    flex-direction: column !important;
-  }
-  .flex-xl-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-xl-none {
+    flex: none !important;
   }
   .flex-xl-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-xl-inherit {
+    flex: inherit !important;
+  }
+  .flex-xl-1 {
+    flex: 1 !important;
+  }
+  .flex-xl-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-xl-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-xl-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-xl-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-xl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-xl-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-xl-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-xl-flex-start {
@@ -12150,22 +12268,40 @@ hr {
   .d-xxl-inline-flex {
     display: inline-flex !important;
   }
-  .flex-xxl-row {
-    flex-direction: row !important;
+  .flex-xxl-auto {
+    flex: auto !important;
   }
-  .flex-xxl-row-reverse {
-    flex-direction: row-reverse !important;
-  }
-  .flex-xxl-column {
-    flex-direction: column !important;
-  }
-  .flex-xxl-column-reverse {
-    flex-direction: column-reverse !important;
+  .flex-xxl-none {
+    flex: none !important;
   }
   .flex-xxl-initial {
-    flex-direction: initial !important;
+    flex: initial !important;
   }
   .flex-xxl-inherit {
+    flex: inherit !important;
+  }
+  .flex-xxl-1 {
+    flex: 1 !important;
+  }
+  .flex-xxl-0 {
+    flex: 0 !important;
+  }
+  .flex-direction-xxl-row {
+    flex-direction: row !important;
+  }
+  .flex-direction-xxl-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-direction-xxl-column {
+    flex-direction: column !important;
+  }
+  .flex-direction-xxl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .flex-direction-xxl-initial {
+    flex-direction: initial !important;
+  }
+  .flex-direction-xxl-inherit {
     flex-direction: inherit !important;
   }
   .justify-content-xxl-flex-start {

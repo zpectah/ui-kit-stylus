@@ -1,5 +1,11 @@
 flex-responsive-scope(key)
   if (utilities-enabled && utilities-flex-enabled)
+    // Flex
+    if utilities-flex-flex-responsive
+      for prop in (utilities-flex-flex-values)
+        .{prefix-global}{utilities-flex-flex-class}-{key}-{prop}
+          flex-flex-scope(prop)
+
     // Flex: Direction
     if utilities-flex-direction-responsive
       for prop in (utilities-flex-direction-values)

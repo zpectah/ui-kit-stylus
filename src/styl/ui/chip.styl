@@ -2,6 +2,7 @@ if (ui-enabled && ui-chip-enabled)
   .{prefix-global}{ui-chip-class}
     chip-size-variant(ui-chip-size-default-height, ui-chip-size-default-padding, ui-chip-size-default-font-size, ui-chip-size-default-line-height)
     chip-base()
+    text-truncate()
 
     if ui-chip-size-enabled
       &.{ui-chip-size-small-prefix}
@@ -12,7 +13,7 @@ if (ui-enabled && ui-chip-enabled)
 
     if ui-chip-palette-enabled
       for key, value in palette
-        if key != 'default'
+        if key != 'default' // Ignored 'default' color
           &.{key}
             &:hover
               text-decoration: none

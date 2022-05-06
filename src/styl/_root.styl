@@ -1,22 +1,23 @@
-:root
+if (import-root)
+  :root
 
-  // Base
-  {root-prefix}{prefix-variable}-spacer: spacer
-  {root-prefix}{prefix-variable}-font-family: base-font-family
-  {root-prefix}{prefix-variable}-font-size: base-font-size
-  {root-prefix}{prefix-variable}-line-height: base-font-line-height
-  {root-prefix}{prefix-variable}-color-link: base-link
+    // Base
+    {root-prefix}{prefix-variable}-spacer: spacer
+    {root-prefix}{prefix-variable}-font-family: base-font-family
+    {root-prefix}{prefix-variable}-font-size: base-font-size
+    {root-prefix}{prefix-variable}-line-height: base-font-line-height
+    {root-prefix}{prefix-variable}-color-link: base-link
 
-  // Breakpoints
-  for key, value in (breakpoints)
-    if key != 'xs'
-      {root-prefix}{prefix-variable}-breakpoint-{key}: value
+    // Breakpoints
+    for key, value in (breakpoints)
+      if key != 'xs'
+        {root-prefix}{prefix-variable}-breakpoint-{key}: value
 
-  // Containers
-  for key, value in (containers)
-    if key != 'xs'
-      {root-prefix}{prefix-variable}-container-{key}: value
+    // Containers
+    for key, value in (containers)
+      if key != 'xs'
+        {root-prefix}{prefix-variable}-container-{key}: value
 
-  // Palette
-  for key, value in palette
-    {root-prefix}{prefix-variable}-color-{key}: value
+    // Palette
+    for key, value in palette
+      {root-prefix}{prefix-variable}-color-{key}: value
