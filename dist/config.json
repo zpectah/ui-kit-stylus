@@ -76,7 +76,8 @@
       "class": "bg",
       "values": "none inherit",
       "list_min": 1,
-      "list_max": 9
+      "list_max": 9,
+      "value_counter": 10
     },
     "color": {
       "enabled": true,
@@ -84,7 +85,8 @@
       "class": "color",
       "values": "inherit",
       "list_min": 1,
-      "list_max": 9
+      "list_max": 9,
+      "value_counter": 10
     },
     "display": {
       "enabled": true,
@@ -288,7 +290,8 @@
       "class": "opacity",
       "list_min": 0,
       "list_max": 100,
-      "list_modulo": 5
+      "list_modulo": 5,
+      "value_counter": 100
     },
     "text": {
       "enabled": true,

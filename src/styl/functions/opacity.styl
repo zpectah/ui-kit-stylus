@@ -1,6 +1,6 @@
-getOpacityValue(value, opacity = 10)
-  if opacity < 10
-    val = rgba(value, opacity / 10)
+getOpacityValue(value, opacity = 10, counter = 10)
+  if opacity < counter // else return back to 10
+    val = rgba(value, opacity / counter)
   else
     val = value
 
