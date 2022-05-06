@@ -123,17 +123,11 @@ a:hover {
 .vertical-align-text-bottom {
   vertical-align: text-bottom !important;
 }
-.vertical-align-initial {
-  vertical-align: initial !important;
-}
 .vertical-align-inherit {
   vertical-align: inherit !important;
 }
 .bg-none {
   background: none !important;
-}
-.bg-initial {
-  background: initial !important;
 }
 .bg-inherit {
   background: inherit !important;
@@ -407,9 +401,6 @@ a:hover {
 }
 .bg-dark-9 {
   background: rgba(41,40,45,0.9) !important;
-}
-.color-initial {
-  color: initial !important;
 }
 .color-inherit {
   color: inherit !important;
@@ -723,9 +714,6 @@ a:hover {
 .flex-none {
   flex: none !important;
 }
-.flex-initial {
-  flex: initial !important;
-}
 .flex-inherit {
   flex: inherit !important;
 }
@@ -746,9 +734,6 @@ a:hover {
 }
 .flex-direction-column-reverse {
   flex-direction: column-reverse !important;
-}
-.flex-direction-initial {
-  flex-direction: initial !important;
 }
 .flex-direction-inherit {
   flex-direction: inherit !important;
@@ -771,9 +756,6 @@ a:hover {
 .justify-content-space-evenly {
   justify-content: space-evenly !important;
 }
-.justify-content-initial {
-  justify-content: initial !important;
-}
 .justify-content-inherit {
   justify-content: inherit !important;
 }
@@ -785,9 +767,6 @@ a:hover {
 }
 .justify-items-center {
   justify-items: center !important;
-}
-.justify-items-initial {
-  justify-items: initial !important;
 }
 .justify-items-inherit {
   justify-items: inherit !important;
@@ -825,9 +804,6 @@ a:hover {
 .justify-self-baseline {
   justify-self: baseline !important;
 }
-.justify-self-initial {
-  justify-self: initial !important;
-}
 .justify-self-inherit {
   justify-self: inherit !important;
 }
@@ -855,9 +831,6 @@ a:hover {
 .align-content-space-around {
   align-content: space-around !important;
 }
-.align-content-initial {
-  align-content: initial !important;
-}
 .align-content-inherit {
   align-content: inherit !important;
 }
@@ -875,9 +848,6 @@ a:hover {
 }
 .align-items-baseline {
   align-items: baseline !important;
-}
-.align-items-initial {
-  align-items: initial !important;
 }
 .align-items-inherit {
   align-items: inherit !important;
@@ -900,23 +870,14 @@ a:hover {
 .align-self-baseline {
   align-self: baseline !important;
 }
-.align-self-initial {
-  align-self: initial !important;
-}
 .align-self-inherit {
   align-self: inherit !important;
 }
 .flex-fill {
   flex: 1 1 auto !important;
 }
-.flex-grow-initial {
-  flex-grow: initial !important;
-}
 .flex-grow-inherit {
   flex-grow: inherit !important;
-}
-.flex-shrink-initial {
-  flex-shrink: initial !important;
 }
 .flex-shrink-inherit {
   flex-shrink: inherit !important;
@@ -965,9 +926,6 @@ a:hover {
 }
 .flex-wrap-wrap-reverse {
   flex-wrap: wrap-reverse !important;
-}
-.flex-wrap-initial {
-  flex-wrap: initial !important;
 }
 .flex-wrap-inherit {
   flex-wrap: inherit !important;
@@ -1022,9 +980,6 @@ a:hover {
 }
 .float-right {
   float: right !important;
-}
-.float-initial {
-  float: initial !important;
 }
 .float-inherit {
   float: inherit !important;
@@ -1095,17 +1050,11 @@ a:hover {
 .w-auto {
   width: auto !important;
 }
-.w-initial {
-  width: initial !important;
-}
 .w-inherit {
   width: inherit !important;
 }
 .h-auto {
   height: auto !important;
-}
-.h-initial {
-  height: initial !important;
 }
 .h-inherit {
   height: inherit !important;
@@ -1113,29 +1062,17 @@ a:hover {
 .vw-auto {
   width: auto !important;
 }
-.vw-initial {
-  width: initial !important;
-}
 .vw-inherit {
   width: inherit !important;
 }
 .vh-auto {
   height: auto !important;
 }
-.vh-initial {
-  height: initial !important;
-}
 .vh-inherit {
   height: inherit !important;
 }
-.w-min-initial {
-  min-width: initial !important;
-}
 .w-min-inherit {
   min-width: inherit !important;
-}
-.h-min-initial {
-  min-height: initial !important;
 }
 .h-min-inherit {
   min-height: inherit !important;
@@ -1143,17 +1080,11 @@ a:hover {
 .w-max-none {
   max-width: none !important;
 }
-.w-max-initial {
-  max-width: initial !important;
-}
 .w-max-inherit {
   max-width: inherit !important;
 }
 .h-max-none {
   max-height: none !important;
-}
-.h-max-initial {
-  max-height: initial !important;
 }
 .h-max-inherit {
   max-height: inherit !important;
@@ -1188,12 +1119,6 @@ a:hover {
 .vh-min-0 {
   min-height: 0 !important;
 }
-.vw-max-0 {
-  max-width: 0 !important;
-}
-.vh-max-0 {
-  max-height: 0 !important;
-}
 .w-5 {
   width: 5% !important;
 }
@@ -1223,12 +1148,6 @@ a:hover {
 }
 .vh-min-5 {
   min-height: 5vh !important;
-}
-.vw-max-5 {
-  max-width: 5vw !important;
-}
-.vh-max-5 {
-  max-height: 5vh !important;
 }
 .w-10 {
   width: 10% !important;
@@ -1260,12 +1179,6 @@ a:hover {
 .vh-min-10 {
   min-height: 10vh !important;
 }
-.vw-max-10 {
-  max-width: 10vw !important;
-}
-.vh-max-10 {
-  max-height: 10vh !important;
-}
 .w-15 {
   width: 15% !important;
 }
@@ -1295,12 +1208,6 @@ a:hover {
 }
 .vh-min-15 {
   min-height: 15vh !important;
-}
-.vw-max-15 {
-  max-width: 15vw !important;
-}
-.vh-max-15 {
-  max-height: 15vh !important;
 }
 .w-20 {
   width: 20% !important;
@@ -1332,12 +1239,6 @@ a:hover {
 .vh-min-20 {
   min-height: 20vh !important;
 }
-.vw-max-20 {
-  max-width: 20vw !important;
-}
-.vh-max-20 {
-  max-height: 20vh !important;
-}
 .w-25 {
   width: 25% !important;
 }
@@ -1367,12 +1268,6 @@ a:hover {
 }
 .vh-min-25 {
   min-height: 25vh !important;
-}
-.vw-max-25 {
-  max-width: 25vw !important;
-}
-.vh-max-25 {
-  max-height: 25vh !important;
 }
 .w-30 {
   width: 30% !important;
@@ -1404,12 +1299,6 @@ a:hover {
 .vh-min-30 {
   min-height: 30vh !important;
 }
-.vw-max-30 {
-  max-width: 30vw !important;
-}
-.vh-max-30 {
-  max-height: 30vh !important;
-}
 .w-35 {
   width: 35% !important;
 }
@@ -1439,12 +1328,6 @@ a:hover {
 }
 .vh-min-35 {
   min-height: 35vh !important;
-}
-.vw-max-35 {
-  max-width: 35vw !important;
-}
-.vh-max-35 {
-  max-height: 35vh !important;
 }
 .w-40 {
   width: 40% !important;
@@ -1476,12 +1359,6 @@ a:hover {
 .vh-min-40 {
   min-height: 40vh !important;
 }
-.vw-max-40 {
-  max-width: 40vw !important;
-}
-.vh-max-40 {
-  max-height: 40vh !important;
-}
 .w-45 {
   width: 45% !important;
 }
@@ -1511,12 +1388,6 @@ a:hover {
 }
 .vh-min-45 {
   min-height: 45vh !important;
-}
-.vw-max-45 {
-  max-width: 45vw !important;
-}
-.vh-max-45 {
-  max-height: 45vh !important;
 }
 .w-50 {
   width: 50% !important;
@@ -1548,12 +1419,6 @@ a:hover {
 .vh-min-50 {
   min-height: 50vh !important;
 }
-.vw-max-50 {
-  max-width: 50vw !important;
-}
-.vh-max-50 {
-  max-height: 50vh !important;
-}
 .w-55 {
   width: 55% !important;
 }
@@ -1583,12 +1448,6 @@ a:hover {
 }
 .vh-min-55 {
   min-height: 55vh !important;
-}
-.vw-max-55 {
-  max-width: 55vw !important;
-}
-.vh-max-55 {
-  max-height: 55vh !important;
 }
 .w-60 {
   width: 60% !important;
@@ -1620,12 +1479,6 @@ a:hover {
 .vh-min-60 {
   min-height: 60vh !important;
 }
-.vw-max-60 {
-  max-width: 60vw !important;
-}
-.vh-max-60 {
-  max-height: 60vh !important;
-}
 .w-65 {
   width: 65% !important;
 }
@@ -1655,12 +1508,6 @@ a:hover {
 }
 .vh-min-65 {
   min-height: 65vh !important;
-}
-.vw-max-65 {
-  max-width: 65vw !important;
-}
-.vh-max-65 {
-  max-height: 65vh !important;
 }
 .w-70 {
   width: 70% !important;
@@ -1692,12 +1539,6 @@ a:hover {
 .vh-min-70 {
   min-height: 70vh !important;
 }
-.vw-max-70 {
-  max-width: 70vw !important;
-}
-.vh-max-70 {
-  max-height: 70vh !important;
-}
 .w-75 {
   width: 75% !important;
 }
@@ -1727,12 +1568,6 @@ a:hover {
 }
 .vh-min-75 {
   min-height: 75vh !important;
-}
-.vw-max-75 {
-  max-width: 75vw !important;
-}
-.vh-max-75 {
-  max-height: 75vh !important;
 }
 .w-80 {
   width: 80% !important;
@@ -1764,12 +1599,6 @@ a:hover {
 .vh-min-80 {
   min-height: 80vh !important;
 }
-.vw-max-80 {
-  max-width: 80vw !important;
-}
-.vh-max-80 {
-  max-height: 80vh !important;
-}
 .w-85 {
   width: 85% !important;
 }
@@ -1799,12 +1628,6 @@ a:hover {
 }
 .vh-min-85 {
   min-height: 85vh !important;
-}
-.vw-max-85 {
-  max-width: 85vw !important;
-}
-.vh-max-85 {
-  max-height: 85vh !important;
 }
 .w-90 {
   width: 90% !important;
@@ -1836,12 +1659,6 @@ a:hover {
 .vh-min-90 {
   min-height: 90vh !important;
 }
-.vw-max-90 {
-  max-width: 90vw !important;
-}
-.vh-max-90 {
-  max-height: 90vh !important;
-}
 .w-95 {
   width: 95% !important;
 }
@@ -1871,12 +1688,6 @@ a:hover {
 }
 .vh-min-95 {
   min-height: 95vh !important;
-}
-.vw-max-95 {
-  max-width: 95vw !important;
-}
-.vh-max-95 {
-  max-height: 95vh !important;
 }
 .w-100 {
   width: 100% !important;
@@ -1908,12 +1719,6 @@ a:hover {
 .vh-min-100 {
   min-height: 100vh !important;
 }
-.vw-max-100 {
-  max-width: 100vw !important;
-}
-.vh-max-100 {
-  max-height: 100vh !important;
-}
 .m-auto {
   margin: auto !important;
 }
@@ -1937,29 +1742,6 @@ a:hover {
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
-.m-initial {
-  margin: initial !important;
-}
-.mt-initial {
-  margin-top: initial !important;
-}
-.mr-initial {
-  margin-right: initial !important;
-}
-.mb-initial {
-  margin-bottom: initial !important;
-}
-.ml-initial {
-  margin-left: initial !important;
-}
-.mx-initial {
-  margin-left: initial !important;
-  margin-right: initial !important;
-}
-.my-initial {
-  margin-top: initial !important;
-  margin-bottom: initial !important;
-}
 .m-inherit {
   margin: inherit !important;
 }
@@ -1982,29 +1764,6 @@ a:hover {
 .my-inherit {
   margin-top: inherit !important;
   margin-bottom: inherit !important;
-}
-.p-initial {
-  padding: initial !important;
-}
-.pt-initial {
-  padding-top: initial !important;
-}
-.pr-initial {
-  padding-right: initial !important;
-}
-.pb-initial {
-  padding-bottom: initial !important;
-}
-.pl-initial {
-  padding-left: initial !important;
-}
-.px-initial {
-  padding-left: initial !important;
-  padding-right: initial !important;
-}
-.py-initial {
-  padding-top: initial !important;
-  padding-bottom: initial !important;
 }
 .p-inherit {
   padding: inherit !important;
@@ -2432,9 +2191,6 @@ a:hover {
 .text-align-justify {
   text-align: justify !important;
 }
-.text-align-initial {
-  text-align: initial !important;
-}
 .text-align-inherit {
   text-align: inherit !important;
 }
@@ -2449,9 +2205,6 @@ a:hover {
 }
 .text-decoration-none {
   text-decoration: none !important;
-}
-.text-decoration-initial {
-  text-decoration: initial !important;
 }
 .text-decoration-inherit {
   text-decoration: inherit !important;
@@ -2468,9 +2221,6 @@ a:hover {
 .text-justify-none {
   text-justify: none !important;
 }
-.text-justify-initial {
-  text-justify: initial !important;
-}
 .text-justify-inherit {
   text-justify: inherit !important;
 }
@@ -2479,9 +2229,6 @@ a:hover {
 }
 .text-overflow-ellipsis {
   text-overflow: ellipsis !important;
-}
-.text-overflow-initial {
-  text-overflow: initial !important;
 }
 .text-overflow-inherit {
   text-overflow: inherit !important;
@@ -2497,9 +2244,6 @@ a:hover {
 }
 .text-transform-lowercase {
   text-transform: lowercase !important;
-}
-.text-transform-initial {
-  text-transform: initial !important;
 }
 .text-transform-inherit {
   text-transform: inherit !important;
@@ -2519,9 +2263,6 @@ a:hover {
 .white-space-pre-wrap {
   white-space: pre-wrap !important;
 }
-.white-space-initial {
-  white-space: initial !important;
-}
 .white-space-inherit {
   white-space: inherit !important;
 }
@@ -2537,9 +2278,6 @@ a:hover {
 .word-break-break-word {
   word-break: break-word !important;
 }
-.word-break-initial {
-  word-break: initial !important;
-}
 .word-break-inherit {
   word-break: inherit !important;
 }
@@ -2548,9 +2286,6 @@ a:hover {
 }
 .word-wrap-break-word {
   word-wrap: break-word !important;
-}
-.word-wrap-initial {
-  word-wrap: initial !important;
 }
 .word-wrap-inherit {
   word-wrap: inherit !important;
@@ -2563,9 +2298,6 @@ a:hover {
 }
 .visibility-collapse {
   visibility: collapse !important;
-}
-.visibility-initial {
-  visibility: initial !important;
 }
 .visibility-inherit {
   visibility: inherit !important;
@@ -3651,9 +3383,6 @@ hr {
   .flex-xs-none {
     flex: none !important;
   }
-  .flex-xs-initial {
-    flex: initial !important;
-  }
   .flex-xs-inherit {
     flex: inherit !important;
   }
@@ -3674,9 +3403,6 @@ hr {
   }
   .flex-direction-xs-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-xs-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-xs-inherit {
     flex-direction: inherit !important;
@@ -3699,9 +3425,6 @@ hr {
   .justify-content-xs-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-xs-initial {
-    justify-content: initial !important;
-  }
   .justify-content-xs-inherit {
     justify-content: inherit !important;
   }
@@ -3713,9 +3436,6 @@ hr {
   }
   .justify-items-xs-center {
     justify-items: center !important;
-  }
-  .justify-items-xs-initial {
-    justify-items: initial !important;
   }
   .justify-items-xs-inherit {
     justify-items: inherit !important;
@@ -3753,9 +3473,6 @@ hr {
   .justify-self-xs-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-xs-initial {
-    justify-self: initial !important;
-  }
   .justify-self-xs-inherit {
     justify-self: inherit !important;
   }
@@ -3783,9 +3500,6 @@ hr {
   .align-content-xs-space-around {
     align-content: space-around !important;
   }
-  .align-content-xs-initial {
-    align-content: initial !important;
-  }
   .align-content-xs-inherit {
     align-content: inherit !important;
   }
@@ -3803,9 +3517,6 @@ hr {
   }
   .align-items-xs-baseline {
     align-items: baseline !important;
-  }
-  .align-items-xs-initial {
-    align-items: initial !important;
   }
   .align-items-xs-inherit {
     align-items: inherit !important;
@@ -3828,17 +3539,11 @@ hr {
   .align-self-xs-baseline {
     align-self: baseline !important;
   }
-  .align-self-xs-initial {
-    align-self: initial !important;
-  }
   .align-self-xs-inherit {
     align-self: inherit !important;
   }
   .flex-fill-xs {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-xs-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-xs-inherit {
     flex-grow: inherit !important;
@@ -3860,9 +3565,6 @@ hr {
   }
   .flex-grow-xs-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-xs-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-xs-inherit {
     flex-shrink: inherit !important;
@@ -3893,9 +3595,6 @@ hr {
   }
   .flex-wrap-xs-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-xs-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-xs-inherit {
     flex-wrap: inherit !important;
@@ -3951,9 +3650,6 @@ hr {
   .float-xs-right {
     float: right !important;
   }
-  .float-xs-initial {
-    float: initial !important;
-  }
   .float-xs-inherit {
     float: inherit !important;
   }
@@ -3979,29 +3675,6 @@ hr {
   .my-xs-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-xs-initial {
-    margin: initial !important;
-  }
-  .mt-xs-initial {
-    margin-top: initial !important;
-  }
-  .mr-xs-initial {
-    margin-right: initial !important;
-  }
-  .mb-xs-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-xs-initial {
-    margin-left: initial !important;
-  }
-  .mx-xs-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-xs-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-xs-inherit {
     margin: inherit !important;
@@ -4279,29 +3952,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-xs-initial {
-    padding: initial !important;
-  }
-  .pt-xs-initial {
-    padding-top: initial !important;
-  }
-  .pr-xs-initial {
-    padding-right: initial !important;
-  }
-  .pb-xs-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-xs-initial {
-    padding-left: initial !important;
-  }
-  .px-xs-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-xs-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-xs-inherit {
     padding: inherit !important;
   }
@@ -4466,17 +4116,11 @@ hr {
   .w-xs-auto {
     width: auto !important;
   }
-  .w-xs-initial {
-    width: initial !important;
-  }
   .w-xs-inherit {
     width: inherit !important;
   }
   .h-xs-auto {
     height: auto !important;
-  }
-  .h-xs-initial {
-    height: initial !important;
   }
   .h-xs-inherit {
     height: inherit !important;
@@ -4484,29 +4128,17 @@ hr {
   .vw-xs-auto {
     width: auto !important;
   }
-  .vw-xs-initial {
-    width: initial !important;
-  }
   .vw-xs-inherit {
     width: inherit !important;
   }
   .vh-xs-auto {
     height: auto !important;
   }
-  .vh-xs-initial {
-    height: initial !important;
-  }
   .vh-xs-inherit {
     height: inherit !important;
   }
-  .w-min-xs-initial {
-    min-width: initial !important;
-  }
   .w-min-xs-inherit {
     min-width: inherit !important;
-  }
-  .h-min-xs-initial {
-    min-height: initial !important;
   }
   .h-min-xs-inherit {
     min-height: inherit !important;
@@ -4514,17 +4146,11 @@ hr {
   .w-max-xs-none {
     max-width: none !important;
   }
-  .w-max-xs-initial {
-    max-width: initial !important;
-  }
   .w-max-xs-inherit {
     max-width: inherit !important;
   }
   .h-max-xs-none {
     max-height: none !important;
-  }
-  .h-max-xs-initial {
-    max-height: initial !important;
   }
   .h-max-xs-inherit {
     max-height: inherit !important;
@@ -4559,12 +4185,6 @@ hr {
   .vh-min-xs-0 {
     min-height: 0 !important;
   }
-  .vw-max-xs-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-xs-0 {
-    max-height: 0 !important;
-  }
   .w-xs-5 {
     width: 5% !important;
   }
@@ -4594,12 +4214,6 @@ hr {
   }
   .vh-min-xs-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-xs-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-xs-5 {
-    max-height: 5vh !important;
   }
   .w-xs-10 {
     width: 10% !important;
@@ -4631,12 +4245,6 @@ hr {
   .vh-min-xs-10 {
     min-height: 10vh !important;
   }
-  .vw-max-xs-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-xs-10 {
-    max-height: 10vh !important;
-  }
   .w-xs-15 {
     width: 15% !important;
   }
@@ -4666,12 +4274,6 @@ hr {
   }
   .vh-min-xs-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-xs-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-xs-15 {
-    max-height: 15vh !important;
   }
   .w-xs-20 {
     width: 20% !important;
@@ -4703,12 +4305,6 @@ hr {
   .vh-min-xs-20 {
     min-height: 20vh !important;
   }
-  .vw-max-xs-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-xs-20 {
-    max-height: 20vh !important;
-  }
   .w-xs-25 {
     width: 25% !important;
   }
@@ -4738,12 +4334,6 @@ hr {
   }
   .vh-min-xs-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-xs-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-xs-25 {
-    max-height: 25vh !important;
   }
   .w-xs-30 {
     width: 30% !important;
@@ -4775,12 +4365,6 @@ hr {
   .vh-min-xs-30 {
     min-height: 30vh !important;
   }
-  .vw-max-xs-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-xs-30 {
-    max-height: 30vh !important;
-  }
   .w-xs-35 {
     width: 35% !important;
   }
@@ -4810,12 +4394,6 @@ hr {
   }
   .vh-min-xs-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-xs-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-xs-35 {
-    max-height: 35vh !important;
   }
   .w-xs-40 {
     width: 40% !important;
@@ -4847,12 +4425,6 @@ hr {
   .vh-min-xs-40 {
     min-height: 40vh !important;
   }
-  .vw-max-xs-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-xs-40 {
-    max-height: 40vh !important;
-  }
   .w-xs-45 {
     width: 45% !important;
   }
@@ -4882,12 +4454,6 @@ hr {
   }
   .vh-min-xs-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-xs-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-xs-45 {
-    max-height: 45vh !important;
   }
   .w-xs-50 {
     width: 50% !important;
@@ -4919,12 +4485,6 @@ hr {
   .vh-min-xs-50 {
     min-height: 50vh !important;
   }
-  .vw-max-xs-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-xs-50 {
-    max-height: 50vh !important;
-  }
   .w-xs-55 {
     width: 55% !important;
   }
@@ -4954,12 +4514,6 @@ hr {
   }
   .vh-min-xs-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-xs-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-xs-55 {
-    max-height: 55vh !important;
   }
   .w-xs-60 {
     width: 60% !important;
@@ -4991,12 +4545,6 @@ hr {
   .vh-min-xs-60 {
     min-height: 60vh !important;
   }
-  .vw-max-xs-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-xs-60 {
-    max-height: 60vh !important;
-  }
   .w-xs-65 {
     width: 65% !important;
   }
@@ -5026,12 +4574,6 @@ hr {
   }
   .vh-min-xs-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-xs-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-xs-65 {
-    max-height: 65vh !important;
   }
   .w-xs-70 {
     width: 70% !important;
@@ -5063,12 +4605,6 @@ hr {
   .vh-min-xs-70 {
     min-height: 70vh !important;
   }
-  .vw-max-xs-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-xs-70 {
-    max-height: 70vh !important;
-  }
   .w-xs-75 {
     width: 75% !important;
   }
@@ -5098,12 +4634,6 @@ hr {
   }
   .vh-min-xs-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-xs-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-xs-75 {
-    max-height: 75vh !important;
   }
   .w-xs-80 {
     width: 80% !important;
@@ -5135,12 +4665,6 @@ hr {
   .vh-min-xs-80 {
     min-height: 80vh !important;
   }
-  .vw-max-xs-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-xs-80 {
-    max-height: 80vh !important;
-  }
   .w-xs-85 {
     width: 85% !important;
   }
@@ -5170,12 +4694,6 @@ hr {
   }
   .vh-min-xs-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-xs-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-xs-85 {
-    max-height: 85vh !important;
   }
   .w-xs-90 {
     width: 90% !important;
@@ -5207,12 +4725,6 @@ hr {
   .vh-min-xs-90 {
     min-height: 90vh !important;
   }
-  .vw-max-xs-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-xs-90 {
-    max-height: 90vh !important;
-  }
   .w-xs-95 {
     width: 95% !important;
   }
@@ -5242,12 +4754,6 @@ hr {
   }
   .vh-min-xs-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-xs-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-xs-95 {
-    max-height: 95vh !important;
   }
   .w-xs-100 {
     width: 100% !important;
@@ -5279,12 +4785,6 @@ hr {
   .vh-min-xs-100 {
     min-height: 100vh !important;
   }
-  .vw-max-xs-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-xs-100 {
-    max-height: 100vh !important;
-  }
   .text-align-xs-left {
     text-align: left !important;
   }
@@ -5297,9 +4797,6 @@ hr {
   .text-align-xs-justify {
     text-align: justify !important;
   }
-  .text-align-xs-initial {
-    text-align: initial !important;
-  }
   .text-align-xs-inherit {
     text-align: inherit !important;
   }
@@ -5311,9 +4808,6 @@ hr {
   }
   .visibility-xs-collapse {
     visibility: collapse !important;
-  }
-  .visibility-xs-initial {
-    visibility: initial !important;
   }
   .visibility-xs-inherit {
     visibility: inherit !important;
@@ -5375,9 +4869,6 @@ hr {
   .flex-sm-none {
     flex: none !important;
   }
-  .flex-sm-initial {
-    flex: initial !important;
-  }
   .flex-sm-inherit {
     flex: inherit !important;
   }
@@ -5398,9 +4889,6 @@ hr {
   }
   .flex-direction-sm-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-sm-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-sm-inherit {
     flex-direction: inherit !important;
@@ -5423,9 +4911,6 @@ hr {
   .justify-content-sm-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-sm-initial {
-    justify-content: initial !important;
-  }
   .justify-content-sm-inherit {
     justify-content: inherit !important;
   }
@@ -5437,9 +4922,6 @@ hr {
   }
   .justify-items-sm-center {
     justify-items: center !important;
-  }
-  .justify-items-sm-initial {
-    justify-items: initial !important;
   }
   .justify-items-sm-inherit {
     justify-items: inherit !important;
@@ -5477,9 +4959,6 @@ hr {
   .justify-self-sm-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-sm-initial {
-    justify-self: initial !important;
-  }
   .justify-self-sm-inherit {
     justify-self: inherit !important;
   }
@@ -5507,9 +4986,6 @@ hr {
   .align-content-sm-space-around {
     align-content: space-around !important;
   }
-  .align-content-sm-initial {
-    align-content: initial !important;
-  }
   .align-content-sm-inherit {
     align-content: inherit !important;
   }
@@ -5527,9 +5003,6 @@ hr {
   }
   .align-items-sm-baseline {
     align-items: baseline !important;
-  }
-  .align-items-sm-initial {
-    align-items: initial !important;
   }
   .align-items-sm-inherit {
     align-items: inherit !important;
@@ -5552,17 +5025,11 @@ hr {
   .align-self-sm-baseline {
     align-self: baseline !important;
   }
-  .align-self-sm-initial {
-    align-self: initial !important;
-  }
   .align-self-sm-inherit {
     align-self: inherit !important;
   }
   .flex-fill-sm {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-sm-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-sm-inherit {
     flex-grow: inherit !important;
@@ -5584,9 +5051,6 @@ hr {
   }
   .flex-grow-sm-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-sm-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-sm-inherit {
     flex-shrink: inherit !important;
@@ -5617,9 +5081,6 @@ hr {
   }
   .flex-wrap-sm-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-sm-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-sm-inherit {
     flex-wrap: inherit !important;
@@ -5675,9 +5136,6 @@ hr {
   .float-sm-right {
     float: right !important;
   }
-  .float-sm-initial {
-    float: initial !important;
-  }
   .float-sm-inherit {
     float: inherit !important;
   }
@@ -5703,29 +5161,6 @@ hr {
   .my-sm-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-sm-initial {
-    margin: initial !important;
-  }
-  .mt-sm-initial {
-    margin-top: initial !important;
-  }
-  .mr-sm-initial {
-    margin-right: initial !important;
-  }
-  .mb-sm-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-sm-initial {
-    margin-left: initial !important;
-  }
-  .mx-sm-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-sm-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-sm-inherit {
     margin: inherit !important;
@@ -6003,29 +5438,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-sm-initial {
-    padding: initial !important;
-  }
-  .pt-sm-initial {
-    padding-top: initial !important;
-  }
-  .pr-sm-initial {
-    padding-right: initial !important;
-  }
-  .pb-sm-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-sm-initial {
-    padding-left: initial !important;
-  }
-  .px-sm-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-sm-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-sm-inherit {
     padding: inherit !important;
   }
@@ -6190,17 +5602,11 @@ hr {
   .w-sm-auto {
     width: auto !important;
   }
-  .w-sm-initial {
-    width: initial !important;
-  }
   .w-sm-inherit {
     width: inherit !important;
   }
   .h-sm-auto {
     height: auto !important;
-  }
-  .h-sm-initial {
-    height: initial !important;
   }
   .h-sm-inherit {
     height: inherit !important;
@@ -6208,29 +5614,17 @@ hr {
   .vw-sm-auto {
     width: auto !important;
   }
-  .vw-sm-initial {
-    width: initial !important;
-  }
   .vw-sm-inherit {
     width: inherit !important;
   }
   .vh-sm-auto {
     height: auto !important;
   }
-  .vh-sm-initial {
-    height: initial !important;
-  }
   .vh-sm-inherit {
     height: inherit !important;
   }
-  .w-min-sm-initial {
-    min-width: initial !important;
-  }
   .w-min-sm-inherit {
     min-width: inherit !important;
-  }
-  .h-min-sm-initial {
-    min-height: initial !important;
   }
   .h-min-sm-inherit {
     min-height: inherit !important;
@@ -6238,17 +5632,11 @@ hr {
   .w-max-sm-none {
     max-width: none !important;
   }
-  .w-max-sm-initial {
-    max-width: initial !important;
-  }
   .w-max-sm-inherit {
     max-width: inherit !important;
   }
   .h-max-sm-none {
     max-height: none !important;
-  }
-  .h-max-sm-initial {
-    max-height: initial !important;
   }
   .h-max-sm-inherit {
     max-height: inherit !important;
@@ -6283,12 +5671,6 @@ hr {
   .vh-min-sm-0 {
     min-height: 0 !important;
   }
-  .vw-max-sm-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-sm-0 {
-    max-height: 0 !important;
-  }
   .w-sm-5 {
     width: 5% !important;
   }
@@ -6318,12 +5700,6 @@ hr {
   }
   .vh-min-sm-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-sm-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-sm-5 {
-    max-height: 5vh !important;
   }
   .w-sm-10 {
     width: 10% !important;
@@ -6355,12 +5731,6 @@ hr {
   .vh-min-sm-10 {
     min-height: 10vh !important;
   }
-  .vw-max-sm-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-sm-10 {
-    max-height: 10vh !important;
-  }
   .w-sm-15 {
     width: 15% !important;
   }
@@ -6390,12 +5760,6 @@ hr {
   }
   .vh-min-sm-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-sm-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-sm-15 {
-    max-height: 15vh !important;
   }
   .w-sm-20 {
     width: 20% !important;
@@ -6427,12 +5791,6 @@ hr {
   .vh-min-sm-20 {
     min-height: 20vh !important;
   }
-  .vw-max-sm-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-sm-20 {
-    max-height: 20vh !important;
-  }
   .w-sm-25 {
     width: 25% !important;
   }
@@ -6462,12 +5820,6 @@ hr {
   }
   .vh-min-sm-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-sm-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-sm-25 {
-    max-height: 25vh !important;
   }
   .w-sm-30 {
     width: 30% !important;
@@ -6499,12 +5851,6 @@ hr {
   .vh-min-sm-30 {
     min-height: 30vh !important;
   }
-  .vw-max-sm-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-sm-30 {
-    max-height: 30vh !important;
-  }
   .w-sm-35 {
     width: 35% !important;
   }
@@ -6534,12 +5880,6 @@ hr {
   }
   .vh-min-sm-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-sm-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-sm-35 {
-    max-height: 35vh !important;
   }
   .w-sm-40 {
     width: 40% !important;
@@ -6571,12 +5911,6 @@ hr {
   .vh-min-sm-40 {
     min-height: 40vh !important;
   }
-  .vw-max-sm-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-sm-40 {
-    max-height: 40vh !important;
-  }
   .w-sm-45 {
     width: 45% !important;
   }
@@ -6606,12 +5940,6 @@ hr {
   }
   .vh-min-sm-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-sm-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-sm-45 {
-    max-height: 45vh !important;
   }
   .w-sm-50 {
     width: 50% !important;
@@ -6643,12 +5971,6 @@ hr {
   .vh-min-sm-50 {
     min-height: 50vh !important;
   }
-  .vw-max-sm-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-sm-50 {
-    max-height: 50vh !important;
-  }
   .w-sm-55 {
     width: 55% !important;
   }
@@ -6678,12 +6000,6 @@ hr {
   }
   .vh-min-sm-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-sm-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-sm-55 {
-    max-height: 55vh !important;
   }
   .w-sm-60 {
     width: 60% !important;
@@ -6715,12 +6031,6 @@ hr {
   .vh-min-sm-60 {
     min-height: 60vh !important;
   }
-  .vw-max-sm-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-sm-60 {
-    max-height: 60vh !important;
-  }
   .w-sm-65 {
     width: 65% !important;
   }
@@ -6750,12 +6060,6 @@ hr {
   }
   .vh-min-sm-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-sm-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-sm-65 {
-    max-height: 65vh !important;
   }
   .w-sm-70 {
     width: 70% !important;
@@ -6787,12 +6091,6 @@ hr {
   .vh-min-sm-70 {
     min-height: 70vh !important;
   }
-  .vw-max-sm-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-sm-70 {
-    max-height: 70vh !important;
-  }
   .w-sm-75 {
     width: 75% !important;
   }
@@ -6822,12 +6120,6 @@ hr {
   }
   .vh-min-sm-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-sm-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-sm-75 {
-    max-height: 75vh !important;
   }
   .w-sm-80 {
     width: 80% !important;
@@ -6859,12 +6151,6 @@ hr {
   .vh-min-sm-80 {
     min-height: 80vh !important;
   }
-  .vw-max-sm-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-sm-80 {
-    max-height: 80vh !important;
-  }
   .w-sm-85 {
     width: 85% !important;
   }
@@ -6894,12 +6180,6 @@ hr {
   }
   .vh-min-sm-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-sm-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-sm-85 {
-    max-height: 85vh !important;
   }
   .w-sm-90 {
     width: 90% !important;
@@ -6931,12 +6211,6 @@ hr {
   .vh-min-sm-90 {
     min-height: 90vh !important;
   }
-  .vw-max-sm-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-sm-90 {
-    max-height: 90vh !important;
-  }
   .w-sm-95 {
     width: 95% !important;
   }
@@ -6966,12 +6240,6 @@ hr {
   }
   .vh-min-sm-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-sm-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-sm-95 {
-    max-height: 95vh !important;
   }
   .w-sm-100 {
     width: 100% !important;
@@ -7003,12 +6271,6 @@ hr {
   .vh-min-sm-100 {
     min-height: 100vh !important;
   }
-  .vw-max-sm-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-sm-100 {
-    max-height: 100vh !important;
-  }
   .text-align-sm-left {
     text-align: left !important;
   }
@@ -7021,9 +6283,6 @@ hr {
   .text-align-sm-justify {
     text-align: justify !important;
   }
-  .text-align-sm-initial {
-    text-align: initial !important;
-  }
   .text-align-sm-inherit {
     text-align: inherit !important;
   }
@@ -7035,9 +6294,6 @@ hr {
   }
   .visibility-sm-collapse {
     visibility: collapse !important;
-  }
-  .visibility-sm-initial {
-    visibility: initial !important;
   }
   .visibility-sm-inherit {
     visibility: inherit !important;
@@ -7099,9 +6355,6 @@ hr {
   .flex-md-none {
     flex: none !important;
   }
-  .flex-md-initial {
-    flex: initial !important;
-  }
   .flex-md-inherit {
     flex: inherit !important;
   }
@@ -7122,9 +6375,6 @@ hr {
   }
   .flex-direction-md-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-md-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-md-inherit {
     flex-direction: inherit !important;
@@ -7147,9 +6397,6 @@ hr {
   .justify-content-md-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-md-initial {
-    justify-content: initial !important;
-  }
   .justify-content-md-inherit {
     justify-content: inherit !important;
   }
@@ -7161,9 +6408,6 @@ hr {
   }
   .justify-items-md-center {
     justify-items: center !important;
-  }
-  .justify-items-md-initial {
-    justify-items: initial !important;
   }
   .justify-items-md-inherit {
     justify-items: inherit !important;
@@ -7201,9 +6445,6 @@ hr {
   .justify-self-md-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-md-initial {
-    justify-self: initial !important;
-  }
   .justify-self-md-inherit {
     justify-self: inherit !important;
   }
@@ -7231,9 +6472,6 @@ hr {
   .align-content-md-space-around {
     align-content: space-around !important;
   }
-  .align-content-md-initial {
-    align-content: initial !important;
-  }
   .align-content-md-inherit {
     align-content: inherit !important;
   }
@@ -7251,9 +6489,6 @@ hr {
   }
   .align-items-md-baseline {
     align-items: baseline !important;
-  }
-  .align-items-md-initial {
-    align-items: initial !important;
   }
   .align-items-md-inherit {
     align-items: inherit !important;
@@ -7276,17 +6511,11 @@ hr {
   .align-self-md-baseline {
     align-self: baseline !important;
   }
-  .align-self-md-initial {
-    align-self: initial !important;
-  }
   .align-self-md-inherit {
     align-self: inherit !important;
   }
   .flex-fill-md {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-md-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-md-inherit {
     flex-grow: inherit !important;
@@ -7308,9 +6537,6 @@ hr {
   }
   .flex-grow-md-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-md-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-md-inherit {
     flex-shrink: inherit !important;
@@ -7341,9 +6567,6 @@ hr {
   }
   .flex-wrap-md-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-md-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-md-inherit {
     flex-wrap: inherit !important;
@@ -7399,9 +6622,6 @@ hr {
   .float-md-right {
     float: right !important;
   }
-  .float-md-initial {
-    float: initial !important;
-  }
   .float-md-inherit {
     float: inherit !important;
   }
@@ -7427,29 +6647,6 @@ hr {
   .my-md-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-md-initial {
-    margin: initial !important;
-  }
-  .mt-md-initial {
-    margin-top: initial !important;
-  }
-  .mr-md-initial {
-    margin-right: initial !important;
-  }
-  .mb-md-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-md-initial {
-    margin-left: initial !important;
-  }
-  .mx-md-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-md-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-md-inherit {
     margin: inherit !important;
@@ -7727,29 +6924,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-md-initial {
-    padding: initial !important;
-  }
-  .pt-md-initial {
-    padding-top: initial !important;
-  }
-  .pr-md-initial {
-    padding-right: initial !important;
-  }
-  .pb-md-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-md-initial {
-    padding-left: initial !important;
-  }
-  .px-md-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-md-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-md-inherit {
     padding: inherit !important;
   }
@@ -7914,17 +7088,11 @@ hr {
   .w-md-auto {
     width: auto !important;
   }
-  .w-md-initial {
-    width: initial !important;
-  }
   .w-md-inherit {
     width: inherit !important;
   }
   .h-md-auto {
     height: auto !important;
-  }
-  .h-md-initial {
-    height: initial !important;
   }
   .h-md-inherit {
     height: inherit !important;
@@ -7932,29 +7100,17 @@ hr {
   .vw-md-auto {
     width: auto !important;
   }
-  .vw-md-initial {
-    width: initial !important;
-  }
   .vw-md-inherit {
     width: inherit !important;
   }
   .vh-md-auto {
     height: auto !important;
   }
-  .vh-md-initial {
-    height: initial !important;
-  }
   .vh-md-inherit {
     height: inherit !important;
   }
-  .w-min-md-initial {
-    min-width: initial !important;
-  }
   .w-min-md-inherit {
     min-width: inherit !important;
-  }
-  .h-min-md-initial {
-    min-height: initial !important;
   }
   .h-min-md-inherit {
     min-height: inherit !important;
@@ -7962,17 +7118,11 @@ hr {
   .w-max-md-none {
     max-width: none !important;
   }
-  .w-max-md-initial {
-    max-width: initial !important;
-  }
   .w-max-md-inherit {
     max-width: inherit !important;
   }
   .h-max-md-none {
     max-height: none !important;
-  }
-  .h-max-md-initial {
-    max-height: initial !important;
   }
   .h-max-md-inherit {
     max-height: inherit !important;
@@ -8007,12 +7157,6 @@ hr {
   .vh-min-md-0 {
     min-height: 0 !important;
   }
-  .vw-max-md-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-md-0 {
-    max-height: 0 !important;
-  }
   .w-md-5 {
     width: 5% !important;
   }
@@ -8042,12 +7186,6 @@ hr {
   }
   .vh-min-md-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-md-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-md-5 {
-    max-height: 5vh !important;
   }
   .w-md-10 {
     width: 10% !important;
@@ -8079,12 +7217,6 @@ hr {
   .vh-min-md-10 {
     min-height: 10vh !important;
   }
-  .vw-max-md-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-md-10 {
-    max-height: 10vh !important;
-  }
   .w-md-15 {
     width: 15% !important;
   }
@@ -8114,12 +7246,6 @@ hr {
   }
   .vh-min-md-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-md-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-md-15 {
-    max-height: 15vh !important;
   }
   .w-md-20 {
     width: 20% !important;
@@ -8151,12 +7277,6 @@ hr {
   .vh-min-md-20 {
     min-height: 20vh !important;
   }
-  .vw-max-md-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-md-20 {
-    max-height: 20vh !important;
-  }
   .w-md-25 {
     width: 25% !important;
   }
@@ -8186,12 +7306,6 @@ hr {
   }
   .vh-min-md-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-md-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-md-25 {
-    max-height: 25vh !important;
   }
   .w-md-30 {
     width: 30% !important;
@@ -8223,12 +7337,6 @@ hr {
   .vh-min-md-30 {
     min-height: 30vh !important;
   }
-  .vw-max-md-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-md-30 {
-    max-height: 30vh !important;
-  }
   .w-md-35 {
     width: 35% !important;
   }
@@ -8258,12 +7366,6 @@ hr {
   }
   .vh-min-md-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-md-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-md-35 {
-    max-height: 35vh !important;
   }
   .w-md-40 {
     width: 40% !important;
@@ -8295,12 +7397,6 @@ hr {
   .vh-min-md-40 {
     min-height: 40vh !important;
   }
-  .vw-max-md-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-md-40 {
-    max-height: 40vh !important;
-  }
   .w-md-45 {
     width: 45% !important;
   }
@@ -8330,12 +7426,6 @@ hr {
   }
   .vh-min-md-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-md-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-md-45 {
-    max-height: 45vh !important;
   }
   .w-md-50 {
     width: 50% !important;
@@ -8367,12 +7457,6 @@ hr {
   .vh-min-md-50 {
     min-height: 50vh !important;
   }
-  .vw-max-md-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-md-50 {
-    max-height: 50vh !important;
-  }
   .w-md-55 {
     width: 55% !important;
   }
@@ -8402,12 +7486,6 @@ hr {
   }
   .vh-min-md-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-md-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-md-55 {
-    max-height: 55vh !important;
   }
   .w-md-60 {
     width: 60% !important;
@@ -8439,12 +7517,6 @@ hr {
   .vh-min-md-60 {
     min-height: 60vh !important;
   }
-  .vw-max-md-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-md-60 {
-    max-height: 60vh !important;
-  }
   .w-md-65 {
     width: 65% !important;
   }
@@ -8474,12 +7546,6 @@ hr {
   }
   .vh-min-md-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-md-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-md-65 {
-    max-height: 65vh !important;
   }
   .w-md-70 {
     width: 70% !important;
@@ -8511,12 +7577,6 @@ hr {
   .vh-min-md-70 {
     min-height: 70vh !important;
   }
-  .vw-max-md-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-md-70 {
-    max-height: 70vh !important;
-  }
   .w-md-75 {
     width: 75% !important;
   }
@@ -8546,12 +7606,6 @@ hr {
   }
   .vh-min-md-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-md-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-md-75 {
-    max-height: 75vh !important;
   }
   .w-md-80 {
     width: 80% !important;
@@ -8583,12 +7637,6 @@ hr {
   .vh-min-md-80 {
     min-height: 80vh !important;
   }
-  .vw-max-md-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-md-80 {
-    max-height: 80vh !important;
-  }
   .w-md-85 {
     width: 85% !important;
   }
@@ -8618,12 +7666,6 @@ hr {
   }
   .vh-min-md-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-md-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-md-85 {
-    max-height: 85vh !important;
   }
   .w-md-90 {
     width: 90% !important;
@@ -8655,12 +7697,6 @@ hr {
   .vh-min-md-90 {
     min-height: 90vh !important;
   }
-  .vw-max-md-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-md-90 {
-    max-height: 90vh !important;
-  }
   .w-md-95 {
     width: 95% !important;
   }
@@ -8690,12 +7726,6 @@ hr {
   }
   .vh-min-md-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-md-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-md-95 {
-    max-height: 95vh !important;
   }
   .w-md-100 {
     width: 100% !important;
@@ -8727,12 +7757,6 @@ hr {
   .vh-min-md-100 {
     min-height: 100vh !important;
   }
-  .vw-max-md-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-md-100 {
-    max-height: 100vh !important;
-  }
   .text-align-md-left {
     text-align: left !important;
   }
@@ -8745,9 +7769,6 @@ hr {
   .text-align-md-justify {
     text-align: justify !important;
   }
-  .text-align-md-initial {
-    text-align: initial !important;
-  }
   .text-align-md-inherit {
     text-align: inherit !important;
   }
@@ -8759,9 +7780,6 @@ hr {
   }
   .visibility-md-collapse {
     visibility: collapse !important;
-  }
-  .visibility-md-initial {
-    visibility: initial !important;
   }
   .visibility-md-inherit {
     visibility: inherit !important;
@@ -8823,9 +7841,6 @@ hr {
   .flex-lg-none {
     flex: none !important;
   }
-  .flex-lg-initial {
-    flex: initial !important;
-  }
   .flex-lg-inherit {
     flex: inherit !important;
   }
@@ -8846,9 +7861,6 @@ hr {
   }
   .flex-direction-lg-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-lg-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-lg-inherit {
     flex-direction: inherit !important;
@@ -8871,9 +7883,6 @@ hr {
   .justify-content-lg-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-lg-initial {
-    justify-content: initial !important;
-  }
   .justify-content-lg-inherit {
     justify-content: inherit !important;
   }
@@ -8885,9 +7894,6 @@ hr {
   }
   .justify-items-lg-center {
     justify-items: center !important;
-  }
-  .justify-items-lg-initial {
-    justify-items: initial !important;
   }
   .justify-items-lg-inherit {
     justify-items: inherit !important;
@@ -8925,9 +7931,6 @@ hr {
   .justify-self-lg-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-lg-initial {
-    justify-self: initial !important;
-  }
   .justify-self-lg-inherit {
     justify-self: inherit !important;
   }
@@ -8955,9 +7958,6 @@ hr {
   .align-content-lg-space-around {
     align-content: space-around !important;
   }
-  .align-content-lg-initial {
-    align-content: initial !important;
-  }
   .align-content-lg-inherit {
     align-content: inherit !important;
   }
@@ -8975,9 +7975,6 @@ hr {
   }
   .align-items-lg-baseline {
     align-items: baseline !important;
-  }
-  .align-items-lg-initial {
-    align-items: initial !important;
   }
   .align-items-lg-inherit {
     align-items: inherit !important;
@@ -9000,17 +7997,11 @@ hr {
   .align-self-lg-baseline {
     align-self: baseline !important;
   }
-  .align-self-lg-initial {
-    align-self: initial !important;
-  }
   .align-self-lg-inherit {
     align-self: inherit !important;
   }
   .flex-fill-lg {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-lg-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-lg-inherit {
     flex-grow: inherit !important;
@@ -9032,9 +8023,6 @@ hr {
   }
   .flex-grow-lg-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-lg-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-lg-inherit {
     flex-shrink: inherit !important;
@@ -9065,9 +8053,6 @@ hr {
   }
   .flex-wrap-lg-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-lg-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-lg-inherit {
     flex-wrap: inherit !important;
@@ -9123,9 +8108,6 @@ hr {
   .float-lg-right {
     float: right !important;
   }
-  .float-lg-initial {
-    float: initial !important;
-  }
   .float-lg-inherit {
     float: inherit !important;
   }
@@ -9151,29 +8133,6 @@ hr {
   .my-lg-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-lg-initial {
-    margin: initial !important;
-  }
-  .mt-lg-initial {
-    margin-top: initial !important;
-  }
-  .mr-lg-initial {
-    margin-right: initial !important;
-  }
-  .mb-lg-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-lg-initial {
-    margin-left: initial !important;
-  }
-  .mx-lg-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-lg-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-lg-inherit {
     margin: inherit !important;
@@ -9451,29 +8410,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-lg-initial {
-    padding: initial !important;
-  }
-  .pt-lg-initial {
-    padding-top: initial !important;
-  }
-  .pr-lg-initial {
-    padding-right: initial !important;
-  }
-  .pb-lg-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-lg-initial {
-    padding-left: initial !important;
-  }
-  .px-lg-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-lg-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-lg-inherit {
     padding: inherit !important;
   }
@@ -9638,17 +8574,11 @@ hr {
   .w-lg-auto {
     width: auto !important;
   }
-  .w-lg-initial {
-    width: initial !important;
-  }
   .w-lg-inherit {
     width: inherit !important;
   }
   .h-lg-auto {
     height: auto !important;
-  }
-  .h-lg-initial {
-    height: initial !important;
   }
   .h-lg-inherit {
     height: inherit !important;
@@ -9656,29 +8586,17 @@ hr {
   .vw-lg-auto {
     width: auto !important;
   }
-  .vw-lg-initial {
-    width: initial !important;
-  }
   .vw-lg-inherit {
     width: inherit !important;
   }
   .vh-lg-auto {
     height: auto !important;
   }
-  .vh-lg-initial {
-    height: initial !important;
-  }
   .vh-lg-inherit {
     height: inherit !important;
   }
-  .w-min-lg-initial {
-    min-width: initial !important;
-  }
   .w-min-lg-inherit {
     min-width: inherit !important;
-  }
-  .h-min-lg-initial {
-    min-height: initial !important;
   }
   .h-min-lg-inherit {
     min-height: inherit !important;
@@ -9686,17 +8604,11 @@ hr {
   .w-max-lg-none {
     max-width: none !important;
   }
-  .w-max-lg-initial {
-    max-width: initial !important;
-  }
   .w-max-lg-inherit {
     max-width: inherit !important;
   }
   .h-max-lg-none {
     max-height: none !important;
-  }
-  .h-max-lg-initial {
-    max-height: initial !important;
   }
   .h-max-lg-inherit {
     max-height: inherit !important;
@@ -9731,12 +8643,6 @@ hr {
   .vh-min-lg-0 {
     min-height: 0 !important;
   }
-  .vw-max-lg-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-lg-0 {
-    max-height: 0 !important;
-  }
   .w-lg-5 {
     width: 5% !important;
   }
@@ -9766,12 +8672,6 @@ hr {
   }
   .vh-min-lg-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-lg-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-lg-5 {
-    max-height: 5vh !important;
   }
   .w-lg-10 {
     width: 10% !important;
@@ -9803,12 +8703,6 @@ hr {
   .vh-min-lg-10 {
     min-height: 10vh !important;
   }
-  .vw-max-lg-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-lg-10 {
-    max-height: 10vh !important;
-  }
   .w-lg-15 {
     width: 15% !important;
   }
@@ -9838,12 +8732,6 @@ hr {
   }
   .vh-min-lg-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-lg-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-lg-15 {
-    max-height: 15vh !important;
   }
   .w-lg-20 {
     width: 20% !important;
@@ -9875,12 +8763,6 @@ hr {
   .vh-min-lg-20 {
     min-height: 20vh !important;
   }
-  .vw-max-lg-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-lg-20 {
-    max-height: 20vh !important;
-  }
   .w-lg-25 {
     width: 25% !important;
   }
@@ -9910,12 +8792,6 @@ hr {
   }
   .vh-min-lg-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-lg-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-lg-25 {
-    max-height: 25vh !important;
   }
   .w-lg-30 {
     width: 30% !important;
@@ -9947,12 +8823,6 @@ hr {
   .vh-min-lg-30 {
     min-height: 30vh !important;
   }
-  .vw-max-lg-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-lg-30 {
-    max-height: 30vh !important;
-  }
   .w-lg-35 {
     width: 35% !important;
   }
@@ -9982,12 +8852,6 @@ hr {
   }
   .vh-min-lg-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-lg-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-lg-35 {
-    max-height: 35vh !important;
   }
   .w-lg-40 {
     width: 40% !important;
@@ -10019,12 +8883,6 @@ hr {
   .vh-min-lg-40 {
     min-height: 40vh !important;
   }
-  .vw-max-lg-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-lg-40 {
-    max-height: 40vh !important;
-  }
   .w-lg-45 {
     width: 45% !important;
   }
@@ -10054,12 +8912,6 @@ hr {
   }
   .vh-min-lg-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-lg-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-lg-45 {
-    max-height: 45vh !important;
   }
   .w-lg-50 {
     width: 50% !important;
@@ -10091,12 +8943,6 @@ hr {
   .vh-min-lg-50 {
     min-height: 50vh !important;
   }
-  .vw-max-lg-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-lg-50 {
-    max-height: 50vh !important;
-  }
   .w-lg-55 {
     width: 55% !important;
   }
@@ -10126,12 +8972,6 @@ hr {
   }
   .vh-min-lg-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-lg-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-lg-55 {
-    max-height: 55vh !important;
   }
   .w-lg-60 {
     width: 60% !important;
@@ -10163,12 +9003,6 @@ hr {
   .vh-min-lg-60 {
     min-height: 60vh !important;
   }
-  .vw-max-lg-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-lg-60 {
-    max-height: 60vh !important;
-  }
   .w-lg-65 {
     width: 65% !important;
   }
@@ -10198,12 +9032,6 @@ hr {
   }
   .vh-min-lg-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-lg-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-lg-65 {
-    max-height: 65vh !important;
   }
   .w-lg-70 {
     width: 70% !important;
@@ -10235,12 +9063,6 @@ hr {
   .vh-min-lg-70 {
     min-height: 70vh !important;
   }
-  .vw-max-lg-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-lg-70 {
-    max-height: 70vh !important;
-  }
   .w-lg-75 {
     width: 75% !important;
   }
@@ -10270,12 +9092,6 @@ hr {
   }
   .vh-min-lg-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-lg-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-lg-75 {
-    max-height: 75vh !important;
   }
   .w-lg-80 {
     width: 80% !important;
@@ -10307,12 +9123,6 @@ hr {
   .vh-min-lg-80 {
     min-height: 80vh !important;
   }
-  .vw-max-lg-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-lg-80 {
-    max-height: 80vh !important;
-  }
   .w-lg-85 {
     width: 85% !important;
   }
@@ -10342,12 +9152,6 @@ hr {
   }
   .vh-min-lg-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-lg-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-lg-85 {
-    max-height: 85vh !important;
   }
   .w-lg-90 {
     width: 90% !important;
@@ -10379,12 +9183,6 @@ hr {
   .vh-min-lg-90 {
     min-height: 90vh !important;
   }
-  .vw-max-lg-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-lg-90 {
-    max-height: 90vh !important;
-  }
   .w-lg-95 {
     width: 95% !important;
   }
@@ -10414,12 +9212,6 @@ hr {
   }
   .vh-min-lg-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-lg-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-lg-95 {
-    max-height: 95vh !important;
   }
   .w-lg-100 {
     width: 100% !important;
@@ -10451,12 +9243,6 @@ hr {
   .vh-min-lg-100 {
     min-height: 100vh !important;
   }
-  .vw-max-lg-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-lg-100 {
-    max-height: 100vh !important;
-  }
   .text-align-lg-left {
     text-align: left !important;
   }
@@ -10469,9 +9255,6 @@ hr {
   .text-align-lg-justify {
     text-align: justify !important;
   }
-  .text-align-lg-initial {
-    text-align: initial !important;
-  }
   .text-align-lg-inherit {
     text-align: inherit !important;
   }
@@ -10483,9 +9266,6 @@ hr {
   }
   .visibility-lg-collapse {
     visibility: collapse !important;
-  }
-  .visibility-lg-initial {
-    visibility: initial !important;
   }
   .visibility-lg-inherit {
     visibility: inherit !important;
@@ -10547,9 +9327,6 @@ hr {
   .flex-xl-none {
     flex: none !important;
   }
-  .flex-xl-initial {
-    flex: initial !important;
-  }
   .flex-xl-inherit {
     flex: inherit !important;
   }
@@ -10570,9 +9347,6 @@ hr {
   }
   .flex-direction-xl-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-xl-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-xl-inherit {
     flex-direction: inherit !important;
@@ -10595,9 +9369,6 @@ hr {
   .justify-content-xl-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-xl-initial {
-    justify-content: initial !important;
-  }
   .justify-content-xl-inherit {
     justify-content: inherit !important;
   }
@@ -10609,9 +9380,6 @@ hr {
   }
   .justify-items-xl-center {
     justify-items: center !important;
-  }
-  .justify-items-xl-initial {
-    justify-items: initial !important;
   }
   .justify-items-xl-inherit {
     justify-items: inherit !important;
@@ -10649,9 +9417,6 @@ hr {
   .justify-self-xl-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-xl-initial {
-    justify-self: initial !important;
-  }
   .justify-self-xl-inherit {
     justify-self: inherit !important;
   }
@@ -10679,9 +9444,6 @@ hr {
   .align-content-xl-space-around {
     align-content: space-around !important;
   }
-  .align-content-xl-initial {
-    align-content: initial !important;
-  }
   .align-content-xl-inherit {
     align-content: inherit !important;
   }
@@ -10699,9 +9461,6 @@ hr {
   }
   .align-items-xl-baseline {
     align-items: baseline !important;
-  }
-  .align-items-xl-initial {
-    align-items: initial !important;
   }
   .align-items-xl-inherit {
     align-items: inherit !important;
@@ -10724,17 +9483,11 @@ hr {
   .align-self-xl-baseline {
     align-self: baseline !important;
   }
-  .align-self-xl-initial {
-    align-self: initial !important;
-  }
   .align-self-xl-inherit {
     align-self: inherit !important;
   }
   .flex-fill-xl {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-xl-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-xl-inherit {
     flex-grow: inherit !important;
@@ -10756,9 +9509,6 @@ hr {
   }
   .flex-grow-xl-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-xl-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-xl-inherit {
     flex-shrink: inherit !important;
@@ -10789,9 +9539,6 @@ hr {
   }
   .flex-wrap-xl-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-xl-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-xl-inherit {
     flex-wrap: inherit !important;
@@ -10847,9 +9594,6 @@ hr {
   .float-xl-right {
     float: right !important;
   }
-  .float-xl-initial {
-    float: initial !important;
-  }
   .float-xl-inherit {
     float: inherit !important;
   }
@@ -10875,29 +9619,6 @@ hr {
   .my-xl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-xl-initial {
-    margin: initial !important;
-  }
-  .mt-xl-initial {
-    margin-top: initial !important;
-  }
-  .mr-xl-initial {
-    margin-right: initial !important;
-  }
-  .mb-xl-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-xl-initial {
-    margin-left: initial !important;
-  }
-  .mx-xl-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-xl-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-xl-inherit {
     margin: inherit !important;
@@ -11175,29 +9896,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-xl-initial {
-    padding: initial !important;
-  }
-  .pt-xl-initial {
-    padding-top: initial !important;
-  }
-  .pr-xl-initial {
-    padding-right: initial !important;
-  }
-  .pb-xl-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-xl-initial {
-    padding-left: initial !important;
-  }
-  .px-xl-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-xl-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-xl-inherit {
     padding: inherit !important;
   }
@@ -11362,17 +10060,11 @@ hr {
   .w-xl-auto {
     width: auto !important;
   }
-  .w-xl-initial {
-    width: initial !important;
-  }
   .w-xl-inherit {
     width: inherit !important;
   }
   .h-xl-auto {
     height: auto !important;
-  }
-  .h-xl-initial {
-    height: initial !important;
   }
   .h-xl-inherit {
     height: inherit !important;
@@ -11380,29 +10072,17 @@ hr {
   .vw-xl-auto {
     width: auto !important;
   }
-  .vw-xl-initial {
-    width: initial !important;
-  }
   .vw-xl-inherit {
     width: inherit !important;
   }
   .vh-xl-auto {
     height: auto !important;
   }
-  .vh-xl-initial {
-    height: initial !important;
-  }
   .vh-xl-inherit {
     height: inherit !important;
   }
-  .w-min-xl-initial {
-    min-width: initial !important;
-  }
   .w-min-xl-inherit {
     min-width: inherit !important;
-  }
-  .h-min-xl-initial {
-    min-height: initial !important;
   }
   .h-min-xl-inherit {
     min-height: inherit !important;
@@ -11410,17 +10090,11 @@ hr {
   .w-max-xl-none {
     max-width: none !important;
   }
-  .w-max-xl-initial {
-    max-width: initial !important;
-  }
   .w-max-xl-inherit {
     max-width: inherit !important;
   }
   .h-max-xl-none {
     max-height: none !important;
-  }
-  .h-max-xl-initial {
-    max-height: initial !important;
   }
   .h-max-xl-inherit {
     max-height: inherit !important;
@@ -11455,12 +10129,6 @@ hr {
   .vh-min-xl-0 {
     min-height: 0 !important;
   }
-  .vw-max-xl-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-xl-0 {
-    max-height: 0 !important;
-  }
   .w-xl-5 {
     width: 5% !important;
   }
@@ -11490,12 +10158,6 @@ hr {
   }
   .vh-min-xl-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-xl-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-xl-5 {
-    max-height: 5vh !important;
   }
   .w-xl-10 {
     width: 10% !important;
@@ -11527,12 +10189,6 @@ hr {
   .vh-min-xl-10 {
     min-height: 10vh !important;
   }
-  .vw-max-xl-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-xl-10 {
-    max-height: 10vh !important;
-  }
   .w-xl-15 {
     width: 15% !important;
   }
@@ -11562,12 +10218,6 @@ hr {
   }
   .vh-min-xl-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-xl-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-xl-15 {
-    max-height: 15vh !important;
   }
   .w-xl-20 {
     width: 20% !important;
@@ -11599,12 +10249,6 @@ hr {
   .vh-min-xl-20 {
     min-height: 20vh !important;
   }
-  .vw-max-xl-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-xl-20 {
-    max-height: 20vh !important;
-  }
   .w-xl-25 {
     width: 25% !important;
   }
@@ -11634,12 +10278,6 @@ hr {
   }
   .vh-min-xl-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-xl-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-xl-25 {
-    max-height: 25vh !important;
   }
   .w-xl-30 {
     width: 30% !important;
@@ -11671,12 +10309,6 @@ hr {
   .vh-min-xl-30 {
     min-height: 30vh !important;
   }
-  .vw-max-xl-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-xl-30 {
-    max-height: 30vh !important;
-  }
   .w-xl-35 {
     width: 35% !important;
   }
@@ -11706,12 +10338,6 @@ hr {
   }
   .vh-min-xl-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-xl-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-xl-35 {
-    max-height: 35vh !important;
   }
   .w-xl-40 {
     width: 40% !important;
@@ -11743,12 +10369,6 @@ hr {
   .vh-min-xl-40 {
     min-height: 40vh !important;
   }
-  .vw-max-xl-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-xl-40 {
-    max-height: 40vh !important;
-  }
   .w-xl-45 {
     width: 45% !important;
   }
@@ -11778,12 +10398,6 @@ hr {
   }
   .vh-min-xl-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-xl-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-xl-45 {
-    max-height: 45vh !important;
   }
   .w-xl-50 {
     width: 50% !important;
@@ -11815,12 +10429,6 @@ hr {
   .vh-min-xl-50 {
     min-height: 50vh !important;
   }
-  .vw-max-xl-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-xl-50 {
-    max-height: 50vh !important;
-  }
   .w-xl-55 {
     width: 55% !important;
   }
@@ -11850,12 +10458,6 @@ hr {
   }
   .vh-min-xl-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-xl-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-xl-55 {
-    max-height: 55vh !important;
   }
   .w-xl-60 {
     width: 60% !important;
@@ -11887,12 +10489,6 @@ hr {
   .vh-min-xl-60 {
     min-height: 60vh !important;
   }
-  .vw-max-xl-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-xl-60 {
-    max-height: 60vh !important;
-  }
   .w-xl-65 {
     width: 65% !important;
   }
@@ -11922,12 +10518,6 @@ hr {
   }
   .vh-min-xl-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-xl-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-xl-65 {
-    max-height: 65vh !important;
   }
   .w-xl-70 {
     width: 70% !important;
@@ -11959,12 +10549,6 @@ hr {
   .vh-min-xl-70 {
     min-height: 70vh !important;
   }
-  .vw-max-xl-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-xl-70 {
-    max-height: 70vh !important;
-  }
   .w-xl-75 {
     width: 75% !important;
   }
@@ -11994,12 +10578,6 @@ hr {
   }
   .vh-min-xl-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-xl-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-xl-75 {
-    max-height: 75vh !important;
   }
   .w-xl-80 {
     width: 80% !important;
@@ -12031,12 +10609,6 @@ hr {
   .vh-min-xl-80 {
     min-height: 80vh !important;
   }
-  .vw-max-xl-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-xl-80 {
-    max-height: 80vh !important;
-  }
   .w-xl-85 {
     width: 85% !important;
   }
@@ -12066,12 +10638,6 @@ hr {
   }
   .vh-min-xl-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-xl-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-xl-85 {
-    max-height: 85vh !important;
   }
   .w-xl-90 {
     width: 90% !important;
@@ -12103,12 +10669,6 @@ hr {
   .vh-min-xl-90 {
     min-height: 90vh !important;
   }
-  .vw-max-xl-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-xl-90 {
-    max-height: 90vh !important;
-  }
   .w-xl-95 {
     width: 95% !important;
   }
@@ -12138,12 +10698,6 @@ hr {
   }
   .vh-min-xl-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-xl-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-xl-95 {
-    max-height: 95vh !important;
   }
   .w-xl-100 {
     width: 100% !important;
@@ -12175,12 +10729,6 @@ hr {
   .vh-min-xl-100 {
     min-height: 100vh !important;
   }
-  .vw-max-xl-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-xl-100 {
-    max-height: 100vh !important;
-  }
   .text-align-xl-left {
     text-align: left !important;
   }
@@ -12193,9 +10741,6 @@ hr {
   .text-align-xl-justify {
     text-align: justify !important;
   }
-  .text-align-xl-initial {
-    text-align: initial !important;
-  }
   .text-align-xl-inherit {
     text-align: inherit !important;
   }
@@ -12207,9 +10752,6 @@ hr {
   }
   .visibility-xl-collapse {
     visibility: collapse !important;
-  }
-  .visibility-xl-initial {
-    visibility: initial !important;
   }
   .visibility-xl-inherit {
     visibility: inherit !important;
@@ -12271,9 +10813,6 @@ hr {
   .flex-xxl-none {
     flex: none !important;
   }
-  .flex-xxl-initial {
-    flex: initial !important;
-  }
   .flex-xxl-inherit {
     flex: inherit !important;
   }
@@ -12294,9 +10833,6 @@ hr {
   }
   .flex-direction-xxl-column-reverse {
     flex-direction: column-reverse !important;
-  }
-  .flex-direction-xxl-initial {
-    flex-direction: initial !important;
   }
   .flex-direction-xxl-inherit {
     flex-direction: inherit !important;
@@ -12319,9 +10855,6 @@ hr {
   .justify-content-xxl-space-evenly {
     justify-content: space-evenly !important;
   }
-  .justify-content-xxl-initial {
-    justify-content: initial !important;
-  }
   .justify-content-xxl-inherit {
     justify-content: inherit !important;
   }
@@ -12333,9 +10866,6 @@ hr {
   }
   .justify-items-xxl-center {
     justify-items: center !important;
-  }
-  .justify-items-xxl-initial {
-    justify-items: initial !important;
   }
   .justify-items-xxl-inherit {
     justify-items: inherit !important;
@@ -12373,9 +10903,6 @@ hr {
   .justify-self-xxl-baseline {
     justify-self: baseline !important;
   }
-  .justify-self-xxl-initial {
-    justify-self: initial !important;
-  }
   .justify-self-xxl-inherit {
     justify-self: inherit !important;
   }
@@ -12403,9 +10930,6 @@ hr {
   .align-content-xxl-space-around {
     align-content: space-around !important;
   }
-  .align-content-xxl-initial {
-    align-content: initial !important;
-  }
   .align-content-xxl-inherit {
     align-content: inherit !important;
   }
@@ -12423,9 +10947,6 @@ hr {
   }
   .align-items-xxl-baseline {
     align-items: baseline !important;
-  }
-  .align-items-xxl-initial {
-    align-items: initial !important;
   }
   .align-items-xxl-inherit {
     align-items: inherit !important;
@@ -12448,17 +10969,11 @@ hr {
   .align-self-xxl-baseline {
     align-self: baseline !important;
   }
-  .align-self-xxl-initial {
-    align-self: initial !important;
-  }
   .align-self-xxl-inherit {
     align-self: inherit !important;
   }
   .flex-fill-xxl {
     flex: 1 1 auto !important;
-  }
-  .flex-grow-xxl-initial {
-    flex-grow: initial !important;
   }
   .flex-grow-xxl-inherit {
     flex-grow: inherit !important;
@@ -12480,9 +10995,6 @@ hr {
   }
   .flex-grow-xxl-5 {
     flex-grow: 5 !important;
-  }
-  .flex-shrink-xxl-initial {
-    flex-shrink: initial !important;
   }
   .flex-shrink-xxl-inherit {
     flex-shrink: inherit !important;
@@ -12513,9 +11025,6 @@ hr {
   }
   .flex-wrap-xxl-wrap-reverse {
     flex-wrap: wrap-reverse !important;
-  }
-  .flex-wrap-xxl-initial {
-    flex-wrap: initial !important;
   }
   .flex-wrap-xxl-inherit {
     flex-wrap: inherit !important;
@@ -12571,9 +11080,6 @@ hr {
   .float-xxl-right {
     float: right !important;
   }
-  .float-xxl-initial {
-    float: initial !important;
-  }
   .float-xxl-inherit {
     float: inherit !important;
   }
@@ -12599,29 +11105,6 @@ hr {
   .my-xxl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-  .m-xxl-initial {
-    margin: initial !important;
-  }
-  .mt-xxl-initial {
-    margin-top: initial !important;
-  }
-  .mr-xxl-initial {
-    margin-right: initial !important;
-  }
-  .mb-xxl-initial {
-    margin-bottom: initial !important;
-  }
-  .ml-xxl-initial {
-    margin-left: initial !important;
-  }
-  .mx-xxl-initial {
-    margin-left: initial !important;
-    margin-right: initial !important;
-  }
-  .my-xxl-initial {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
   }
   .m-xxl-inherit {
     margin: inherit !important;
@@ -12899,29 +11382,6 @@ hr {
     margin-top: -5rem !important;
     margin-bottom: -5rem !important;
   }
-  .p-xxl-initial {
-    padding: initial !important;
-  }
-  .pt-xxl-initial {
-    padding-top: initial !important;
-  }
-  .pr-xxl-initial {
-    padding-right: initial !important;
-  }
-  .pb-xxl-initial {
-    padding-bottom: initial !important;
-  }
-  .pl-xxl-initial {
-    padding-left: initial !important;
-  }
-  .px-xxl-initial {
-    padding-left: initial !important;
-    padding-right: initial !important;
-  }
-  .py-xxl-initial {
-    padding-top: initial !important;
-    padding-bottom: initial !important;
-  }
   .p-xxl-inherit {
     padding: inherit !important;
   }
@@ -13086,17 +11546,11 @@ hr {
   .w-xxl-auto {
     width: auto !important;
   }
-  .w-xxl-initial {
-    width: initial !important;
-  }
   .w-xxl-inherit {
     width: inherit !important;
   }
   .h-xxl-auto {
     height: auto !important;
-  }
-  .h-xxl-initial {
-    height: initial !important;
   }
   .h-xxl-inherit {
     height: inherit !important;
@@ -13104,29 +11558,17 @@ hr {
   .vw-xxl-auto {
     width: auto !important;
   }
-  .vw-xxl-initial {
-    width: initial !important;
-  }
   .vw-xxl-inherit {
     width: inherit !important;
   }
   .vh-xxl-auto {
     height: auto !important;
   }
-  .vh-xxl-initial {
-    height: initial !important;
-  }
   .vh-xxl-inherit {
     height: inherit !important;
   }
-  .w-min-xxl-initial {
-    min-width: initial !important;
-  }
   .w-min-xxl-inherit {
     min-width: inherit !important;
-  }
-  .h-min-xxl-initial {
-    min-height: initial !important;
   }
   .h-min-xxl-inherit {
     min-height: inherit !important;
@@ -13134,17 +11576,11 @@ hr {
   .w-max-xxl-none {
     max-width: none !important;
   }
-  .w-max-xxl-initial {
-    max-width: initial !important;
-  }
   .w-max-xxl-inherit {
     max-width: inherit !important;
   }
   .h-max-xxl-none {
     max-height: none !important;
-  }
-  .h-max-xxl-initial {
-    max-height: initial !important;
   }
   .h-max-xxl-inherit {
     max-height: inherit !important;
@@ -13179,12 +11615,6 @@ hr {
   .vh-min-xxl-0 {
     min-height: 0 !important;
   }
-  .vw-max-xxl-0 {
-    max-width: 0 !important;
-  }
-  .vh-max-xxl-0 {
-    max-height: 0 !important;
-  }
   .w-xxl-5 {
     width: 5% !important;
   }
@@ -13214,12 +11644,6 @@ hr {
   }
   .vh-min-xxl-5 {
     min-height: 5vh !important;
-  }
-  .vw-max-xxl-5 {
-    max-width: 5vw !important;
-  }
-  .vh-max-xxl-5 {
-    max-height: 5vh !important;
   }
   .w-xxl-10 {
     width: 10% !important;
@@ -13251,12 +11675,6 @@ hr {
   .vh-min-xxl-10 {
     min-height: 10vh !important;
   }
-  .vw-max-xxl-10 {
-    max-width: 10vw !important;
-  }
-  .vh-max-xxl-10 {
-    max-height: 10vh !important;
-  }
   .w-xxl-15 {
     width: 15% !important;
   }
@@ -13286,12 +11704,6 @@ hr {
   }
   .vh-min-xxl-15 {
     min-height: 15vh !important;
-  }
-  .vw-max-xxl-15 {
-    max-width: 15vw !important;
-  }
-  .vh-max-xxl-15 {
-    max-height: 15vh !important;
   }
   .w-xxl-20 {
     width: 20% !important;
@@ -13323,12 +11735,6 @@ hr {
   .vh-min-xxl-20 {
     min-height: 20vh !important;
   }
-  .vw-max-xxl-20 {
-    max-width: 20vw !important;
-  }
-  .vh-max-xxl-20 {
-    max-height: 20vh !important;
-  }
   .w-xxl-25 {
     width: 25% !important;
   }
@@ -13358,12 +11764,6 @@ hr {
   }
   .vh-min-xxl-25 {
     min-height: 25vh !important;
-  }
-  .vw-max-xxl-25 {
-    max-width: 25vw !important;
-  }
-  .vh-max-xxl-25 {
-    max-height: 25vh !important;
   }
   .w-xxl-30 {
     width: 30% !important;
@@ -13395,12 +11795,6 @@ hr {
   .vh-min-xxl-30 {
     min-height: 30vh !important;
   }
-  .vw-max-xxl-30 {
-    max-width: 30vw !important;
-  }
-  .vh-max-xxl-30 {
-    max-height: 30vh !important;
-  }
   .w-xxl-35 {
     width: 35% !important;
   }
@@ -13430,12 +11824,6 @@ hr {
   }
   .vh-min-xxl-35 {
     min-height: 35vh !important;
-  }
-  .vw-max-xxl-35 {
-    max-width: 35vw !important;
-  }
-  .vh-max-xxl-35 {
-    max-height: 35vh !important;
   }
   .w-xxl-40 {
     width: 40% !important;
@@ -13467,12 +11855,6 @@ hr {
   .vh-min-xxl-40 {
     min-height: 40vh !important;
   }
-  .vw-max-xxl-40 {
-    max-width: 40vw !important;
-  }
-  .vh-max-xxl-40 {
-    max-height: 40vh !important;
-  }
   .w-xxl-45 {
     width: 45% !important;
   }
@@ -13502,12 +11884,6 @@ hr {
   }
   .vh-min-xxl-45 {
     min-height: 45vh !important;
-  }
-  .vw-max-xxl-45 {
-    max-width: 45vw !important;
-  }
-  .vh-max-xxl-45 {
-    max-height: 45vh !important;
   }
   .w-xxl-50 {
     width: 50% !important;
@@ -13539,12 +11915,6 @@ hr {
   .vh-min-xxl-50 {
     min-height: 50vh !important;
   }
-  .vw-max-xxl-50 {
-    max-width: 50vw !important;
-  }
-  .vh-max-xxl-50 {
-    max-height: 50vh !important;
-  }
   .w-xxl-55 {
     width: 55% !important;
   }
@@ -13574,12 +11944,6 @@ hr {
   }
   .vh-min-xxl-55 {
     min-height: 55vh !important;
-  }
-  .vw-max-xxl-55 {
-    max-width: 55vw !important;
-  }
-  .vh-max-xxl-55 {
-    max-height: 55vh !important;
   }
   .w-xxl-60 {
     width: 60% !important;
@@ -13611,12 +11975,6 @@ hr {
   .vh-min-xxl-60 {
     min-height: 60vh !important;
   }
-  .vw-max-xxl-60 {
-    max-width: 60vw !important;
-  }
-  .vh-max-xxl-60 {
-    max-height: 60vh !important;
-  }
   .w-xxl-65 {
     width: 65% !important;
   }
@@ -13646,12 +12004,6 @@ hr {
   }
   .vh-min-xxl-65 {
     min-height: 65vh !important;
-  }
-  .vw-max-xxl-65 {
-    max-width: 65vw !important;
-  }
-  .vh-max-xxl-65 {
-    max-height: 65vh !important;
   }
   .w-xxl-70 {
     width: 70% !important;
@@ -13683,12 +12035,6 @@ hr {
   .vh-min-xxl-70 {
     min-height: 70vh !important;
   }
-  .vw-max-xxl-70 {
-    max-width: 70vw !important;
-  }
-  .vh-max-xxl-70 {
-    max-height: 70vh !important;
-  }
   .w-xxl-75 {
     width: 75% !important;
   }
@@ -13718,12 +12064,6 @@ hr {
   }
   .vh-min-xxl-75 {
     min-height: 75vh !important;
-  }
-  .vw-max-xxl-75 {
-    max-width: 75vw !important;
-  }
-  .vh-max-xxl-75 {
-    max-height: 75vh !important;
   }
   .w-xxl-80 {
     width: 80% !important;
@@ -13755,12 +12095,6 @@ hr {
   .vh-min-xxl-80 {
     min-height: 80vh !important;
   }
-  .vw-max-xxl-80 {
-    max-width: 80vw !important;
-  }
-  .vh-max-xxl-80 {
-    max-height: 80vh !important;
-  }
   .w-xxl-85 {
     width: 85% !important;
   }
@@ -13790,12 +12124,6 @@ hr {
   }
   .vh-min-xxl-85 {
     min-height: 85vh !important;
-  }
-  .vw-max-xxl-85 {
-    max-width: 85vw !important;
-  }
-  .vh-max-xxl-85 {
-    max-height: 85vh !important;
   }
   .w-xxl-90 {
     width: 90% !important;
@@ -13827,12 +12155,6 @@ hr {
   .vh-min-xxl-90 {
     min-height: 90vh !important;
   }
-  .vw-max-xxl-90 {
-    max-width: 90vw !important;
-  }
-  .vh-max-xxl-90 {
-    max-height: 90vh !important;
-  }
   .w-xxl-95 {
     width: 95% !important;
   }
@@ -13862,12 +12184,6 @@ hr {
   }
   .vh-min-xxl-95 {
     min-height: 95vh !important;
-  }
-  .vw-max-xxl-95 {
-    max-width: 95vw !important;
-  }
-  .vh-max-xxl-95 {
-    max-height: 95vh !important;
   }
   .w-xxl-100 {
     width: 100% !important;
@@ -13899,12 +12215,6 @@ hr {
   .vh-min-xxl-100 {
     min-height: 100vh !important;
   }
-  .vw-max-xxl-100 {
-    max-width: 100vw !important;
-  }
-  .vh-max-xxl-100 {
-    max-height: 100vh !important;
-  }
   .text-align-xxl-left {
     text-align: left !important;
   }
@@ -13917,9 +12227,6 @@ hr {
   .text-align-xxl-justify {
     text-align: justify !important;
   }
-  .text-align-xxl-initial {
-    text-align: initial !important;
-  }
   .text-align-xxl-inherit {
     text-align: inherit !important;
   }
@@ -13931,9 +12238,6 @@ hr {
   }
   .visibility-xxl-collapse {
     visibility: collapse !important;
-  }
-  .visibility-xxl-initial {
-    visibility: initial !important;
   }
   .visibility-xxl-inherit {
     visibility: inherit !important;
