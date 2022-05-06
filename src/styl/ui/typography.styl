@@ -1,0 +1,23 @@
+if (ui-enabled && ui-typography-enabled)
+
+  h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+    margin: 0 0 ui-typography-heading-offset-bottom 0
+    font-weight: ui-typography-heading-font-weight
+    line-height: ui-typography-heading-line-height
+
+  .h1,.h2,.h3,.h4,.h5,.h6
+    display: block
+
+  for num in (1..6)
+    fs = base-font-size + 3.75 + (7 - num * 0.75) * 1rem
+
+    h{num}, .h{num}
+      font-size: fs
+
+  p, .p
+    margin-top: 0
+    margin-bottom: (spacer / 2)
+
+    &.lead
+      font-size: ui-typography-lead-font-size
+

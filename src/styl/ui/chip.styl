@@ -4,6 +4,12 @@ if (ui-enabled && ui-chip-enabled)
     chip-base()
     text-truncate()
 
+    a&
+      transition: action-element-transition
+
+      &:hover
+        text-decoration: none
+
     if ui-chip-size-enabled
       &.{ui-chip-size-small-prefix}
         chip-size-variant(ui-chip-size-small-height, ui-chip-size-small-padding, ui-chip-size-small-font-size, ui-chip-size-small-line-height)
@@ -15,9 +21,6 @@ if (ui-enabled && ui-chip-enabled)
       for key, value in palette
         if key != 'default' // Ignored 'default' color
           &.{key}
-            &:hover
-              text-decoration: none
-
             chip-color-variant(
                 colors[key][0], colors[key][1], colors[key][2],
                 shade(colors[key][0], 15%), colors[key][1], shade(colors[key][2], 20%),
@@ -27,9 +30,6 @@ if (ui-enabled && ui-chip-enabled)
 
           if ui-chip-palette-outline-enabled
             &.{key}-{ui-chip-palette-outline-prefix}
-              &:hover
-                text-decoration: none
-
               chip-color-variant(
                   transparent, colors[key][0], colors[key][2],
                   alpha(colors[key][1], .95), colors[key][0], darken(colors[key][2], 7.5%),

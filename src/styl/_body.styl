@@ -19,3 +19,8 @@ if (import-body)
     &:visited:hover
       color: link_visited
 
+    &:not([href]):not([class]),
+    &:not([href]):not([class]):hover
+      color: inherit
+      text-decoration: none
+

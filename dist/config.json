@@ -384,7 +384,12 @@
     "typography": {
       "enabled": true,
       "heading": {
-        "list": "h1 h2 h3 h4 h5 h6"
+        "offset-bottom": "1rem",
+        "font-weight": 700,
+        "line-height": 1.25
+      },
+      "lead": {
+        "font-size": "125%"
       }
     },
     "button": {

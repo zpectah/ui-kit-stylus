@@ -106,6 +106,11 @@ a:visited,
 a:visited:hover {
   color: #8835ab;
 }
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
 .vertical-align-baseline {
   vertical-align: baseline !important;
 }
@@ -2854,6 +2859,12 @@ a.chip {
 a.chip:hover {
   text-decoration: underline;
 }
+a.chip {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
+a.chip:hover {
+  text-decoration: none;
+}
 .chip.sm {
   min-width: 1.25rem;
   min-height: 1.25rem;
@@ -2874,12 +2885,6 @@ a.chip:hover {
   background-color: #6868ac;
   color: #fafafa;
   border-color: #6868ac;
-}
-.chip.primary:hover {
-  text-decoration: none;
-}
-a.chip.primary {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.primary:hover {
   background-color: #585892;
@@ -2904,12 +2909,6 @@ a.chip.primary.disabled {
   color: #6868ac;
   border-color: #6868ac;
 }
-.chip.primary-outline:hover {
-  text-decoration: none;
-}
-a.chip.primary-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.primary-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #6868ac;
@@ -2932,12 +2931,6 @@ a.chip.primary-outline.disabled {
   background-color: #625d60;
   color: #fafafa;
   border-color: #625d60;
-}
-.chip.secondary:hover {
-  text-decoration: none;
-}
-a.chip.secondary {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.secondary:hover {
   background-color: #534f51;
@@ -2962,12 +2955,6 @@ a.chip.secondary.disabled {
   color: #625d60;
   border-color: #625d60;
 }
-.chip.secondary-outline:hover {
-  text-decoration: none;
-}
-a.chip.secondary-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.secondary-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #625d60;
@@ -2990,12 +2977,6 @@ a.chip.secondary-outline.disabled {
   background-color: #388e3c;
   color: #fafafa;
   border-color: #388e3c;
-}
-.chip.success:hover {
-  text-decoration: none;
-}
-a.chip.success {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.success:hover {
   background-color: #2f7833;
@@ -3020,12 +3001,6 @@ a.chip.success.disabled {
   color: #388e3c;
   border-color: #388e3c;
 }
-.chip.success-outline:hover {
-  text-decoration: none;
-}
-a.chip.success-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.success-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #388e3c;
@@ -3048,12 +3023,6 @@ a.chip.success-outline.disabled {
   background-color: #0288d1;
   color: #fafafa;
   border-color: #0288d1;
-}
-.chip.info:hover {
-  text-decoration: none;
-}
-a.chip.info {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.info:hover {
   background-color: #0173b1;
@@ -3078,12 +3047,6 @@ a.chip.info.disabled {
   color: #0288d1;
   border-color: #0288d1;
 }
-.chip.info-outline:hover {
-  text-decoration: none;
-}
-a.chip.info-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.info-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #0288d1;
@@ -3106,12 +3069,6 @@ a.chip.info-outline.disabled {
   background-color: #f57c00;
   color: #fafafa;
   border-color: #f57c00;
-}
-.chip.warning:hover {
-  text-decoration: none;
-}
-a.chip.warning {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.warning:hover {
   background-color: #d06900;
@@ -3136,12 +3093,6 @@ a.chip.warning.disabled {
   color: #f57c00;
   border-color: #f57c00;
 }
-.chip.warning-outline:hover {
-  text-decoration: none;
-}
-a.chip.warning-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.warning-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #f57c00;
@@ -3164,12 +3115,6 @@ a.chip.warning-outline.disabled {
   background-color: #d32f2f;
   color: #fafafa;
   border-color: #d32f2f;
-}
-.chip.error:hover {
-  text-decoration: none;
-}
-a.chip.error {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.error:hover {
   background-color: #b32727;
@@ -3194,12 +3139,6 @@ a.chip.error.disabled {
   color: #d32f2f;
   border-color: #d32f2f;
 }
-.chip.error-outline:hover {
-  text-decoration: none;
-}
-a.chip.error-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.error-outline:hover {
   background-color: rgba(250,250,250,0.95);
   color: #d32f2f;
@@ -3222,12 +3161,6 @@ a.chip.error-outline.disabled {
   background-color: #fafafa;
   color: #29282d;
   border-color: #fafafa;
-}
-.chip.light:hover {
-  text-decoration: none;
-}
-a.chip.light {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.light:hover {
   background-color: #d4d4d4;
@@ -3252,12 +3185,6 @@ a.chip.light.disabled {
   color: #fafafa;
   border-color: #fafafa;
 }
-.chip.light-outline:hover {
-  text-decoration: none;
-}
-a.chip.light-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.light-outline:hover {
   background-color: rgba(41,40,45,0.95);
   color: #fafafa;
@@ -3281,12 +3208,6 @@ a.chip.light-outline.disabled {
   color: #fafafa;
   border-color: #29282d;
 }
-.chip.dark:hover {
-  text-decoration: none;
-}
-a.chip.dark {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
-}
 a.chip.dark:hover {
   background-color: #222226;
   color: #fafafa;
@@ -3309,12 +3230,6 @@ a.chip.dark.disabled {
   background-color: transparent;
   color: #29282d;
   border-color: #29282d;
-}
-.chip.dark-outline:hover {
-  text-decoration: none;
-}
-a.chip.dark-outline {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.dark-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -3362,6 +3277,63 @@ hr {
 }
 .menu {
   margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  display: block;
+}
+h1,
+.h1 {
+  font-size: 26px;
+}
+h2,
+.h2 {
+  font-size: 25.25px;
+}
+h3,
+.h3 {
+  font-size: 24.5px;
+}
+h4,
+.h4 {
+  font-size: 23.75px;
+}
+h5,
+.h5 {
+  font-size: 23px;
+}
+h6,
+.h6 {
+  font-size: 22.25px;
+}
+p,
+.p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p.lead,
+.p.lead {
+  font-size: 125%;
 }
 @media print {
   .d-print-inherit {
