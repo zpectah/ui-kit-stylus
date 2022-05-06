@@ -73,16 +73,16 @@
       "property": "background",
       "class": "bg",
       "values": "none initial inherit",
-      "counter_min": 1,
-      "counter_max": 9
+      "list_min": 1,
+      "list_max": 9
     },
     "color": {
       "enabled": true,
       "property": "color",
       "class": "color",
       "values": "initial inherit",
-      "counter_min": 1,
-      "counter_max": 9
+      "list_min": 1,
+      "list_max": 9
     },
     "display": {
       "enabled": true,
@@ -152,16 +152,16 @@
         "property": "flex-grow",
         "class": "flex-grow",
         "values": "initial inherit",
-        "counter_min": 0,
-        "counter_max": 5,
+        "list_min": 0,
+        "list_max": 5,
         "responsive": true
       },
       "shrink": {
         "property": "flex-shrink",
         "class": "flex-shrink",
         "values": "initial inherit",
-        "counter_min": 0,
-        "counter_max": 5,
+        "list_min": 0,
+        "list_max": 5,
         "responsive": true
       },
       "wrap": {
@@ -173,15 +173,15 @@
       "order": {
         "property": "order",
         "class": "flex-order",
-        "counter_min": 0,
-        "counter_max": 5,
+        "list_min": 0,
+        "list_max": 5,
         "responsive": true
       },
       "gap": {
         "property": "gap",
         "class": "gap",
-        "counter_min": 0,
-        "counter_max": 5,
+        "list_min": 0,
+        "list_max": 5,
         "responsive": true
       }
     },
@@ -194,15 +194,16 @@
     },
     "spacing": {
       "enabled": true,
-      "counter_min": 0,
-      "counter_max": 5,
+      "list_min": 0,
+      "list_max": 5,
+      "list_modulo": 1,
       "responsive": true,
       "margin": {
         "property": "margin",
         "class": "m",
         "values": "auto initial inherit",
-        "counterNeg_min": 1,
-        "counterNeg_max": 5,
+        "listNeg_min": 1,
+        "listNeg_max": 5,
         "responsive": true
       },
       "padding": {
@@ -214,7 +215,9 @@
     },
     "sizing": {
       "enabled": true,
-      "values": "0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100",
+      "list_min": 0,
+      "list_max": 100,
+      "list_modulo": 5,
       "responsive": true,
       "width": {
         "property": "width",

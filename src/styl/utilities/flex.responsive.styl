@@ -67,7 +67,7 @@ flex-responsive-scope(key)
         .{prefix-global}{utilities-flex-grow-class}-{key}-{prop}
           flex-grow-scope(prop)
 
-      for prop in (utilities-flex-grow-counter_min..utilities-flex-grow-counter_max)
+      for prop in (utilities-flex-grow-list_min..utilities-flex-grow-list_max)
         .{prefix-global}{utilities-flex-grow-class}-{key}-{prop}
           flex-grow-scope(prop)
 
@@ -78,7 +78,7 @@ flex-responsive-scope(key)
         .{prefix-global}{utilities-flex-shrink-class}-{key}-{prop}
           flex-shrink-scope(prop)
 
-      for prop in (utilities-flex-shrink-counter_min..utilities-flex-shrink-counter_max)
+      for prop in (utilities-flex-shrink-list_min..utilities-flex-shrink-list_max)
         .{prefix-global}{utilities-flex-shrink-class}-{key}-{prop}
           flex-shrink-scope(prop)
 
@@ -93,18 +93,18 @@ flex-responsive-scope(key)
     // Flex: Order
     if utilities-flex-order-responsive
       .{prefix-global}{utilities-flex-order-class}-{key}-{suffix-first}
-        flex-order-scope((utilities-flex-order-counter_min - 1))
+        flex-order-scope((utilities-flex-order-list_min - 1))
 
       .{prefix-global}{utilities-flex-order-class}-{key}-{suffix-last}
-        flex-order-scope((utilities-flex-order-counter_max + 1))
+        flex-order-scope((utilities-flex-order-list_max + 1))
 
-      for prop in (utilities-flex-order-counter_min..utilities-flex-order-counter_max)
+      for prop in (utilities-flex-order-list_min..utilities-flex-order-list_max)
         .{prefix-global}{utilities-flex-order-class}-{key}-{prop}
           flex-order-scope(prop)
 
 
     // Flex: Gap
     if utilities-flex-gap-responsive
-      for prop in (utilities-flex-gap-counter_min..utilities-flex-gap-counter_max)
+      for prop in (utilities-flex-gap-list_min..utilities-flex-gap-list_max)
         .{prefix-global}{utilities-flex-gap-class}-{key}-{prop}
           flex-gap-scope(prop)

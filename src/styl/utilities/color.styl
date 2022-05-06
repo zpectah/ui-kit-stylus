@@ -7,6 +7,6 @@ if (utilities-enabled && utilities-color-enabled)
     .{prefix-global}{utilities-color-class}-{key}
       color-scope(value)
 
-    for prop in (utilities-color-counter_min..utilities-color-counter_max)
+    for prop in (utilities-color-list_min..utilities-color-list_max)
       .{prefix-global}{utilities-color-class}-{key}-{prop}
         color-scope(value, prop)

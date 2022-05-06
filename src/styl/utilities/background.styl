@@ -7,6 +7,6 @@ if (utilities-enabled && utilities-background-enabled)
     .{prefix-global}{utilities-background-class}-{prop}
       background-scope(value, num)
 
-    for num in (utilities-background-counter_min..utilities-background-counter_max)
+    for num in (utilities-background-list_min..utilities-background-list_max)
       .{prefix-global}{utilities-background-class}-{prop}-{num}
         background-scope(value, num)

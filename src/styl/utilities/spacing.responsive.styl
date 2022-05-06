@@ -24,51 +24,53 @@ spacing-responsive-scope(key)
         .{prefix-global}{utilities-spacing-margin-class}{suffix-y}-{key}-{prop}
           margin-y-scope(prop)
 
-      for prop in (utilities-spacing-counter_min..utilities-spacing-counter_max)
-        .{prefix-global}{utilities-spacing-margin-class}-{key}-{prop}
-          margin-scope(prop)
+      for prop in (utilities-spacing-list_min..utilities-spacing-list_max)
+        if prop % utilities-spacing-list_modulo == 0
+          .{prefix-global}{utilities-spacing-margin-class}-{key}-{prop}
+            margin-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-top}-{key}-{prop}
-          margin-top-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-top}-{key}-{prop}
+            margin-top-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-right}-{key}-{prop}
-          margin-right-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-right}-{key}-{prop}
+            margin-right-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-bottom}-{key}-{prop}
-          margin-bottom-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-bottom}-{key}-{prop}
+            margin-bottom-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-left}-{key}-{prop}
-          margin-left-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-left}-{key}-{prop}
+            margin-left-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-x}-{key}-{prop}
-          margin-x-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-x}-{key}-{prop}
+            margin-x-scope(prop)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-y}-{key}-{prop}
-          margin-y-scope(prop)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-y}-{key}-{prop}
+            margin-y-scope(prop)
 
 
       // Margin negative
-      for prop in (utilities-spacing-margin-counterNeg_min..utilities-spacing-margin-counterNeg_max)
-        .{prefix-global}{utilities-spacing-margin-class}-{key}-{suffix-negative}{prop}
-          margin-scope(prop, true)
+      for prop in (utilities-spacing-margin-listNeg_min..utilities-spacing-margin-listNeg_max)
+        if prop % utilities-spacing-list_modulo == 0
+          .{prefix-global}{utilities-spacing-margin-class}-{key}-{suffix-negative}{prop}
+            margin-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-top}-{key}-{suffix-negative}{prop}
-          margin-top-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-top}-{key}-{suffix-negative}{prop}
+            margin-top-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-right}-{key}-{suffix-negative}{prop}
-          margin-right-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-right}-{key}-{suffix-negative}{prop}
+            margin-right-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-bottom}-{key}-{suffix-negative}{prop}
-          margin-bottom-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-bottom}-{key}-{suffix-negative}{prop}
+            margin-bottom-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-left}-{key}-{suffix-negative}{prop}
-          margin-left-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-left}-{key}-{suffix-negative}{prop}
+            margin-left-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-x}-{key}-{suffix-negative}{prop}
-          margin-x-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-x}-{key}-{suffix-negative}{prop}
+            margin-x-scope(prop, true)
 
-        .{prefix-global}{utilities-spacing-margin-class}{suffix-y}-{key}-{suffix-negative}{prop}
-          margin-y-scope(prop, true)
+          .{prefix-global}{utilities-spacing-margin-class}{suffix-y}-{key}-{suffix-negative}{prop}
+            margin-y-scope(prop, true)
 
 
     // Padding
@@ -95,24 +97,25 @@ spacing-responsive-scope(key)
         .{prefix-global}{utilities-spacing-padding-class}{suffix-y}-{key}-{prop}
           padding-y-scope(prop)
 
-      for prop in (utilities-spacing-counter_min..utilities-spacing-counter_max)
-        .{prefix-global}{utilities-spacing-padding-class}-{key}-{prop}
-          padding-scope(prop)
+      for prop in (utilities-spacing-list_min..utilities-spacing-list_max)
+        if prop % utilities-spacing-list_modulo == 0
+          .{prefix-global}{utilities-spacing-padding-class}-{key}-{prop}
+            padding-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-top}-{key}-{prop}
-          padding-top-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-top}-{key}-{prop}
+            padding-top-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-right}-{key}-{prop}
-          padding-right-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-right}-{key}-{prop}
+            padding-right-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-bottom}-{key}-{prop}
-          padding-bottom-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-bottom}-{key}-{prop}
+            padding-bottom-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-left}-{key}-{prop}
-          padding-left-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-left}-{key}-{prop}
+            padding-left-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-x}-{key}-{prop}
-          padding-x-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-x}-{key}-{prop}
+            padding-x-scope(prop)
 
-        .{prefix-global}{utilities-spacing-padding-class}{suffix-y}-{key}-{prop}
-          padding-y-scope(prop)
+          .{prefix-global}{utilities-spacing-padding-class}{suffix-y}-{key}-{prop}
+            padding-y-scope(prop)
