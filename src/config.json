@@ -24,7 +24,8 @@
     }
   },
   "prefix": {
-    "global": ""
+    "global": "",
+    "variable": "kit"
   },
   "suffix": {
     "print": "print",
@@ -369,6 +370,18 @@
   },
   "ui": {
     "enabled": true,
+    "container": {
+      "enabled": true,
+      "class": "container",
+      "max-width": {
+        "xs": "100%",
+        "sm": "540px",
+        "md": "720px",
+        "lg": "960px",
+        "xl": "1140px",
+        "xxl": "1320px"
+      }
+    },
     "button": {
       "enabled": true,
       "class": "btn",
@@ -404,25 +417,44 @@
         }
       }
     },
+    "chip": {
+      "enabled": true,
+      "class": "chip",
+      "active-shadow": "0 0 .0125rem .05rem",
+      "palette": {
+        "enabled": true,
+        "outline": {
+          "enabled": true,
+          "prefix": "outline"
+        }
+      },
+      "size": {
+        "enabled": true,
+        "default": {
+          "height": "1.75rem",
+          "padding": "0 .5rem",
+          "font-size": ".9rem",
+          "line-height": 1.05
+        },
+        "small": {
+          "prefix": "sm",
+          "height": "1.5rem",
+          "padding": "0 .5rem",
+          "font-size": "0.8rem",
+          "line-height": 1.05
+        },
+        "large": {
+          "prefix": "lg",
+          "height": "1.9rem",
+          "padding": "0 .75rem",
+          "font-size": ".95rem",
+          "line-height": 1.05
+        }
+      }
+    },
     "card": {
       "enabled": true,
       "class": "card"
-    },
-    "chip": {
-      "enabled": true,
-      "class": "chip"
-    },
-    "container": {
-      "enabled": true,
-      "class": "container",
-      "max-width": {
-        "xs": "100%",
-        "sm": "540px",
-        "md": "720px",
-        "lg": "960px",
-        "xl": "1140px",
-        "xxl": "1320px"
-      }
     },
     "divider": {
       "enabled": true,

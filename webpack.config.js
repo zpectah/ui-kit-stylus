@@ -40,6 +40,7 @@ module.exports = [
                             options: {
                                 stylusOptions: {
                                     resolveURL: true,
+                                    hoistAtrules: true,
                                     compress: process.env.NODE_ENV !== 'development',
                                 }
                             }

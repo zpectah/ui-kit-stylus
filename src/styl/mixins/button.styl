@@ -1,6 +1,12 @@
-button-like-element(padding = 0)
-  base-element(padding)
-
+button-like-element()
+  width: auto
+  height: auto
+  margin: 0
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  outline: none
   text-decoration: none
   transition: border-color base-transition-duration ease-in-out base-transition-delay, color base-transition-duration ease-in-out base-transition-delay, background-color base-transition-duration ease-in-out base-transition-delay
   color: base-link
@@ -16,16 +22,35 @@ button-like-element(padding = 0)
     cursor: not-allowed
 
 
-button-base(minSize, padding, fontSize, lineHeight)
-  button-like-element(padding)
+button-base()
+  button-like-element()
 
+  cursor: pointer
+  border-color: transparent
+  border-width: base-border-width
+  border-style: base-border-style
+  border-radius: base-border-radius
+
+  & > span
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-truncate()
+
+  &:focus
+    box-shadow: ui-button-active-shadow alpha(base-link, .75)
+
+
+button-size-variant(minSize, padding, fontSize, lineHeight)
   min-width: minSize
   min-height: minSize
+  padding: padding
   font-size: fontSize
   line-height: lineHeight
 
 
-button-variant(
+button-color-variant(
   bg, color, border,
   hoverBg, hoverColor, hoverBorder,
   activeBg, activeColor, activeBorder,

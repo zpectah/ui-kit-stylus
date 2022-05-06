@@ -1,45 +1,31 @@
 if (ui-enabled && ui-button-enabled)
   .{prefix-global}{ui-button-class}
-    button-base(ui-button-size-default-height, ui-button-size-default-padding, ui-button-size-default-font-size, ui-button-size-default-line-height)
-
-    cursor: pointer
-    border-color: transparent
-    border-width: base-border-width
-    border-style: base-border-style
-    border-radius: base-border-radius
-
-    & > span
-      display: flex
-      align-items: center
-      justify-content: space-between
-      color: inherit
-      text-truncate()
-
-    &:focus
-      box-shadow: ui-button-active-shadow alpha(base-link, .75)
+    button-size-variant(ui-button-size-default-height, ui-button-size-default-padding, ui-button-size-default-font-size, ui-button-size-default-line-height)
+    button-base()
 
     if ui-button-size-enabled
       &.{ui-button-size-small-prefix}
-        button-base(ui-button-size-small-height, ui-button-size-small-padding, ui-button-size-small-font-size, ui-button-size-small-line-height)
+        button-size-variant(ui-button-size-small-height, ui-button-size-small-padding, ui-button-size-small-font-size, ui-button-size-small-line-height)
 
       &.{ui-button-size-large-prefix}
-        button-base(ui-button-size-large-height, ui-button-size-large-padding, ui-button-size-large-font-size, ui-button-size-large-line-height)
+        button-size-variant(ui-button-size-large-height, ui-button-size-large-padding, ui-button-size-large-font-size, ui-button-size-large-line-height)
 
     if ui-button-palette-enabled
       for key, value in palette
-        &.{key}
-          button-variant(
-            colors[key][0], colors[key][1], colors[key][2],
-            darken(colors[key][0], 7.5%), colors[key][1], darken(colors[key][2], 7.5%),
-            darken(colors[key][0], 10%), colors[key][1], darken(colors[key][2], 10%),
-            alpha(colors[key][0], .15), colors[key][1], alpha(colors[key][2], .15)
-          )
-
-        if ui-button-palette-outline-enabled
-          &.{key}-{ui-button-palette-outline-prefix}
-            button-variant(
-              transparent, colors[key][0], colors[key][2],
-              alpha(colors[key][1], .95), colors[key][0], darken(colors[key][2], 7.5%),
-              alpha(colors[key][1], .85), colors[key][0], darken(colors[key][2], 10%),
-              alpha(colors[key][1], .8), colors[key][0], alpha(colors[key][2], .15)
+        if key != 'default'
+          &.{key}
+            button-color-variant(
+              colors[key][0], colors[key][1], colors[key][2],
+              darken(colors[key][0], 7.5%), colors[key][1], darken(colors[key][2], 7.5%),
+              darken(colors[key][0], 10%), colors[key][1], darken(colors[key][2], 10%),
+              alpha(colors[key][0], .15), colors[key][1], alpha(colors[key][2], .15)
             )
+
+          if ui-button-palette-outline-enabled
+            &.{key}-{ui-button-palette-outline-prefix}
+              button-color-variant(
+                transparent, colors[key][0], colors[key][2],
+                alpha(colors[key][1], .95), colors[key][0], darken(colors[key][2], 7.5%),
+                alpha(colors[key][1], .85), colors[key][0], darken(colors[key][2], 10%),
+                alpha(colors[key][1], .8), colors[key][0], alpha(colors[key][2], .15)
+              )

@@ -1,7 +1,37 @@
 if (ui-enabled && ui-chip-enabled)
   .{prefix-global}{ui-chip-class}
-    chip-base(1.75rem, 0 .5rem, .9rem, 1.05)
+    chip-size-variant(ui-chip-size-default-height, ui-chip-size-default-padding, ui-chip-size-default-font-size, ui-chip-size-default-line-height)
+    chip-base()
 
-// + lg, sm
-// + colors + inverted with border ...
+    if ui-chip-size-enabled
+      &.{ui-chip-size-small-prefix}
+        chip-size-variant(ui-chip-size-small-height, ui-chip-size-small-padding, ui-chip-size-small-font-size, ui-chip-size-small-line-height)
 
+      &.{ui-chip-size-large-prefix}
+        chip-size-variant(ui-chip-size-large-height, ui-chip-size-large-padding, ui-chip-size-large-font-size, ui-chip-size-large-line-height)
+
+    if ui-chip-palette-enabled
+      for key, value in palette
+        if key != 'default'
+          &.{key}
+            &:hover
+              text-decoration: none
+
+            chip-color-variant(
+                colors[key][0], colors[key][1], colors[key][2],
+                darken(colors[key][0], 7.5%), colors[key][1], darken(colors[key][2], 7.5%),
+                darken(colors[key][0], 10%), colors[key][1], darken(colors[key][2], 10%),
+                alpha(colors[key][0], .15), colors[key][1], alpha(colors[key][2], .15)
+            )
+
+          if ui-chip-palette-outline-enabled
+            &.{key}-{ui-chip-palette-outline-prefix}
+              &:hover
+                text-decoration: none
+
+              chip-color-variant(
+                  transparent, colors[key][0], colors[key][2],
+                  alpha(colors[key][1], .95), colors[key][0], darken(colors[key][2], 7.5%),
+                  alpha(colors[key][1], .85), colors[key][0], darken(colors[key][2], 10%),
+                  alpha(colors[key][1], .8), colors[key][0], alpha(colors[key][2], .15)
+              )

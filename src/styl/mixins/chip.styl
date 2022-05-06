@@ -1,14 +1,59 @@
-chip-base(minSize, padding, fontSize, lineHeight)
-  base-element(padding)
-
-  min-width: minSize
-  min-height: minSize
-  font-size: fontSize
-  line-height: lineHeight
+chip-base()
+  width: auto
+  height: auto
+  margin: 0
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  outline: none
+  color: inherit
+  border-color: transparent
+  border-width: base-border-width
+  border-style: base-border-style
 
   a&
     text-decoration: none
+    color: base-link
     cursor: pointer
 
     &:hover
       text-decoration: underline
+
+
+chip-size-variant(minSize, padding, fontSize, lineHeight)
+  min-width: minSize
+  min-height: minSize
+  padding: padding
+  font-size: fontSize
+  line-height: lineHeight
+  border-radius: minSize
+
+chip-color-variant(
+  bg, color, border,
+  hoverBg, hoverColor, hoverBorder,
+  activeBg, activeColor, activeBorder,
+  disabledBg, disabledColor, disabledBorder
+)
+  background-color: bg
+  color: color
+  border-color: border
+
+  a&
+    &:hover
+      background-color: hoverBg
+      color: hoverColor
+      border-color: hoverBorder
+
+    &:active
+      background-color: activeBg
+      color: activeColor
+      border-color: activeBorder
+
+    &:focus
+      box-shadow: 0 0 .025rem .125rem alpha(darken(border, 25%), .5)
+
+    &.disabled
+      background-color: disabledBg
+      color: disabledColor
+      border-color: disabledBorder
