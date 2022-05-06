@@ -6,7 +6,9 @@
   --kit-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --kit-font-size: 16px;
   --kit-line-height: 1.5;
-  --kit-color-link: #7b1fa2;
+  --kit-link: #7b1fa2;
+  --kit-link-hovered: #6e1b91;
+  --kit-link-visited: #8835ab;
   --kit-breakpoint-sm: 576px;
   --kit-breakpoint-md: 768px;
   --kit-breakpoint-lg: 992px;
@@ -2403,9 +2405,9 @@ a:visited:hover {
   border-color: #6868ac;
 }
 .btn.primary:hover {
-  background-color: #5b5ba5;
+  background-color: #585892;
   color: #fafafa;
-  border-color: #5b5ba5;
+  border-color: #535389;
 }
 .btn.primary:active {
   background-color: #5858a0;
@@ -2451,9 +2453,9 @@ a:visited:hover {
   border-color: #625d60;
 }
 .btn.secondary:hover {
-  background-color: #5b5659;
+  background-color: #534f51;
   color: #fafafa;
-  border-color: #5b5659;
+  border-color: #4e4a4c;
 }
 .btn.secondary:active {
   background-color: #585456;
@@ -2499,9 +2501,9 @@ a:visited:hover {
   border-color: #388e3c;
 }
 .btn.success:hover {
-  background-color: #348338;
+  background-color: #2f7833;
   color: #fafafa;
-  border-color: #348338;
+  border-color: #2c7130;
 }
 .btn.success:active {
   background-color: #328036;
@@ -2547,9 +2549,9 @@ a:visited:hover {
   border-color: #0288d1;
 }
 .btn.info:hover {
-  background-color: #027ec1;
+  background-color: #0173b1;
   color: #fafafa;
-  border-color: #027ec1;
+  border-color: #016ca7;
 }
 .btn.info:active {
   background-color: #027abc;
@@ -2595,9 +2597,9 @@ a:visited:hover {
   border-color: #f57c00;
 }
 .btn.warning:hover {
-  background-color: #e37300;
+  background-color: #d06900;
   color: #fafafa;
-  border-color: #e37300;
+  border-color: #c46300;
 }
 .btn.warning:active {
   background-color: #dd7000;
@@ -2643,9 +2645,9 @@ a:visited:hover {
   border-color: #d32f2f;
 }
 .btn.error:hover {
-  background-color: #c52a2a;
+  background-color: #b32727;
   color: #fafafa;
-  border-color: #c52a2a;
+  border-color: #a82525;
 }
 .btn.error:active {
   background-color: #c02929;
@@ -2691,9 +2693,9 @@ a:visited:hover {
   border-color: #fafafa;
 }
 .btn.light:hover {
-  background-color: #e7e7e7;
+  background-color: #d4d4d4;
   color: #29282d;
-  border-color: #e7e7e7;
+  border-color: #c8c8c8;
 }
 .btn.light:active {
   background-color: #e1e1e1;
@@ -2739,9 +2741,9 @@ a:visited:hover {
   border-color: #29282d;
 }
 .btn.dark:hover {
-  background-color: #26252a;
+  background-color: #222226;
   color: #fafafa;
-  border-color: #26252a;
+  border-color: #202024;
 }
 .btn.dark:active {
   background-color: #252429;
@@ -2876,10 +2878,13 @@ a.chip:hover {
 .chip.primary:hover {
   text-decoration: none;
 }
+a.chip.primary {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.primary:hover {
-  background-color: #5b5ba5;
+  background-color: #585892;
   color: #fafafa;
-  border-color: #5b5ba5;
+  border-color: #535389;
 }
 a.chip.primary:active {
   background-color: #5858a0;
@@ -2901,6 +2906,9 @@ a.chip.primary.disabled {
 }
 .chip.primary-outline:hover {
   text-decoration: none;
+}
+a.chip.primary-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.primary-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -2928,10 +2936,13 @@ a.chip.primary-outline.disabled {
 .chip.secondary:hover {
   text-decoration: none;
 }
+a.chip.secondary {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.secondary:hover {
-  background-color: #5b5659;
+  background-color: #534f51;
   color: #fafafa;
-  border-color: #5b5659;
+  border-color: #4e4a4c;
 }
 a.chip.secondary:active {
   background-color: #585456;
@@ -2953,6 +2964,9 @@ a.chip.secondary.disabled {
 }
 .chip.secondary-outline:hover {
   text-decoration: none;
+}
+a.chip.secondary-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.secondary-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -2980,10 +2994,13 @@ a.chip.secondary-outline.disabled {
 .chip.success:hover {
   text-decoration: none;
 }
+a.chip.success {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.success:hover {
-  background-color: #348338;
+  background-color: #2f7833;
   color: #fafafa;
-  border-color: #348338;
+  border-color: #2c7130;
 }
 a.chip.success:active {
   background-color: #328036;
@@ -3005,6 +3022,9 @@ a.chip.success.disabled {
 }
 .chip.success-outline:hover {
   text-decoration: none;
+}
+a.chip.success-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.success-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -3032,10 +3052,13 @@ a.chip.success-outline.disabled {
 .chip.info:hover {
   text-decoration: none;
 }
+a.chip.info {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.info:hover {
-  background-color: #027ec1;
+  background-color: #0173b1;
   color: #fafafa;
-  border-color: #027ec1;
+  border-color: #016ca7;
 }
 a.chip.info:active {
   background-color: #027abc;
@@ -3057,6 +3080,9 @@ a.chip.info.disabled {
 }
 .chip.info-outline:hover {
   text-decoration: none;
+}
+a.chip.info-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.info-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -3084,10 +3110,13 @@ a.chip.info-outline.disabled {
 .chip.warning:hover {
   text-decoration: none;
 }
+a.chip.warning {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.warning:hover {
-  background-color: #e37300;
+  background-color: #d06900;
   color: #fafafa;
-  border-color: #e37300;
+  border-color: #c46300;
 }
 a.chip.warning:active {
   background-color: #dd7000;
@@ -3109,6 +3138,9 @@ a.chip.warning.disabled {
 }
 .chip.warning-outline:hover {
   text-decoration: none;
+}
+a.chip.warning-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.warning-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -3136,10 +3168,13 @@ a.chip.warning-outline.disabled {
 .chip.error:hover {
   text-decoration: none;
 }
+a.chip.error {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.error:hover {
-  background-color: #c52a2a;
+  background-color: #b32727;
   color: #fafafa;
-  border-color: #c52a2a;
+  border-color: #a82525;
 }
 a.chip.error:active {
   background-color: #c02929;
@@ -3161,6 +3196,9 @@ a.chip.error.disabled {
 }
 .chip.error-outline:hover {
   text-decoration: none;
+}
+a.chip.error-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.error-outline:hover {
   background-color: rgba(250,250,250,0.95);
@@ -3188,10 +3226,13 @@ a.chip.error-outline.disabled {
 .chip.light:hover {
   text-decoration: none;
 }
+a.chip.light {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.light:hover {
-  background-color: #e7e7e7;
+  background-color: #d4d4d4;
   color: #29282d;
-  border-color: #e7e7e7;
+  border-color: #c8c8c8;
 }
 a.chip.light:active {
   background-color: #e1e1e1;
@@ -3213,6 +3254,9 @@ a.chip.light.disabled {
 }
 .chip.light-outline:hover {
   text-decoration: none;
+}
+a.chip.light-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.light-outline:hover {
   background-color: rgba(41,40,45,0.95);
@@ -3240,10 +3284,13 @@ a.chip.light-outline.disabled {
 .chip.dark:hover {
   text-decoration: none;
 }
+a.chip.dark {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+}
 a.chip.dark:hover {
-  background-color: #26252a;
+  background-color: #222226;
   color: #fafafa;
-  border-color: #26252a;
+  border-color: #202024;
 }
 a.chip.dark:active {
   background-color: #252429;
@@ -3265,6 +3312,9 @@ a.chip.dark.disabled {
 }
 .chip.dark-outline:hover {
   text-decoration: none;
+}
+a.chip.dark-outline {
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
 }
 a.chip.dark-outline:hover {
   background-color: rgba(250,250,250,0.95);

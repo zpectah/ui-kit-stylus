@@ -10,7 +10,7 @@ button-like-element()
   background: transparent
   outline: none
   text-decoration: none
-  transition: border-color base-transition-duration ease-in-out base-transition-delay, color base-transition-duration ease-in-out base-transition-delay, background-color base-transition-duration ease-in-out base-transition-delay
+  transition: action-element-transition
   color: base-link
 
   &:hover
@@ -37,23 +37,23 @@ button-base()
     box-shadow: ui-button-active-shadow alpha(base-link, .75)
 
 
-button-size-variant(minSize, padding, fontSize, lineHeight)
+button-size-variant(minSize, btnPadding, fontSize, lineHeight)
   min-width: minSize
   min-height: minSize
-  padding: padding
+  padding: btnPadding
   font-size: fontSize
   line-height: lineHeight
 
 
 button-color-variant(
-  bg, color, border,
+  btnBg, btnColor, btnBorder,
   hoverBg, hoverColor, hoverBorder,
   activeBg, activeColor, activeBorder,
   disabledBg, disabledColor, disabledBorder
 )
-  background-color: bg
-  color: color
-  border-color: border
+  background-color: btnBg
+  color: btnColor
+  border-color: btnBorder
 
   &:hover
     background-color: hoverBg
@@ -66,7 +66,7 @@ button-color-variant(
     border-color: activeBorder
 
   &:focus
-    box-shadow: 0 0 .025rem .125rem alpha(darken(border, 25%), .5)
+    box-shadow: 0 0 .025rem .125rem alpha(darken(btnBorder, 25%), .5)
 
   &:disabled, &.disabled
     background-color: disabledBg

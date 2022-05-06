@@ -22,25 +22,27 @@ chip-base()
       text-decoration: underline
 
 
-chip-size-variant(minSize, padding, fontSize, lineHeight)
+chip-size-variant(minSize, chipPadding, fontSize, lineHeight)
   min-width: minSize
   min-height: minSize
-  padding: padding
+  padding: chipPadding
   font-size: fontSize
   line-height: lineHeight
   border-radius: minSize
 
 chip-color-variant(
-  bg, color, border,
+  chipBg, chipColor, chipBorder,
   hoverBg, hoverColor, hoverBorder,
   activeBg, activeColor, activeBorder,
   disabledBg, disabledColor, disabledBorder
 )
-  background-color: bg
-  color: color
-  border-color: border
+  background-color: chipBg
+  color: chipColor
+  border-color: chipBorder
 
   a&
+    transition: action-element-transition
+
     &:hover
       background-color: hoverBg
       color: hoverColor
@@ -52,7 +54,7 @@ chip-color-variant(
       border-color: activeBorder
 
     &:focus
-      box-shadow: 0 0 .025rem .125rem alpha(darken(border, 25%), .5)
+      box-shadow: 0 0 .025rem .125rem alpha(darken(chipBorder, 25%), .5)
 
     &.disabled
       background-color: disabledBg
