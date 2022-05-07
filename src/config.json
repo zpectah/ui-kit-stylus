@@ -6,7 +6,7 @@
   },
   "base": {
     "spacer": "1rem",
-    "link": "rgb(123,31,162)",
+    "link": "rgb(48,63,159)",
     "font": {
       "family": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "size": "16px",

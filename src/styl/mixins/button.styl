@@ -13,16 +13,6 @@ button-like-element()
   transition: action-element-transition
   color: base-link
 
-  &:hover
-    color: inherit
-
-  &:active
-    color: inherit
-
-  &:disabled, &.disabled
-    opacity: .75
-    cursor: not-allowed
-
 
 button-base()
   button-like-element()
@@ -35,6 +25,16 @@ button-base()
 
   &:focus
     box-shadow: ui-button-active-shadow alpha(base-link, .75)
+
+  &:hover
+    color: inherit
+
+  &:active
+    color: inherit
+
+  &:disabled, &.disabled
+    opacity: .75
+    cursor: not-allowed
 
 
 button-size-variant(minSize, btnPadding, fontSize, lineHeight)

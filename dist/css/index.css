@@ -6,9 +6,9 @@
   --kit-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --kit-font-size: 16px;
   --kit-line-height: 1.5;
-  --kit-link: #7b1fa2;
-  --kit-link-hovered: #6e1b91;
-  --kit-link-visited: #8835ab;
+  --kit-link: #303f9f;
+  --kit-link-hovered: #2b388f;
+  --kit-link-visited: #4452a8;
   --kit-breakpoint-sm: 576px;
   --kit-breakpoint-md: 768px;
   --kit-breakpoint-lg: 992px;
@@ -97,14 +97,14 @@ body {
   height: 100%;
 }
 a {
-  color: #7b1fa2;
+  color: #303f9f;
 }
 a:hover {
-  color: #6e1b91;
+  color: #2b388f;
 }
 a:visited,
 a:visited:hover {
-  color: #8835ab;
+  color: #4452a8;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -2366,7 +2366,7 @@ a:not([href]):not([class]):hover {
   outline: none;
   text-decoration: none;
   transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
-  color: #7b1fa2;
+  color: #303f9f;
   cursor: pointer;
   border-color: transparent;
   border-width: 1px;
@@ -2375,6 +2375,9 @@ a:not([href]):not([class]):hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.btn:focus {
+  box-shadow: 0 0 0.025rem 0.125rem rgba(48,63,159,0.75);
 }
 .btn:hover {
   color: inherit;
@@ -2386,9 +2389,6 @@ a:not([href]):not([class]):hover {
 .btn.disabled {
   opacity: 0.75;
   cursor: not-allowed;
-}
-.btn:focus {
-  box-shadow: 0 0 0.025rem 0.125rem rgba(123,31,162,0.75);
 }
 .btn.sm {
   min-width: 2rem;
@@ -2853,7 +2853,7 @@ a:not([href]):not([class]):hover {
 }
 a.chip {
   text-decoration: none;
-  color: #7b1fa2;
+  color: #303f9f;
   cursor: pointer;
 }
 a.chip:hover {
@@ -3575,6 +3575,50 @@ hr {
 }
 .menu {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.menu-link {
+  min-width: 2.375rem;
+  min-height: 2.375rem;
+  padding: 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.05;
+  width: auto;
+  height: auto;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: none;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+  color: #303f9f;
+}
+.menu.horizontal {
+  flex-direction: row;
+}
+.menu.vertical {
+  flex-direction: column;
+}
+.menu.vertical .menu-item {
+  width: 100%;
+  align-items: flex-start;
 }
 h1,
 h2,

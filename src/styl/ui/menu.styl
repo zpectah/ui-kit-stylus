@@ -1,4 +1,32 @@
 if (ui-enabled && ui-menu-enabled)
   .{prefix-global}{ui-menu-class}
     margin: 0
-    // TODO
+    padding: 0
+    list-style: none
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &-item
+      margin: 0
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      flex-direction: column
+
+    &-link
+      button-size-variant(ui-button-size-default-height, ui-button-size-default-padding, ui-button-size-default-font-size, ui-button-size-default-line-height)
+      button-like-element()
+
+    &.horizontal
+      flex-direction: row
+
+    &.vertical
+      flex-direction: column
+
+      & .{prefix-global}{ui-menu-class}-item
+        width: 100%
+        align-items: flex-start
+
