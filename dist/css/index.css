@@ -996,6 +996,9 @@ a:not([href]):not([class]):hover {
 .float-inherit {
   float: inherit !important;
 }
+.opacity-inherit {
+  opacity: inherit !important;
+}
 .opacity-0 {
   opacity: 0 !important;
 }

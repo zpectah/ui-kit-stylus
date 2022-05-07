@@ -16,8 +16,8 @@ module.exports = [
             new CopyWebpackPlugin({
                 patterns: [
                     {
-                        from: './src/config.json',
-                        to: path.resolve(__dirname, './dist'),
+                        from: './src/styl/config.json',
+                        to: path.resolve(__dirname, './dist/css'),
                     }
                 ],
             })

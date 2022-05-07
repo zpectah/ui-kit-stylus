@@ -291,7 +291,8 @@
       "list_min": 0,
       "list_max": 100,
       "list_modulo": 5,
-      "value_counter": 100
+      "value_counter": 100,
+      "values": "inherit"
     },
     "text": {
       "enabled": true,

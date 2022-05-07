@@ -1,4 +1,8 @@
 if (utilities-enabled && utilities-opacity-enabled)
+  for prop in (utilities-opacity-values)
+    .{prefix-global}{utilities-opacity-class}-{prop}
+      opacity-scope(prop)
+
   for prop in (utilities-opacity-list_min..utilities-opacity-list_max)
     if prop % utilities-opacity-list_modulo == 0
       .{prefix-global}{utilities-opacity-class}-{prop}
