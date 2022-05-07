@@ -2365,7 +2365,7 @@ a:not([href]):not([class]):hover {
   background: transparent;
   outline: none;
   text-decoration: none;
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
   color: #7b1fa2;
   cursor: pointer;
   border-color: transparent;
@@ -2860,7 +2860,7 @@ a.chip:hover {
   text-decoration: underline;
 }
 a.chip {
-  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, background-color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
 }
 a.chip:hover {
   text-decoration: none;
@@ -3272,8 +3272,306 @@ hr {
   border-top-width: 1px;
   border-top-style: solid;
 }
-.input {
+.form-input {
+  min-height: 2.375rem;
+  padding: 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.05;
+  width: 100%;
+  display: block;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #455a64;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  appearance: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+.form-input[type="file"] {
+  overflow: hidden;
+}
+.form-input[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-input::placeholder {
+  color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-input:hover {
+  color: #5858a0;
+  border-color: #5858a0;
+}
+.form-input:focus {
+  color: #4e4e8e;
+  background-color: transparent;
+  border-color: #4e4e8e;
+  outline: 0;
+  box-shadow: 0 0 0.025rem 0.125rem rgba(104,104,172,0.5);
+}
+.form-input:disabled,
+.form-input[readonly] {
+  color: rgba(69,90,100,0.75);
+  background-color: transparent;
+  border-color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-input[type="file"] {
+  overflow: hidden;
+}
+.form-input[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-input.sm {
+  min-height: 2rem;
+  padding: 0 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.05;
+}
+.form-input.lg {
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  line-height: 1.05;
+}
+.form-textarea {
+  min-height: 2.375rem;
+  padding: 0.85rem;
+  font-size: 1rem;
+  line-height: 1.05;
+  width: 100%;
+  display: block;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #455a64;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  appearance: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+.form-textarea[type="file"] {
+  overflow: hidden;
+}
+.form-textarea[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-textarea::placeholder {
+  color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-textarea:hover {
+  color: #5858a0;
+  border-color: #5858a0;
+}
+.form-textarea:focus {
+  color: #4e4e8e;
+  background-color: transparent;
+  border-color: #4e4e8e;
+  outline: 0;
+  box-shadow: 0 0 0.025rem 0.125rem rgba(104,104,172,0.5);
+}
+.form-textarea:disabled,
+.form-textarea[readonly] {
+  color: rgba(69,90,100,0.75);
+  background-color: transparent;
+  border-color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-textarea[type="file"] {
+  overflow: hidden;
+}
+.form-textarea[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-textarea.sm {
+  min-height: 2rem;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.05;
+}
+.form-textarea.lg {
+  min-height: 2.75rem;
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.05;
+}
+.form-select {
+  min-height: 2.375rem;
+  padding: 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.05;
+  width: 100%;
+  display: block;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #455a64;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  appearance: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20fill=%27black%27%20height=%2724%27%20viewBox=%270%200%2024%2024%27%20width=%2724%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath%20d=%27M7%2010l5%205%205-5z%27/%3E%3Cpath%20d=%27M0%200h24v24H0z%27%20fill=%27none%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: 99.5%;
+  background-position-y: 50%;
+}
+.form-select[type="file"] {
+  overflow: hidden;
+}
+.form-select[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-select::placeholder {
+  color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-select:hover {
+  color: #5858a0;
+  border-color: #5858a0;
+}
+.form-select:focus {
+  color: #4e4e8e;
+  background-color: transparent;
+  border-color: #4e4e8e;
+  outline: 0;
+  box-shadow: 0 0 0.025rem 0.125rem rgba(104,104,172,0.5);
+}
+.form-select:disabled,
+.form-select[readonly] {
+  color: rgba(69,90,100,0.75);
+  background-color: transparent;
+  border-color: rgba(69,90,100,0.5);
+  opacity: 1;
+}
+.form-select option {
+  font-size: 16px;
+}
+.form-select.sm {
+  min-height: 2rem;
+  padding: 0 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.05;
+}
+.form-select.lg {
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  line-height: 1.05;
+}
+.form-range {
+  width: 100%;
+  height: 2.375rem;
+  padding: 0;
+  background-color: transparent;
+}
+.form-range:focus {
+  outline: 0;
+}
+.form-checkbox {
+  width: 1.055555555555556rem;
+  height: 1.055555555555556rem;
   margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  background: transparent;
+  background-size: contain;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  appearance: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+.form-checkbox[type="checkbox"] {
+  border-radius: 0.25rem;
+}
+.form-checkbox[type="radio"] {
+  border-radius: 100%;
+}
+.form-checkbox:focus {
+  border-color: #4e4e8e;
+  outline: 0;
+}
+.form-checkbox:focus[type="checkbox"],
+.form-checkbox:focus[type="radio"] {
+  box-shadow: 0 0 0.025rem 0.125rem rgba(104,104,172,0.5);
+}
+.form-checkbox:checked {
+  background-color: #6868ac;
+  border-color: #4e4e8e;
+  outline: 0;
+}
+.form-checkbox:checked[type="checkbox"],
+.form-checkbox:checked[type="radio"] {
+  background-image: none;
+}
+.form-checkbox:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+.form-radio {
+  width: 1.055555555555556rem;
+  height: 1.055555555555556rem;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  background: transparent;
+  background-size: contain;
+  border-color: #455a64;
+  border-width: 1px;
+  border-style: solid;
+  appearance: none;
+  transition: border-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+.form-radio[type="checkbox"] {
+  border-radius: 0.25rem;
+}
+.form-radio[type="radio"] {
+  border-radius: 100%;
+}
+.form-radio:focus {
+  border-color: #4e4e8e;
+  outline: 0;
+}
+.form-radio:focus[type="checkbox"],
+.form-radio:focus[type="radio"] {
+  box-shadow: 0 0 0.025rem 0.125rem rgba(104,104,172,0.5);
+}
+.form-radio:checked {
+  background-color: #6868ac;
+  border-color: #4e4e8e;
+  outline: 0;
+}
+.form-radio:checked[type="checkbox"],
+.form-radio:checked[type="radio"] {
+  background-image: none;
+}
+.form-radio:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+.form-label {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.571428571428571rem;
+  font-size: 16px;
+  font-weight: 500;
 }
 .menu {
   margin: 0;

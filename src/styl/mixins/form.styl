@@ -1,0 +1,134 @@
+form-element-base()
+  width: 100%
+  display: block
+  font-family: base-font-family
+  font-weight: 400
+  color: palette-default
+  background-color: transparent
+  background-clip: padding-box
+  border-color: palette-default
+  border-width: base-border-width
+  border-style: base-border-style
+  border-radius: base-border-radius
+  appearance: none
+  transition: form-element-transition
+
+  &[type="file"]
+    overflow: hidden
+
+    &:not(:disabled):not([readonly])
+      cursor: pointer
+
+  &::placeholder
+    color: alpha(palette-default, .5)
+    opacity: 1
+
+  &:hover
+    color: darken(palette-primary, 10%)
+    border-color: darken(palette-primary, 10%)
+
+  &:focus
+    color: darken(palette-primary, 20%)
+    background-color: transparent
+    border-color: darken(palette-primary, 20%)
+    outline: 0
+    box-shadow: 0 0 .025rem .125rem alpha(palette-primary, .5)
+
+  &:disabled, &[readonly]
+    color: alpha(palette-default, .75)
+    background-color: transparent
+    border-color: alpha(palette-default, .5)
+    opacity: 1
+
+form-input-base()
+  form-element-base()
+
+  &[type="file"]
+    overflow: hidden
+
+    &:not(:disabled):not([readonly])
+      cursor: pointer
+
+
+form-select-base()
+  form-element-base()
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+  background-repeat: no-repeat
+  background-position-x: 99.5%
+  background-position-y: 50%
+
+  & option
+    font-size: base-font-size
+
+
+input-size-variant(minSize, btnPadding, fontSize, lineHeight)
+  min-height: minSize
+  padding: btnPadding
+  font-size: fontSize
+  line-height: lineHeight
+
+
+input-range-base(minHeight)
+  width: 100%
+  height: minHeight
+  padding: 0
+  background-color: transparent
+
+  &:focus
+    outline: 0
+
+
+input-check-base(minSize)
+  width: minSize
+  height: minSize
+  margin: 0
+  padding: 0
+  vertical-align: middle
+  text-align: center
+  background: transparent
+  background-size: contain
+  border-color: palette-default
+  border-width: base-border-width
+  border-style: base-border-style
+  appearance: none
+  transition: form-element-transition
+
+  &[type="checkbox"]
+    border-radius: base-border-radius
+
+  &[type="radio"]
+    border-radius: 100%
+
+  &:focus
+    border-color: darken(palette-primary, 20%)
+    outline: 0
+
+    &[type="checkbox"],
+    &[type="radio"]
+      box-shadow: 0 0 .025rem .125rem alpha(palette-primary, .5)
+
+  &:checked
+    background-color: palette-primary
+    border-color: darken(palette-primary, 20%)
+    outline: 0
+
+    &[type="checkbox"],
+    &[type="radio"]
+      background-image: none
+
+  &:disabled
+    pointer-events: none
+    filter: none
+    opacity: .5
+
+
+input-label-base()
+  margin: 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  gap: (spacer / 1.75)
+  font-size: base-font-size
+  font-weight: 500
+

@@ -1,0 +1,47 @@
+if (ui-enabled && ui-form-enabled)
+  .{prefix-global}{ui-form-class}
+
+    &-input
+      input-size-variant(ui-form-input-size-default-height, 0 ui-form-input-size-default-spacing, ui-form-input-size-default-font-size, ui-form-input-size-default-line-height)
+      form-input-base()
+
+      if ui-form-input-size-enabled
+        &.{ui-form-input-size-small-class}
+          input-size-variant(ui-form-input-size-small-height, 0 ui-form-input-size-small-spacing, ui-form-input-size-small-font-size, ui-form-input-size-small-line-height)
+
+        &.{ui-form-input-size-large-class}
+          input-size-variant(ui-form-input-size-large-height, 0 ui-form-input-size-large-spacing, ui-form-input-size-large-font-size, ui-form-input-size-large-line-height)
+
+    &-textarea
+      input-size-variant(ui-form-input-size-default-height, ui-form-input-size-default-spacing, ui-form-input-size-default-font-size, ui-form-input-size-default-line-height)
+      form-input-base()
+
+      if ui-form-input-size-enabled
+        &.{ui-form-input-size-small-class}
+          input-size-variant(ui-form-input-size-small-height, ui-form-input-size-small-spacing, ui-form-input-size-small-font-size, ui-form-input-size-small-line-height)
+
+        &.{ui-form-input-size-large-class}
+          input-size-variant(ui-form-input-size-large-height, ui-form-input-size-large-spacing, ui-form-input-size-large-font-size, ui-form-input-size-large-line-height)
+
+    &-select
+      input-size-variant(ui-form-input-size-default-height, 0 ui-form-input-size-default-spacing, ui-form-input-size-default-font-size, ui-form-input-size-default-line-height)
+      form-select-base()
+
+      if ui-form-input-size-enabled
+        &.{ui-form-input-size-small-class}
+          input-size-variant(ui-form-input-size-small-height, 0 ui-form-input-size-small-spacing, ui-form-input-size-small-font-size, ui-form-input-size-small-line-height)
+
+        &.{ui-form-input-size-large-class}
+          input-size-variant(ui-form-input-size-large-height, 0 ui-form-input-size-large-spacing, ui-form-input-size-large-font-size, ui-form-input-size-large-line-height)
+
+    &-range
+      input-range-base(ui-form-input-size-default-height)
+
+    &-checkbox
+      input-check-base(ui-form-input-size-default-height / 2.25)
+
+    &-radio
+      input-check-base(ui-form-input-size-default-height / 2.25)
+
+    &-label
+      input-label-base()

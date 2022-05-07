@@ -412,14 +412,14 @@
           "line-height": 1.05
         },
         "small": {
-          "prefix": "sm",
+          "class": "sm",
           "height": "2rem",
           "padding": "0 .5rem",
           "font-size": "0.85rem",
           "line-height": 1.05
         },
         "large": {
-          "prefix": "lg",
+          "class": "lg",
           "height": "2.75rem",
           "padding": "0 1rem",
           "font-size": "1.125rem",
@@ -447,14 +447,14 @@
           "line-height": 1.05
         },
         "small": {
-          "prefix": "sm",
+          "class": "sm",
           "height": "1.25rem",
           "padding": "0 .4rem",
           "font-size": "0.7rem",
           "line-height": 1.05
         },
         "large": {
-          "prefix": "lg",
+          "class": "lg",
           "height": "1.75rem",
           "padding": "0 .7rem",
           "font-size": ".9rem",
@@ -470,9 +470,34 @@
       "enabled": true,
       "class": "divider"
     },
-    "input": {
+    "form": {
       "enabled": true,
-      "class": "input"
+      "class": "form",
+      "input": {
+        "size": {
+          "enabled": true,
+          "default": {
+            "height": "2.375rem",
+            "spacing": ".85rem",
+            "font-size": "1rem",
+            "line-height": 1.05
+          },
+          "small": {
+            "class": "sm",
+            "height": "2rem",
+            "spacing": ".5rem",
+            "font-size": "0.85rem",
+            "line-height": 1.05
+          },
+          "large": {
+            "class": "lg",
+            "height": "2.75rem",
+            "spacing": "1rem",
+            "font-size": "1.125rem",
+            "line-height": 1.05
+          }
+        }
+      }
     },
     "menu": {
       "enabled": true,

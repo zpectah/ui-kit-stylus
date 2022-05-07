@@ -281,7 +281,7 @@
 
             <article class="card w-100 w-md-25 w-lg-50">
 
-                <header class="card-heading">
+                <header class="card-heading bg-secondary-1">
                     <h3 class="mb-0">
                         Card heading
                     </h3>
@@ -290,19 +290,117 @@
                     </a>
                 </header>
                 <hr />
-                <div class="card-body">
-                    <p>
+                <div class="card-body bg-secondary-7 color-light align-items-center justify-content-center">
+                    <div>
                         Card body
-                    </p>
+                    </div>
                 </div>
                 <hr />
-                <footer class="card-actions">
-                    <a href="#" class="btn primary-outline">
+                <footer class="card-actions bg-secondary-1">
+                    <a href="#" class="btn primary">
                         Action button link
                     </a>
                 </footer>
 
             </article>
+
+        </section>
+
+        <section>
+
+            <section class="stack-v gap-1">
+
+                <div class="stack-v gap-1">
+                    <input type="text" class="form-input" placeholder="placeholder text" />
+                    <input type="text" class="form-input" value="default value" />
+                    <input type="text" class="form-input" placeholder="placeholder text" disabled />
+                    <input type="text" class="form-input" value="default value" disabled />
+                </div>
+
+                <div class="stack-v gap-1">
+                    <input type="text" class="form-input sm" placeholder="placeholder sm text" />
+                    <input type="text" class="form-input sm" value="default sm value" />
+                    <input type="text" class="form-input sm" placeholder="placeholder sm text" disabled />
+                    <input type="text" class="form-input sm" value="default sm value" disabled />
+                </div>
+
+                <div class="stack-v gap-1">
+                    <input type="text" class="form-input lg" placeholder="placeholder lg text" />
+                    <input type="text" class="form-input lg" value="default lg value" />
+                    <input type="text" class="form-input lg" placeholder="placeholder lg text" disabled />
+                    <input type="text" class="form-input lg" value="default lg value" disabled />
+                </div>
+
+                <div class="stack-h gap-1">
+                    <input type="text" class="form-input" placeholder="placeholder text" />
+                    <button type="button" class="btn primary">
+                        Search
+                    </button>
+                </div>
+
+                <div class="stack-v gap-1">
+                    <select class="form-select">
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                    <select class="form-select" disabled>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                </div>
+
+                <div class="stack-v gap-1">
+                    <select class="form-select sm">
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                    <select class="form-select sm" disabled>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                    <select class="form-select lg" disabled>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                </div>
+
+                <div class="stack-v gap-1">
+                    <textarea class="form-textarea" rows="3"></textarea>
+                    <textarea class="form-textarea sm" rows="3"></textarea>
+                    <textarea class="form-textarea lg" rows="3"></textarea>
+                </div>
+
+                <div class="stack-v gap-1">
+                    <input type="range" class="form-range" />
+                </div>
+
+                <div>
+                    <input class="form-checkbox" type="checkbox" value="" />
+                    <input class="form-checkbox" type="checkbox" value="" disabled />
+                </div>
+
+                <div>
+                    <label class="form-label" for="flexRadioDefault1">
+                        label
+                        <input class="form-radio" type="radio" value="a" id="flexRadioDefault1" name="flexRadioDefault" />
+                    </label>
+                    <label class="form-label" for="flexRadioDefault2">
+                        <input class="form-radio" type="radio" value="b" id="flexRadioDefault2" name="flexRadioDefault" />
+                        label
+                    </label>
+                    <label class="form-label" for="flexRadioDefault3">
+                        label
+                        <input class="form-radio" type="radio" value="c" id="flexRadioDefault3" name="flexRadioDefault" disabled />
+                        label
+                    </label>
+                </div>
+
+            </section>
 
         </section>
 
